@@ -1,0 +1,68 @@
+@import "_normalize";
+$PNbk: 'ProximaNova-Black';
+$PNb: 'ProximaNova-Bold';
+$PNsi: 'ProximaNova-SemiboldIt';
+$PN: 'ProximaNova-Regular';
+$PNi: 'ProximaNova-RegularIt';
+$PNs: 'ProximaNova-Semibold';
+$M: 'MuseoCyrl';
+$PrN: 'Proxima Nova';
+$MN: 'Museo Cyrilic';
+
+
+$normal: normal;
+$italic: italic;
+
+$bold: bold;
+$black: 900;
+$light: 300;
+$heavy: 700;
+$semibold: 600;
+$medium: 500;
+
+$dir:'../fonts/';
+$bgcolor: #00b4b1;
+$byn-color: linear-gradient(180deg, rgba(218, 6, 167, 0) 0%, rgba(181, 0, 138, 0) 100%);
+$wt:#fff;
+$bk:#000;
+$accentcolor:#c5a07c;
+$ttl:31px;
+$fz:16px;
+
+@mixin font($fontname, $fweight, $fstyle, $fontfamily){
+    @font-face {
+                font-family: $fontfamily;
+                src: url($dir+$fontname+'.eot');
+                src: url($dir+$fontname+'.eot') format("eot"),
+                     url($dir+$fontname+'.ttf') format("truetype");
+                font-weight: $fweight;
+                font-style: $fstyle;
+    }
+}
+@include font($PNbk, $black, $normal, $PrN);
+@include font($PNb, $bold, $normal, $PrN);
+@include font($PNs, $semibold, $normal, $PrN);
+@include font($PNsi, $semibold, $italic, $PrN);
+@include font($PN, $normal, $normal, $PrN);
+@include font($PNi, $normal, $italic, $PrN);
+@include font($M, $black, $normal, $MN);
+
+body{
+    color: #FFF;
+    font-size: $fz;
+    font-family: $PrN, sans-serif;
+    font-weight: normal;
+}
+
+
+
+
+
+main{
+    
+}
+header{
+    min-height: 81px;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    background: $bgcolor;
+}
