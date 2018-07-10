@@ -156,11 +156,224 @@ body {
   color: #FFF;
   font-size: 16px;
   font-family: "Proxima Nova", sans-serif;
-  font-weight: normal;
+  font-weight: 400;
+  line-height: 22px;
+}
+
+.flex-wrap {
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.btn {
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  justify-content: center;
+}
+.btn button {
+  background: none;
+  border: none;
+  min-width: 250px;
+  height: 40px;
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 600;
+  box-shadow: 0 4px 6px rgba(188, 0, 143, 0.15);
+  border-radius: 25px;
+  background-image: linear-gradient(180deg, #da06a7 0%, #b5008a 100%);
+  transition: all 0.3s;
+}
+.btn button:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
+.ttl-head {
+  text-align: center;
+}
+.ttl-head h2 {
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 46px;
 }
 
 header {
   min-height: 81px;
   box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
   background: #00b4b1;
+  position: fixed;
+  right: 0;
+  left: 0;
+  top: 0;
+  z-index: 10;
+}
+header .oplet {
+  min-height: 81px;
+}
+header .phone ul li {
+  list-style: none;
+  padding: 2px 0;
+}
+header .phone ul li a {
+  font-weight: 600;
+  line-height: 15px;
+  color: #fff;
+}
+header .menu {
+  min-height: inherit;
+  height: 100%;
+}
+header .menu nav {
+  min-height: inherit;
+  height: 100%;
+}
+header .menu nav ul {
+  min-height: inherit;
+  height: 100%;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+}
+header .menu nav ul li {
+  display: inline-block;
+  list-style: none;
+  min-height: inherit;
+  height: 100%;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 15px;
+  transition: all 0.3s;
+}
+header .menu nav ul li a {
+  font-size: 18px;
+  font-weight: 400;
+  color: #fff;
+  text-decoration: none;
+  padding: 28px 0;
+}
+header .menu nav ul li:hover, header .menu nav ul li.active {
+  border-bottom: 3px solid #cbab08;
+  border-top: 3px solid #cbab08;
+  background: rgba(0, 0, 0, 0.1);
+}
+
+.slider {
+  min-height: 750px;
+  position: relative;
+  margin-top: 81px;
+}
+.slider .prev, .slider .next {
+  position: absolute;
+  top: calc(50% - 50px);
+  cursor: pointer;
+  z-index: 2;
+}
+.slider .prev {
+  left: 50px;
+}
+.slider .prev img {
+  transition: all 0.3s;
+  -webkit-filter: saturate(50%);
+          filter: saturate(50%);
+}
+.slider .prev img:hover {
+  -webkit-filter: saturate(150%);
+          filter: saturate(150%);
+}
+.slider .next {
+  right: 50px;
+}
+.slider .next img {
+  transition: all 0.3s;
+  -webkit-filter: saturate(50%);
+          filter: saturate(50%);
+}
+.slider .next img:hover {
+  -webkit-filter: saturate(150%);
+          filter: saturate(150%);
+}
+.slider .sldr .item .pic {
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  overflow: hidden;
+  max-height: 750px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  z-index: -1;
+}
+.slider .sldr .item .pic img {
+  height: 100%;
+  min-height: 750px;
+  width: 100%;
+}
+.slider .sldr .item .pic:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(15, 64, 55, 0.4);
+}
+.slider .sldr .item .desc {
+  padding-top: 200px;
+  text-align: center;
+  color: #f9e093;
+  font-family: "Museo Cyrilic";
+  font-size: 45px;
+  font-weight: 900;
+  line-height: 52px;
+}
+.slider .sldr .item .btn-slider {
+  margin-top: 100px;
+}
+
+.content {
+  background: url(../img/bg1.jpg) repeat-y;
+}
+.content .advantage {
+  margin-top: 30px;
+}
+.content .advantage .item {
+  margin: 20px 0;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  min-height: 280px;
+}
+.content .advantage .item .ico img {
+  max-width: 90px;
+  width: 100%;
+  height: auto;
+}
+.content .advantage .item .wrap {
+  padding-top: 29px;
+}
+.content .advantage .item .ttl {
+  font-size: 20px;
+  font-weight: 600;
+}
+.content .ttl-advantage {
+  padding-top: 70px;
 }

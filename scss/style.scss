@@ -22,7 +22,8 @@ $medium: 500;
 
 $dir:'../fonts/';
 $bgcolor: #00b4b1;
-$byn-color: linear-gradient(180deg, rgba(218, 6, 167, 0) 0%, rgba(181, 0, 138, 0) 100%);
+$btn-color: linear-gradient(180deg, rgba(218, 6, 167, 1) 0%, rgba(181, 0, 138, 1) 100%);
+$link-color: #cbab08;
 $wt:#fff;
 $bk:#000;
 $accentcolor:#c5a07c;
@@ -47,11 +48,15 @@ $fz:16px;
 @include font($PNi, $normal, $italic, $PrN);
 @include font($M, $black, $normal, $MN);
 
+@mixin trans(){
+    transition: all 0.3s;
+}
 body{
     color: #FFF;
     font-size: $fz;
     font-family: $PrN, sans-serif;
-    font-weight: normal;
+    font-weight: 400;
+    line-height: 22px;
 }
 
 
@@ -61,8 +66,290 @@ body{
 main{
     
 }
+.flex-wrap{
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.btn{
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    justify-content: center;
+    button{
+        background: none;
+        border: none;
+        min-width: 250px;
+        height: 40px;
+        color: #ffffff;
+        font-size: 18px;
+        font-weight: 600;
+        box-shadow: 0 4px 6px rgba(188, 0, 143, 0.15);
+        border-radius: 25px;
+        background-image: $btn-color;
+        @include trans();
+        &:hover{
+            transform: scale(1.05);
+        }
+    }
+}
+.ttl-head{
+    text-align: center;
+    h2{
+        font-size: 40px;
+        font-weight: 700;
+        line-height: 46px;
+    }
+}
 header{
     min-height: 81px;
     box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
     background: $bgcolor;
+    position: fixed;
+    right: 0;
+    left: 0;
+    top: 0;
+    z-index: 10;
+    .oplet{
+        min-height: 81px;
+    }
+    .logo{
+        a{
+            img{
+                
+            }
+        }
+    }
+    .phone{
+        ul{
+            li{
+                list-style: none;
+                padding: 2px 0;
+                a{
+                    font-weight: 600;
+                    line-height: 15px;
+                    color: #fff;
+                    img{
+                        
+                    }
+                    span{
+                        
+                    }
+                }
+            }
+        }
+    }
+    .menu{
+        min-height: inherit;
+        height: 100%;
+        nav{
+            min-height: inherit;
+            height: 100%;
+            ul{
+                min-height: inherit;
+                height: 100%;
+                display: -webkit-flex;
+                display: -moz-flex;
+                display: -ms-flex;
+                display: -o-flex;
+                display: flex;
+                li{
+                    display: inline-block;
+                    list-style: none;
+                    min-height: inherit;
+                    height: 100%;
+                    display: -webkit-flex;
+                    display: -moz-flex;
+                    display: -ms-flex;
+                    display: -o-flex;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    padding: 0 15px;
+                    @include trans();
+                    a{
+                        font-size: 18px;
+                        font-weight: 400;
+                        color: #fff;
+                        text-decoration: none;
+                        padding: 28px 0;
+                    }
+                    &:hover, &.active{
+                        border-bottom: 3px solid $link-color;
+                        border-top: 3px solid $link-color;
+                        background: rgba(0,0,0,0.1);
+                    }
+                }
+            }
+        }
+    }
 }
+.slider{
+    min-height: 750px;
+    position: relative;
+    margin-top: 81px;
+    .prev, .next{
+        position: absolute;
+        top: calc(50% - 50px);
+        cursor: pointer;
+        z-index: 2;
+    }
+    .prev{
+        left: 50px;
+        img{
+            @include trans();
+            filter: saturate(50%);
+            &:hover{
+                filter: saturate(150%);
+            }
+        }
+    }
+    .next{
+        right: 50px;
+        img{
+            @include trans();
+            filter: saturate(50%);
+            &:hover{
+                filter: saturate(150%);
+            }
+        }
+    }
+    .sldr{
+        .item{
+            .pic{
+                display: -webkit-flex;
+                display: -moz-flex;
+                display: -ms-flex;
+                display: -o-flex;
+                display: flex;
+                align-items: center;
+                width: 100%;
+                overflow: hidden;
+                max-height: 750px;
+                position: absolute;
+                left: 0;
+                right: 0;
+                top: 0;
+                z-index: -1;
+                img{
+                    height: 100%;
+                    min-height: 750px;
+                    width: 100%;
+                }
+                &:after{
+                    content: "";
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                    bottom: 0;
+                    left: 0;
+                    background: rgba(15,64,55,0.4);
+                }
+            }
+            .desc{
+                padding-top: 200px;
+                text-align: center;
+                color: #f9e093;
+                font-family: "Museo Cyrilic";
+                font-size: 45px;
+                font-weight: 900;
+                line-height: 52px;
+            }
+            .btn-slider{
+                margin-top: 100px;
+                button{
+                    
+                }
+            }
+        }
+    }
+}
+section{
+    
+}
+.content{
+    background: url(../img/bg1.jpg)repeat-y;
+    .advantage{
+        margin-top: 30px;
+        .item{
+            margin: 20px 0;
+            display: -webkit-flex;
+            display: -moz-flex;
+            display: -ms-flex;
+            display: -o-flex;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            min-height: 280px;
+            .ico{
+                img{
+                    max-width: 90px;
+                    width: 100%;
+                    height: auto;
+                }
+            }
+            .wrap{
+                padding-top: 29px;
+            }
+            .ttl{
+                
+                font-size: 20px;
+                font-weight: 600;
+            }
+            .txt{
+               
+            }
+        }
+    }
+    .ttl-advantage{
+        padding-top: 70px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
