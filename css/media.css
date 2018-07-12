@@ -105,8 +105,16 @@
     padding: 15px 0;
   }
 
-  .slider .sldr .item .desc br {
+  .slider .sldr .item .desc br, .banner-dop .ban-dop .arrow, .menu-footer {
     display: none;
+  }
+
+  .banner-dop .ban-dop .left-list, .banner-dop .ban-dop .right-list {
+    margin-bottom: 20px;
+  }
+
+  footer .oplet {
+    padding: 0 14px;
   }
 }
 @media only screen and (max-width: 768px) {
@@ -172,6 +180,14 @@
     width: 100%;
     height: auto;
   }
+
+  .banner-dop .ban-dop .left-list ul {
+    padding: 50px 26px 50px 74px;
+  }
+
+  .banner-dop .ban-dop .right-list ul {
+    padding: 50px 28px 50px 54px;
+  }
 }
 @media only screen and (max-width: 480px) {
   header .menu {
@@ -216,6 +232,12 @@
   }
 
   .banner-index .ttl-banner {
-    font-size: 50px;
+    font-size: 32px;
+    line-height: 36px;
+  }
+
+  .ttl-head h2 {
+    font-size: 28px;
+    line-height: 35px;
   }
 }
