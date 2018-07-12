@@ -1,3 +1,114 @@
+@media only screen and (max-width: 1500px) {
+  .works-index .work .next-work-index {
+    right: 30px;
+  }
+
+  .works-index .work .prev-work-index {
+    left: 30px;
+    z-index: 1;
+  }
+}
+@media only screen and (max-width: 1280px) {
+  .stock-index .stk .arrow-one {
+    right: 217px;
+    top: 57px;
+  }
+  .stock-index .stk .arrow-one img {
+    width: 65%;
+    -webkit-transform: rotate(15deg);
+            transform: rotate(15deg);
+  }
+
+  .stock-index .stk .arrow-two {
+    right: 206px;
+    bottom: 90px;
+  }
+  .stock-index .stk .arrow-two img {
+    -webkit-transform: rotate(114deg);
+            transform: rotate(114deg);
+    width: 65%;
+  }
+}
+@media only screen and (max-width: 992px) {
+  header .oplet {
+    flex-wrap: wrap;
+  }
+
+  header .menu nav ul li a {
+    padding: 0;
+  }
+
+  header .menu {
+    min-height: 40px;
+    width: 100%;
+  }
+
+  header .menu nav ul {
+    justify-content: space-between;
+  }
+
+  header {
+    padding: 0 10px;
+  }
+
+  .slider .prev {
+    left: 10px;
+  }
+
+  .slider .next {
+    right: 10px;
+  }
+
+  .price-index .prc-index .markup:first-child, .price-index .prc-index .note {
+    margin-right: 0;
+  }
+
+  .price-index .prc-index .note {
+    margin-top: 5px;
+  }
+
+  .price-index .prc-index .markup:last-child {
+    margin-left: 0;
+    margin-top: 20px;
+  }
+
+  .stock-index .stk .item {
+    position: static;
+    margin-top: 30px;
+  }
+
+  .stock-index .stk .item .desc {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .stock-index .stk .arrow {
+    display: none;
+  }
+
+  .stock-index .stk .item img {
+    max-width: 70px;
+    width: 100%;
+    height: auto;
+  }
+
+  .review-index .rev .item {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .review-index .rev .item .auhtor {
+    padding-top: 30px;
+  }
+
+  .review-index .rev .item .desc {
+    padding: 15px 0;
+  }
+
+  .slider .sldr .item .desc br {
+    display: none;
+  }
+}
 @media only screen and (max-width: 768px) {
   .price-index .prc-index .table table thead {
     display: none;
@@ -24,5 +135,87 @@
     text-transform: uppercase;
     font-weight: bold;
     font-size: 12px;
+  }
+
+  .slider .sldr .item .desc {
+    padding-top: 80px;
+    font-size: 38px;
+    line-height: 44px;
+  }
+
+  .slider .sldr .item, .slider .sldr .item .pic, .slider, .slider .sldr .item .pic img {
+    min-height: 580px;
+  }
+
+  .slider .prev img, .slider .next img {
+    width: 60%;
+  }
+
+  .slider .next {
+    text-align: right;
+  }
+
+  .review-index .rev .item {
+    margin-bottom: 25px;
+  }
+
+  .ttl-head h2 {
+    font-size: 34px;
+  }
+
+  .banner-index .ttl-banner br, .ttl-head h2 br {
+    display: none;
+  }
+
+  .works-index .work .next-work-index img, .works-index .work .prev-work-index img {
+    max-width: 50px;
+    width: 100%;
+    height: auto;
+  }
+}
+@media only screen and (max-width: 480px) {
+  header .menu {
+    position: relative;
+  }
+
+  header .oplet {
+    flex-direction: column;
+  }
+
+  header .oplet > div {
+    margin: 10px 0;
+  }
+
+  header .menu #sandwich {
+    bottom: 20px;
+  }
+
+  header .menu .mmenu {
+    top: 50px;
+  }
+
+  .slider {
+    margin-top: 247px;
+  }
+
+  .slider .next, .slider .prev {
+    display: none;
+  }
+
+  .slider .sldr .item .desc {
+    font-size: 24px;
+    line-height: 30px;
+  }
+
+  .slider .sldr .item, .slider .sldr .item .pic, .slider, .slider .sldr .item .pic img {
+    min-height: 400px;
+  }
+
+  .slider .sldr .item .btn-slider {
+    margin-top: 50px;
+  }
+
+  .banner-index .ttl-banner {
+    font-size: 50px;
   }
 }
