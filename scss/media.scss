@@ -94,6 +94,20 @@
     footer .oplet {
         padding: 0 14px;
     }
+    .service-page{
+    	display: flex;
+    	-webkit-flex-direction: column;
+    	    -ms-flex-direction: column;
+    	        flex-direction: column;
+    }
+    .service-page aside{
+    	margin-bottom: 30px;
+    	padding-left: 10px;
+    	padding-right: 15px;
+    }
+    .service-page aside nav{
+    	max-height: 246px;
+    }
 }
 @media only screen and (max-width: 768px){
 	.price-index{
@@ -176,6 +190,27 @@
     .banner-dop .ban-dop .right-list ul {
         padding: 50px 28px 50px 54px;
     }
+    .services-card .img{
+    	margin-right: auto;
+    	margin-left: auto;
+    }
+    .services-card{
+    	max-width: 310px;
+    	margin-left: auto;
+    	margin-right: auto;
+    }
+    .banner-buttons-pages{
+    	-webkit-flex-direction: column;
+    	    -ms-flex-direction: column;
+    	        flex-direction: column;
+    }
+    .banner-buttons-pages .btn-ban{
+    	margin: 7px 0;
+    }
+    .banner-buttons-pages .btn-ban:first-child button, .banner-buttons-pages .btn-ban:last-child button {
+		width: 100%;
+		border-radius: 23px;
+    }
 }
 @media only screen and (max-width: 480px){
 	header .menu{
@@ -219,4 +254,8 @@
         font-size: 28px;
         line-height: 35px;
     }
+    .contain{
+    	margin-top: 286px;
+    }
+
 }

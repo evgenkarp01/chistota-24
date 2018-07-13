@@ -160,6 +160,11 @@ body {
   line-height: 22px;
 }
 
+main {
+  min-height: calc(100vh - 137px);
+  background: url(../img/bg1.jpg) repeat-y;
+}
+
 .flex-wrap {
   display: -moz-flex;
   display: -ms-flex;
@@ -167,6 +172,42 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+.banner-buttons-pages {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  max-width: 530px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.banner-buttons-pages .btn-ban {
+  margin: 0 10px;
+}
+.banner-buttons-pages .btn-ban button {
+  background: none;
+  border: none;
+  min-width: 250px;
+  height: 40px;
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 600;
+  box-shadow: 0 4px 6px rgba(188, 0, 143, 0.15);
+  background-image: linear-gradient(180deg, #da06a7 0%, #b5008a 100%);
+  transition: all 0.3s;
+}
+.banner-buttons-pages .btn-ban button:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+.banner-buttons-pages .btn-ban:first-child button {
+  border-top-left-radius: 25px;
+  border-bottom-left-radius: 25px;
+}
+.banner-buttons-pages .btn-ban:last-child button {
+  border-top-right-radius: 25px;
+  border-bottom-right-radius: 25px;
 }
 
 .btn {
@@ -199,6 +240,11 @@ body {
 }
 .ttl-head h2 {
   font-size: 40px;
+  font-weight: 700;
+  line-height: 46px;
+}
+.ttl-head h1 {
+  font-size: 44px;
   font-weight: 700;
   line-height: 46px;
 }
@@ -1002,6 +1048,135 @@ header .menu #sandwich.active .sw_footer {
 .mfp-with-zoom.mfp-removing .mfp-container,
 .mfp-with-zoom.mfp-removing.mfp-bg {
   opacity: 0;
+}
+
+.article {
+  background: #00b4b1;
+  border-radius: 12px;
+  padding-bottom: 52px;
+  min-height: 509px;
+}
+.article .oplet {
+  position: relative;
+  min-height: 420px;
+}
+
+.contain {
+  margin-top: 135px;
+  margin-bottom: 50px;
+}
+
+.services .oplet {
+  margin-top: 50px;
+}
+.services .ttl-services {
+  padding-top: 71px;
+}
+.services-card {
+  max-height: 250px;
+  min-height: 250px;
+  text-align: center;
+  padding: 15px;
+  margin: 15px 0;
+  border-radius: 10px;
+  background: rgba(0, 0, 0, 0.2);
+  position: relative;
+  transition: all 0.3s;
+}
+.services-card .img {
+  max-width: 269px;
+  max-height: 155px;
+  height: 100%;
+  width: 100%;
+  vertical-align: baseline;
+  overflow: hidden;
+}
+.services-card .img img {
+  max-width: 269px;
+  width: 100%;
+  transition: all 3s;
+}
+.services-card .ttl {
+  margin-top: 12px;
+  line-height: 1.2;
+}
+.services-card a {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+.services-card:hover .img img {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+.services-card:hover {
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.service-page aside {
+  padding-bottom: 60px;
+  border-radius: 12px;
+  background-color: #00b4b1;
+}
+.service-page aside .ttl {
+  padding-top: 17px;
+  text-align: center;
+}
+.service-page aside nav {
+  margin-top: 35px;
+  max-height: 1060px;
+  overflow: auto;
+}
+.service-page aside nav ul {
+  padding: 0 15px;
+}
+.service-page aside nav ul li {
+  list-style: none;
+  padding-top: 7px;
+  padding-bottom: 12px;
+  padding-left: 5px;
+  border-bottom: 1px solid #f9e093;
+  transition: all 0.3s;
+}
+.service-page aside nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+.service-page aside nav ul li:hover {
+  background: rgba(0, 0, 0, 0.2);
+}
+.service-page aside nav ul li:last-child {
+  border-bottom: none;
+}
+.service-page aside ::-webkit-scrollbar-button {
+  background-image: url("");
+  background-repeat: no-repeat;
+  width: 6px;
+  height: 0px;
+}
+.service-page aside ::-webkit-scrollbar-track {
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+}
+.service-page aside ::-webkit-scrollbar-thumb {
+  border-radius: 5px;
+  height: 50px;
+  box-shadow: 0px 1px 1px #fff inset;
+  background-color: #EFEFEF;
+  background-image: url("../img/polsun.png");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.service-page aside ::-webkit-resizer {
+  background-image: url("");
+  background-repeat: no-repeat;
+  width: 7px;
+  height: 0px;
+}
+.service-page aside ::-webkit-scrollbar {
+  width: 11px;
 }
 
 article p {
