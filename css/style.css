@@ -160,6 +160,14 @@ body {
   line-height: 22px;
 }
 
+a {
+  color: #fdf4c4;
+  transition: all 0.3s;
+}
+a:hover {
+  color: #fdc55c;
+}
+
 main {
   min-height: calc(100vh - 137px);
   background: url(../img/bg1.jpg) repeat-y;
@@ -243,11 +251,6 @@ main {
   font-weight: 700;
   line-height: 46px;
 }
-.ttl-head h1 {
-  font-size: 44px;
-  font-weight: 700;
-  line-height: 46px;
-}
 
 header {
   min-height: 81px;
@@ -262,6 +265,9 @@ header {
 header .oplet {
   min-height: 81px;
   position: relative;
+}
+header .logo a img {
+  max-width: 90px;
 }
 header .phone ul li {
   list-style: none;
@@ -860,6 +866,9 @@ footer {
 footer .oplet {
   margin-top: 30px;
 }
+footer .logo-footer a img {
+  max-width: 90px;
+}
 footer .menu-footer nav ul li {
   display: inline-block;
   padding: 10px 25px;
@@ -1054,6 +1063,7 @@ header .menu #sandwich.active .sw_footer {
   background: #00b4b1;
   border-radius: 12px;
   padding-bottom: 52px;
+  padding-top: 15px;
   min-height: 509px;
 }
 .article .oplet {
@@ -1070,7 +1080,7 @@ header .menu #sandwich.active .sw_footer {
   margin-top: 50px;
 }
 .services .ttl-services {
-  padding-top: 71px;
+  padding-top: 56px;
 }
 .services-card {
   max-height: 250px;
@@ -1179,6 +1189,270 @@ header .menu #sandwich.active .sw_footer {
   width: 11px;
 }
 
+.ttl-contacts {
+  padding-top: 40px;
+}
+
+.contacts-page .contacts-wrapper {
+  max-width: 840px;
+  margin: 50px auto;
+}
+.contacts-page .contacts-wrapper .adrs {
+  font-weight: 500;
+}
+.contacts-page .contacts-wrapper .adrs .ttl h4 {
+  font-size: 22px;
+  font-weight: 600;
+}
+.contacts-page .contacts-wrapper .adrs .address p i {
+  padding-right: 15px;
+}
+.contacts-page .contacts-wrapper .adrs .address p a {
+  vertical-align: middle;
+}
+.contacts-page .contacts-wrapper .adrs .email p i {
+  padding-right: 15px;
+}
+.contacts-page .contacts-wrapper .adrs .email p a {
+  vertical-align: middle;
+}
+.contacts-page .contacts-wrapper .adrs .phone p i {
+  padding-right: 15px;
+}
+.contacts-page .contacts-wrapper .adrs .phone p a {
+  vertical-align: middle;
+}
+.contacts-page .contacts-wrapper .adrs > div {
+  margin-bottom: 30px;
+}
+.contacts-page .contacts-wrapper .backform .ttl h4 {
+  font-size: 22px;
+  font-weight: 600;
+}
+.contacts-page .contacts-wrapper .backform form {
+  margin-top: 30px;
+  max-width: 355px;
+  width: 100%;
+}
+.contacts-page .contacts-wrapper .backform form fieldset {
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  flex-direction: column;
+}
+.contacts-page .contacts-wrapper .backform form input {
+  width: 100%;
+  border: none;
+  background: rgba(0, 0, 0, 0.2);
+  margin-bottom: 13px;
+  border-radius: 8px;
+  height: 40px;
+  color: #fff;
+  padding: 0 20px;
+  font-weight: 400;
+}
+.contacts-page .contacts-wrapper .backform form textarea {
+  width: 100%;
+  border: none;
+  background: rgba(0, 0, 0, 0.2);
+  margin-bottom: 15px;
+  border-radius: 8px;
+  height: 150px;
+  color: #fff;
+  padding: 0 20px;
+  padding-top: 7px;
+  font-weight: 400;
+}
+.contacts-page .contacts-wrapper .backform form ::-webkit-input-placeholder {
+  color: #D1D1D1;
+}
+.contacts-page .contacts-wrapper .backform form ::-moz-placeholder {
+  color: #D1D1D1;
+}
+.contacts-page .contacts-wrapper .backform form :-moz-placeholder {
+  color: #D1D1D1;
+}
+.contacts-page .contacts-wrapper .backform form :-ms-input-placeholder {
+  color: #D1D1D1;
+}
+.contacts-page .mapa {
+  max-width: 1060px;
+  margin: 30px auto;
+  min-height: 400px;
+  color: #000;
+}
+
+.calc-page .calculator {
+  padding: 30px 30px;
+  border-radius: 12px;
+  background-color: #00b4b1;
+}
+.calc-page .calculator form fieldset {
+  margin-top: 40px;
+}
+.calc-page .calculator form fieldset .title-block {
+  padding-bottom: 15px;
+}
+.calc-page .calculator form fieldset .btns-where {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.calc-page .calculator form fieldset .btns-area {
+  display: flex;
+}
+.calc-page .calculator form fieldset .btns-view {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.calc-page .calculator form fieldset .btns-complect {
+  display: flex;
+}
+.calc-page .calculator form fieldset .btns-additionlly {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.calc-page .calculator form fieldset .text-note textarea {
+  width: 100%;
+  height: 215px;
+  border-radius: 8px;
+  background: rgba(0, 0, 0, 0.2);
+  padding: 5px 10px;
+  border: none;
+  color: #fff;
+}
+
+.but {
+  width: 210px;
+  padding: 0 5px;
+  margin-bottom: 10px;
+}
+.but button {
+  max-width: 210px;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+  height: 35px;
+  border: none;
+  transition: all 0.3s;
+}
+.but button:hover {
+  background: rgba(0, 0, 0, 0.4);
+}
+.but button.active {
+  background: #f9e093;
+  color: #000;
+}
+
+.val-input {
+  position: relative;
+  max-width: 250px;
+  width: 100%;
+  margin: 0 8px;
+}
+.val-input .ttl-area {
+  text-align: center;
+}
+.val-input .oplet {
+  position: relative;
+}
+.val-input .val-decr {
+  cursor: pointer;
+  background: rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  height: 35px;
+  width: 35px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  text-align: center;
+  transition: all 0.3s;
+}
+.val-input .val-decr strong {
+  text-align: center;
+  font-size: 33px;
+  position: relative;
+  top: 4px;
+}
+.val-input .val-decr:hover {
+  background: rgba(0, 0, 0, 0.2);
+}
+.val-input input {
+  text-align: center;
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+  height: 35px;
+  border: none;
+  color: #fff;
+  width: 100%;
+}
+.val-input input::-webkit-input-placeholder {
+  color: #fff;
+}
+.val-input input::-moz-placeholder {
+  color: #fff;
+}
+.val-input input:-moz-placeholder {
+  color: #fff;
+}
+.val-input input:-ms-input-placeholder {
+  color: #fff;
+}
+.val-input .val-incr {
+  cursor: pointer;
+  background: rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  height: 35px;
+  width: 35px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  text-align: center;
+  transition: all 0.3s;
+}
+.val-input .val-incr strong {
+  text-align: center;
+  font-size: 33px;
+  position: relative;
+  top: 7px;
+}
+.val-input .val-incr:hover {
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.but-add {
+  margin: 7px;
+  width: 195px;
+  height: 160px;
+  background: rgba(0, 0, 0, 0.2);
+  text-align: center;
+  border-radius: 8px;
+  position: relative;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.but-add .img {
+  margin: 15px auto;
+}
+.but-add .ttl {
+  position: absolute;
+  bottom: 30px;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+}
+.but-add:hover {
+  background: rgba(0, 0, 0, 0.4);
+}
+.but-add.active {
+  background: #f9e093;
+  color: #000;
+  font-weight: 600;
+}
+
 article p {
   padding: 8px 0;
 }
@@ -1186,8 +1460,14 @@ article p {
 /*//////////////////////////////
 //////////////text editor////////////////
 //////////////////////////////*/
+h1 {
+  font-size: 38px;
+  font-weight: 700;
+  line-height: 46px;
+}
+
 h2 {
-  font-size: 40px;
+  font-size: 34px;
   font-weight: 700;
   line-height: 46px;
 }

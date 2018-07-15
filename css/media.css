@@ -227,6 +227,15 @@
     width: 100%;
     border-radius: 23px;
   }
+
+  .contacts-page .contacts-wrapper .adrs, .backform {
+    text-align: center;
+  }
+
+  .contacts-page .contacts-wrapper .backform form {
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 @media only screen and (max-width: 480px) {
   header .menu {
