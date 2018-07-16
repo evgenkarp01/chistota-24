@@ -151,6 +151,10 @@ $( document ).ready(function() {
 			}
 		}
 	});
+    $('.mwa').magnificPopup({
+		type: 'inline',
+		preloader: false
+	});
     
     
     

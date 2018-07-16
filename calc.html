@@ -64,10 +64,10 @@
                                          <h4>1. Где будем наводить порядок</h4>
                                      </div>
                                       <div class="btns-where">
-                                          <div class="but"><button>Квартира</button></div>
-                                          <div class="but"><button class="active">Дом/котедж</button></div>
-                                          <div class="but"><button>Офис</button></div>
-                                          <div class="but"><button>Химчистка</button></div>
+                                          <div class="but" data-where="apart"><button class="active">Квартира</button><input type="hidden" value="Квартира"></div>
+                                          <div class="but" data-where="home"><button>Дом/коттедж</button><input type="hidden" value="Дом"></div>
+                                          <div class="but" data-where="office"><button>Офис</button><input type="hidden" value="Офис"></div>
+                                          <div class="but" data-where="himchist"><button>Химчистка</button><input type="hidden" value="Химчистка"></div>
                                       </div>
                                   </fieldset>
                                   <fieldset>
@@ -79,7 +79,7 @@
                                              <div class="ttl-area"><span>Площадь</span></div>
                                              <div class="oplet">
                                                  <span class="val-decr"><strong>–</strong></span>
-                                                <input type="text" placeholder="0">
+                                                <input type="text" id="ploschad_area" value="0" placeholder="0">
                                                 <span class="val-incr"><strong>+</strong></span>
                                              </div>
                                           </div>
@@ -87,7 +87,7 @@
                                              <div class="ttl-area"><span>Количество комнат</span></div>
                                              <div class="oplet">
                                                  <span class="val-decr"><strong>–</strong></span>
-                                                <input type="text" placeholder="0">
+                                                <input type="text" id="col_komnat_area" value="0" placeholder="0">
                                                 <span class="val-incr"><strong>+</strong></span>
                                              </div>
                                           </div>
@@ -95,7 +95,7 @@
                                              <div class="ttl-area"><span>Количество санузлов</span></div>
                                              <div class="oplet">
                                                  <span class="val-decr"><strong>–</strong></span>
-                                                <input type="text" placeholder="0">
+                                                <input type="text" id="col_sanus_area" value="0" placeholder="0">
                                                 <span class="val-incr"><strong>+</strong></span>
                                              </div>
                                           </div>
@@ -106,12 +106,27 @@
                                          <h4>3. Вид уборки</h4>
                                      </div>
                                       <div class="btns-view">
-                                          <div class="but"><button>Стандартная</button></div>
-                                          <div class="but"><button>Генеральная</button></div>
-                                          <div class="but"><button>После ремонта</button></div>
-                                          <div class="but"><button>После пожара</button></div>
-                                          <div class="but"><button>После затопления</button></div>
-                                          <div class="but"><button>Придомовая территория</button></div>
+                                          <div class="but apart home"><button>Стандартная</button>
+                                          <input type="hidden" value="standart" data-view="100"></div>
+                                          <div class="but himchist">
+                                          <button>Мягкая мебель</button>
+                                          <input type="hidden" value="magkameb" data-view="200"></div>
+                                          <div class="but himchist"><button>Ковры</button>
+                                          <input type="hidden" value="kovr" data-view="300"></div>
+                                          <div class="but himchist"><button>Шторы</button>
+                                          <input type="hidden" value="shtor" data-view="400"></div>
+                                          <div class="but apart home office"><button>Генеральная</button>
+                                          <input type="hidden" value="general" data-view="500"></div>
+                                          <div class="but apart home office"><button>После ремонта</button>
+                                          <input type="hidden" value="aftremont" data-view="600"></div>
+                                          <div class="but apart home office"><button>После пожара</button>
+                                          <input type="hidden" value="aftpoz" data-view="700"></div>
+                                          <div class="but office"><button>Ежедневная</button>
+                                          <input type="hidden" value="ezhedn" data-view="800"></div>
+                                          <div class="but apart home office"><button>После затопления</button>
+                                          <input type="hidden" value="aftzatop" data-view="900"></div>
+                                          <div class="but home"><button>Придомовая территория</button>
+                                          <input type="hidden" value="pridomter" data-view="1000"></div>
                                       </div>
                                   </fieldset>
                                   <fieldset>
@@ -158,9 +173,9 @@
                                               <div class="img"><img src="img/icons/ico-7.png" alt=""></div>
                                               <div class="ttl">Помыть посуду</div>
                                           </div>
-                                          <div class="but-add">
-                                              <div class="img"><img src="img/icons/ico-8.png" alt=""></div>
-                                              <div class="ttl">Упаковка вещей</div>
+                                          <div class="but-add all-list-dop-serv">
+                                              <div class="ttl">Просмотреть весь список услуг</div>
+                                              <a class="mwa" href="#modal_window_allservices"></a>
                                           </div>
                                       </div>
                                   </fieldset>
@@ -250,13 +265,13 @@
                           <aside>
                               <div class="resultat">
                                   <div class="wrap">
-                                    <div class="view-usluga"><span>УБОРКА КВАРТИРЫ</span></div>
+                                    <div class="view-usluga"><span>КВАРТИРА</span></div>
                                     <div class="option-usluga">
                                       <div id="ploschad-usluga" class="ploschad">Площадь: <span>24</span></div>
                                       <div id="komnat-usluga" class="komnat">Кол.комнат: <span>3</span></div>
                                       <div id="sanusel-usluga" class="sanusel">Кол.санузлов: <span>5</span></div>
-                                      <div class="plus-usluga">
-                                        <span>После строительства/ремонта</span><span>Малыш</span>
+                                      <div class="plus-usluga" id="plus_usluga_result">
+                                        
                                       </div>
                                     </div>
                                     <div class="dop-usluga">
@@ -311,7 +326,7 @@
 			</div>
 		</div>
 	</footer>
- <div class="modal-calc-window mfp-hide white-popup-block mdc" id="modal_calc_window">
+ <div class="modal-calc-window mfp-hide white-popup-block" id="modal_calc_window">
    <div class="ttl-head ttl-modal-calc-window">
      <h2>Выберите окно</h2>
    </div>
@@ -463,10 +478,124 @@
      <div class="btn btn-dop-usl-window"><button>Назад в калькулятор</button></div>
    </div>
  </div>
+   <div class="modal-window-allservices mfp-hide white-popup-block" id="modal_window_allservices">
+       <div class="ttl-head ttl-modal-window-allservices">
+           <h2>Дополнительные опции</h2>
+       </div>
+       <div class="allservices">
+           <div class="wrap">
+               <div class="item-allservices">
+                   <div class="img"><img src="img/icons/ico-1.png" alt=""></div>
+                   <div class="ttl-allservices">
+                       <p>Разбор кладовки или балкона</p>
+                   </div>
+               </div>
+               <div class="item-allservices">
+                   <div class="img"><img src="img/icons/ico-7.png" alt=""></div>
+                   <div class="ttl-allservices">
+                       <p>Разбор кладовки или балкона</p>
+                   </div>
+               </div>
+               <div class="item-allservices">
+                   <div class="img"><img src="img/icons/ico-3.png" alt=""></div>
+                   <div class="ttl-allservices">
+                       <p>Разбор или балкона</p>
+                   </div>
+               </div>
+               <div class="item-allservices">
+                   <div class="img"><img src="img/icons/ico-9.png" alt=""></div>
+                   <div class="ttl-allservices">
+                       <p>Разбор кладовки или балкона</p>
+                   </div>
+               </div>
+               <div class="item-allservices active">
+                   <div class="img"><img src="img/icons/ico-8.png" alt=""></div>
+                   <div class="ttl-allservices">
+                       <p>Разбор кладовки или балкона</p>
+                   </div>
+               </div>
+               <div class="item-allservices">
+                   <div class="img"><img src="img/icons/ico-6.png" alt=""></div>
+                   <div class="ttl-allservices">
+                       <p>Разбор кладовки или балкона</p>
+                   </div>
+               </div>
+               <div class="item-allservices">
+                   <div class="img"><img src="img/icons/ico-2.png" alt=""></div>
+                   <div class="ttl-allservices">
+                       <p>кладовки или балкона</p>
+                   </div>
+               </div>
+               <div class="item-allservices">
+                   <div class="img"><img src="img/icons/ico-3.png" alt=""></div>
+                   <div class="ttl-allservices">
+                       <p>Разбор или балкона</p>
+                   </div>
+               </div>
+               <div class="item-allservices">
+                   <div class="img"><img src="img/icons/ico-3.png" alt=""></div>
+                   <div class="ttl-allservices">
+                       <p>Разбор кладовки или балкона</p>
+                   </div>
+               </div>
+               <div class="item-allservices">
+                   <div class="img"><img src="img/icons/ico-1.png" alt=""></div>
+                   <div class="ttl-allservices">
+                       <p>Разбор кладовки или</p>
+                   </div>
+               </div>
+               <div class="item-allservices">
+                   <div class="img"><img src="img/icons/ico-4.png" alt=""></div>
+                   <div class="ttl-allservices">
+                       <p>Разбор кладовки или балкона</p>
+                   </div>
+               </div>
+               <div class="item-allservices">
+                   <div class="img"><img src="img/icons/ico-1.png" alt=""></div>
+                   <div class="ttl-allservices">
+                       <p>Разбор кладовки или балкона</p>
+                   </div>
+               </div>
+               <div class="item-allservices">
+                   <div class="img"><img src="img/icons/ico-3.png" alt=""></div>
+                   <div class="ttl-allservices">
+                       <p>Разбор или балкона</p>
+                   </div>
+               </div>
+               <div class="item-allservices">
+                   <div class="img"><img src="img/icons/ico-2.png" alt=""></div>
+                   <div class="ttl-allservices">
+                       <p>Разбор кладовки балкона</p>
+                   </div>
+               </div>
+               <div class="item-allservices">
+                   <div class="img"><img src="img/icons/ico-9.png" alt=""></div>
+                   <div class="ttl-allservices">
+                       <p>Разбор кладовки или балкона</p>
+                   </div>
+               </div>
+           </div>
+           <div class="forma-no-service">
+               <form action="">
+                   <div class="ttl-forma-no-service">
+                       <h3>Не нашли нужную опцию?</h3>
+                   </div>
+                   <p>Уточните у нашего менеджера по телефону <strong>8(800)200-34-21</strong> или мы можем перезвонить:</p>
+                   <fieldset>
+                       <input type="text" name="name_forma-no-service" id="name_forma-no-service" placeholder="Ваше имя">
+                       <input type="text" placeholder="Ваш телефон">
+                   </fieldset>
+                   <div class="btn btn-forma-no-service"><button>Отправить</button></div>
+               </form>
+           </div>
+       </div>
+       <div class="btn btn-services-back-calc"><button>Назад в калькулятор</button></div>
+   </div>
     <script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
           crossorigin="anonymous"></script>
 	<script src="slick/slick.min.js"></script>
 	<script src="js/jquery.magnific-popup.min.js"></script>
+	<script src="js/calculator.js"></script>
 	<script src="js/custom.js"></script>
 </body>
 </html>

@@ -123,6 +123,9 @@
     	justify-content: space-around;
     	flex-wrap: wrap;
 	}
+    .modal-window-allservices .allservices .wrap{
+        justify-content: space-around;
+    }
 }
 @media only screen and (max-width: 768px){
 	.price-index{
@@ -264,6 +267,12 @@
 	.modal-calc-window{
 		padding: 40px 10px;
 	}
+    .modal-window-allservices .allservices .item-allservices{
+        width: 100%;
+    }
+    .modal-window-allservices{
+        padding: 30px 15px;
+    }
 }
 @media only screen and (max-width: 480px){
 	header .menu{
@@ -321,4 +330,10 @@
 	    max-width: 100%;
 	    margin-bottom: 10px;
     }
+    .modal-window-allservices .forma-no-service form fieldset input{
+        width: 100%;
+        margin: 0;
+        margin-top: 10px;
+    }
+    
 }
