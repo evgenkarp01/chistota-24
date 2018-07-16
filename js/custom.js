@@ -89,9 +89,12 @@ $( document ).ready(function() {
 
     
     
+    $(".file-upload input[type=file]").change(function(){
+         var filename = $(this).val().replace(/.*\\/, "");
+         $("#filename").val(filename);
+    });
     
-    
-    
+    /*
     var locations = [
             ["Ульяновская д.25", 47.216003, 39.714761, "http://ewal-web.ru/assets/site/img/mapmark.png"],
         ];
@@ -129,9 +132,25 @@ $( document ).ready(function() {
             })(marker, i));
         }
     
+    */
     
-    
-    
+    $('.mdc').magnificPopup({
+		type: 'inline',
+		preloader: false,
+		focus: '#col_one',
+
+		// When elemened is focused, some mobile browsers in some cases zoom in
+		// It looks not nice, so we disable it:
+		callbacks: {
+			beforeOpen: function() {
+				if($(window).width() < 700) {
+					this.st.focus = false;
+				} else {
+					this.st.focus = '#col_one';
+				}
+			}
+		}
+	});
     
     
     

@@ -28,6 +28,10 @@
             transform: rotate(114deg);
     width: 65%;
   }
+
+  .calc-page .resultat {
+    right: 0;
+  }
 }
 @media only screen and (max-width: 992px) {
   header .oplet {
@@ -130,6 +134,21 @@
 
   .service-page aside nav {
     max-height: 246px;
+  }
+
+  .calc-page .resultat {
+    position: relative;
+    max-width: 100%;
+    margin-top: 30px;
+  }
+
+  .calc-page .calculator form fieldset .upload-file {
+    flex-wrap: wrap;
+  }
+
+  .modal-calc-window .dop-usl-window .dop-us-wrap {
+    justify-content: space-around;
+    flex-wrap: wrap;
   }
 }
 @media only screen and (max-width: 768px) {
@@ -236,6 +255,42 @@
     margin-left: auto;
     margin-right: auto;
   }
+
+  .modal-calc-window .window-wrapper .item {
+    max-width: 100%;
+  }
+}
+@media only screen and (max-width: 530px) {
+  .calc-page .calculator form fieldset .btns-area {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .calc-page .calculator form fieldset .btns-where, .calc-page .calculator form fieldset .btns-complect, .calc-page .calculator form fieldset .btns-additionlly {
+    justify-content: center;
+  }
+
+  .calc-page .calculator form fieldset .phone-input {
+    flex-direction: column;
+  }
+  .calc-page .calculator form fieldset .phone-input input {
+    max-width: 100% !important;
+    margin: 0;
+    margin-bottom: 10px;
+  }
+
+  .calc-page .calculator form fieldset .address-input {
+    flex-direction: column;
+  }
+  .calc-page .calculator form fieldset .address-input input {
+    max-width: 100% !important;
+    margin: 0;
+    margin-bottom: 10px;
+  }
+
+  .modal-calc-window {
+    padding: 40px 10px;
+  }
 }
 @media only screen and (max-width: 480px) {
   header .menu {
@@ -291,5 +346,17 @@
 
   .contain {
     margin-top: 286px;
+  }
+
+  .date-input select {
+    margin: 0;
+    max-width: 100%;
+    display: block;
+  }
+
+  .date-input input[type="date"] {
+    margin: 0;
+    max-width: 100%;
+    margin-bottom: 10px;
   }
 }

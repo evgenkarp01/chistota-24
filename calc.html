@@ -129,9 +129,10 @@
                                          <h4>5. Дополнительные опции</h4>
                                      </div>
                                       <div class="btns-additionlly">
-                                          <div class="but-add">
+                                          <div class="but-add" id="modal_window">
                                               <div class="img"><img src="img/icons/ico-1.png" alt=""></div>
                                               <div class="ttl">Окна</div>
+                                              <a class="mdc" href="#modal_calc_window"></a>
                                           </div>
                                           <div class="but-add">
                                               <div class="img"><img src="img/icons/ico-2.png" alt=""></div>
@@ -175,9 +176,16 @@
                                      <div class="title-block">
                                          <h4>7. Прикрепить фотографию</h4>
                                      </div>
-                                      <div class="upload-file">
-                                          <input type="file"><mark for=""></mark>
+                                     <div class="upload-file">
+                                       <div class="file-upload">
+                                           <label>
+                                                <input type="file" name="file">
+                                                <span>Выбрать фото</span>
+                                           </label>
                                       </div>
+                                      <input type="text" id="filename" class="filename" disabled>
+                                     </div>
+                                      
                                   </fieldset>
                                   <fieldset>
                                      <div class="title-block">
@@ -194,11 +202,11 @@
                                          <h4>9. Адрес</h4>
                                      </div>
                                       <div class="address-input">
-                                          <input type="text" placeholder="Город">
-                                          <input type="text" placeholder="Улица">
-                                          <input type="text" placeholder="Дом">
-                                          <input type="text" placeholder="Квартира">
-                                          <input type="text" placeholder="Подъезд">
+                                          <input class="city" type="text" placeholder="Город">
+                                          <input class="street" type="text" placeholder="Улица">
+                                          <input class="home" type="text" placeholder="Дом">
+                                          <input class="apart" type="text" placeholder="Квартира">
+                                          <input class="entrance" type="text" placeholder="Подъезд">
                                       </div>
                                   </fieldset>
                                   <fieldset>
@@ -241,7 +249,33 @@
                       <div class="col-md-3">
                           <aside>
                               <div class="resultat">
-                                  
+                                  <div class="wrap">
+                                    <div class="view-usluga"><span>УБОРКА КВАРТИРЫ</span></div>
+                                    <div class="option-usluga">
+                                      <div id="ploschad-usluga" class="ploschad">Площадь: <span>24</span></div>
+                                      <div id="komnat-usluga" class="komnat">Кол.комнат: <span>3</span></div>
+                                      <div id="sanusel-usluga" class="sanusel">Кол.санузлов: <span>5</span></div>
+                                      <div class="plus-usluga">
+                                        <span>После строительства/ремонта</span><span>Малыш</span>
+                                      </div>
+                                    </div>
+                                    <div class="dop-usluga">
+                                      <span class="result-dop-usluga">Дополнительно: </span><span>Духовка</span><span>Стирка</span>
+                                    </div>
+                                    <div class="date-usluga">
+                                      <div class="result-date-usluga">Дата: <span>12.08.2018</span></div>
+                                      <div class="result-time-usluga">Время: <span>12:00</span></div>
+                                    </div>
+                                    <div class="cost-usluga">
+                                      <div class="summa-cost">К оплате: <span>222 222руб</span></div>
+                                    </div>
+                                  </div>
+                                  <div class="btn btn-calc-result"><button>Отправить расчет</button></div>
+                                  <div class="ofer">
+                                    <p>
+                                      Нажимая кнопку "Отправить" вы соглашаетесь с <a href="">Пользовательским соглашением</a> и <a href="">Положением о Персональных данных</a>
+                                    </p>
+                                  </div>
                               </div>
                           </aside>
                       </div>
@@ -277,12 +311,162 @@
 			</div>
 		</div>
 	</footer>
- 
+ <div class="modal-calc-window mfp-hide white-popup-block mdc" id="modal_calc_window">
+   <div class="ttl-head ttl-modal-calc-window">
+     <h2>Выберите окно</h2>
+   </div>
+   <div class="window-wrapper">
+     <div class="item">
+       <div class="img"><img src="img/win1.png" alt=""></div>
+       <div class="ttl-win">
+         <h4>1-a створка</h4>
+       </div>
+       <div class="input-data"><input type="text" id="col_one" placeholder="Количество"></div>
+       <div class="btn btn-win"><button>Выбрать</button></div>
+       <a href="/"></a>
+     </div>
+    <div class="item">
+       <div class="img"><img src="img/win2.png" alt=""></div>
+       <div class="ttl-win">
+         <h4>1-a створка</h4>
+       </div>
+       <div class="input-data"><input type="text" placeholder="Количество"></div>
+       <div class="btn btn-win"><button>Выбрать</button></div>
+     </div>
+     <div class="item">
+       <div class="img"><img src="img/win3.png" alt=""></div>
+       <div class="ttl-win">
+         <h4>1-a створка</h4>
+       </div>
+       <div class="input-data"><input type="text" placeholder="Количество"></div>
+       <div class="btn btn-win"><button>Выбрать</button></div>
+     </div>
+     <div class="item">
+       <div class="img"><img src="img/win4.png" alt=""></div>
+       <div class="ttl-win">
+         <h4>1-a створка</h4>
+       </div>
+       <div class="input-data"><input type="text" placeholder="Количество"></div>
+       <div class="btn btn-win"><button>Выбрать</button></div>
+     </div>
+     <div class="item active">
+       <div class="img"><img src="img/win5.png" alt=""></div>
+       <div class="ttl-win">
+         <h4>1-a створка</h4>
+       </div>
+       <div class="input-data"><input type="text" placeholder="Количество"></div>
+       <div class="btn btn-win"><button>Выбрать</button></div>
+     </div>
+     <div class="item">
+       <div class="img"><img src="img/win6.png" alt=""></div>
+       <div class="ttl-win">
+         <h4>1-a створка</h4>
+       </div>
+       <div class="input-data"><input type="text" placeholder="Количество"></div>
+       <div class="btn btn-win"><button>Выбрать</button></div>
+     </div>
+     <div class="item">
+       <div class="img"><img src="img/win7.png" alt=""></div>
+       <div class="ttl-win">
+         <h4>1-a створка</h4>
+       </div>
+       <div class="input-data"><input type="text" placeholder="Количество"></div>
+       <div class="btn btn-win"><button>Выбрать</button></div>
+     </div>
+     <div class="item">
+       <div class="img"><img src="img/win8.png" alt=""></div>
+       <div class="ttl-win">
+         <h4>1-a створка</h4>
+       </div>
+       <div class="input-data"><input type="text" placeholder="Количество"></div>
+       <div class="btn btn-win"><button>Выбрать</button></div>
+     </div>
+     <div class="item">
+       <div class="img"><img src="img/win9.png" alt=""></div>
+       <div class="ttl-win">
+         <h4>1-a створка</h4>
+       </div>
+       <div class="input-data"><input type="text" placeholder="Количество"></div>
+       <div class="btn btn-win"><button>Выбрать</button></div>
+     </div>
+     <div class="item">
+       <div class="img"><img src="img/win10.png" alt=""></div>
+       <div class="ttl-win">
+         <h4>1-a створка</h4>
+       </div>
+       <div class="input-data"><input type="text" placeholder="Количество"></div>
+       <div class="btn btn-win"><button>Выбрать</button></div>
+     </div>
+     <div class="item">
+       <div class="img"><img src="img/win11.png" alt=""></div>
+       <div class="ttl-win">
+         <h4>1-a створка</h4>
+       </div>
+       <div class="input-data"><input type="text" placeholder="Количество"></div>
+       <div class="btn btn-win"><button>Выбрать</button></div>
+     </div>
+     <div class="item">
+       <div class="img"><img src="img/win12.png" alt=""></div>
+       <div class="ttl-win">
+         <h4>1-a створка</h4>
+       </div>
+       <div class="input-data"><input type="text" placeholder="Количество"></div>
+       <div class="btn btn-win"><button>Выбрать</button></div>
+     </div>
+
+   </div>
+   <div class="dop-usl-window">
+     <div class="ttl-head ttl-dop-usl-window">
+       <h4>Выберите дополнительные услуги</h4>
+     </div>
+     <div class="dop-us-wrap">
+       <div class="item">
+         <div class="item-ttl-dop-us">
+           <p>Стоимость мытья москитной 100 руб. за м2</p>
+         </div>
+         <div class="item-input-dop-us">
+          <input type="text" placeholder="Площадь">
+        </div>
+       </div>
+       <div class="item">
+         <div class="item-ttl-dop-us">
+           <p>Стоимость мытья жалюзи 100 руб. за м2</p>
+         </div>
+         <div class="item-input-dop-us">
+          <input type="text" placeholder="Площадь">
+        </div>
+       </div>
+       <div class="item">
+         <div class="item-ttl-dop-us">
+           <p>Сильная степень загрязнения окон +30% к заказу</p>
+         </div>
+       </div>
+       <div class="item">
+         <div class="item-ttl-dop-us">
+           <p>Деревянные окна старого образца с раскручиванием рам 200 руб. за м2</p>
+         </div>
+         <div class="item-input-dop-us">
+          <input type="text" placeholder="Площадь">
+        </div>
+       </div>
+       <div class="item">
+         <div class="item-ttl-dop-us">
+           <p>Решётки на окнах +30% к заказу</p>
+         </div>
+       </div>
+       <div class="item active">
+         <div class="item-ttl-dop-us">
+           <p>Мытьё зеркал +100 руб</p>
+         </div>
+       </div>
+     </div>
+     <div class="btn btn-dop-usl-window"><button>Назад в калькулятор</button></div>
+   </div>
+ </div>
     <script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
           crossorigin="anonymous"></script>
 	<script src="slick/slick.min.js"></script>
 	<script src="js/jquery.magnific-popup.min.js"></script>
-	<script src=""></script>
 	<script src="js/custom.js"></script>
 </body>
 </html>
