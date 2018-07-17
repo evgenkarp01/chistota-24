@@ -1316,6 +1316,9 @@ header .menu #sandwich.active .sw_footer {
 .calc-page .calculator form fieldset .btns-view .but {
   display: none;
 }
+.calc-page .calculator form fieldset .btns-view .show-class {
+  display: block;
+}
 .calc-page .calculator form fieldset .btns-complect {
   display: flex;
   flex-wrap: wrap;
@@ -1426,15 +1429,36 @@ header .menu #sandwich.active .sw_footer {
   color: #1eefec;
   font-weight: 600;
   line-height: 19px;
+  display: inline-block;
 }
 .calc-page .resultat .dop-usluga .result-dop-usluga span {
   color: #ffffff;
   font-weight: normal;
 }
-.calc-page .resultat .dop-usluga span:after {
+.calc-page .resultat .dop-usluga .result-dop-usluga #result_dop_usluga span:after {
   content: ", ";
 }
-.calc-page .resultat .dop-usluga span:last-child:after, .calc-page .resultat .dop-usluga span:first-child:after {
+.calc-page .resultat .dop-usluga .result-dop-usluga #result_dop_usluga span:last-child:after {
+  content: "";
+}
+.calc-page .resultat .compl-usluga {
+  border-bottom: 1px solid #f9e093;
+  padding: 15px 0;
+}
+.calc-page .resultat .compl-usluga .result-compl-usluga {
+  color: #1eefec;
+  font-weight: 600;
+  line-height: 19px;
+  display: inline-block;
+}
+.calc-page .resultat .compl-usluga .result-compl-usluga span {
+  color: #ffffff;
+  font-weight: normal;
+}
+.calc-page .resultat .compl-usluga .result-compl-usluga #result_compl_usluga span:after {
+  content: ", ";
+}
+.calc-page .resultat .compl-usluga .result-compl-usluga #result_compl_usluga span:last-child:after {
   content: "";
 }
 .calc-page .resultat .date-usluga {

@@ -106,7 +106,7 @@
                                          <h4>3. Вид уборки</h4>
                                      </div>
                                       <div class="btns-view">
-                                          <div class="but apart home"><button>Стандартная</button>
+                                          <div class="but apart home show-class"><button>Стандартная</button>
                                           <input type="hidden" value="standart" data-view="100"></div>
                                           <div class="but himchist">
                                           <button>Мягкая мебель</button>
@@ -115,15 +115,15 @@
                                           <input type="hidden" value="kovr" data-view="300"></div>
                                           <div class="but himchist"><button>Шторы</button>
                                           <input type="hidden" value="shtor" data-view="400"></div>
-                                          <div class="but apart home office"><button>Генеральная</button>
+                                          <div class="but apart home office show-class"><button>Генеральная</button>
                                           <input type="hidden" value="general" data-view="500"></div>
-                                          <div class="but apart home office"><button>После ремонта</button>
+                                          <div class="but apart home office show-class"><button>После ремонта</button>
                                           <input type="hidden" value="aftremont" data-view="600"></div>
-                                          <div class="but apart home office"><button>После пожара</button>
+                                          <div class="but apart home office show-class"><button>После пожара</button>
                                           <input type="hidden" value="aftpoz" data-view="700"></div>
                                           <div class="but office"><button>Ежедневная</button>
                                           <input type="hidden" value="ezhedn" data-view="800"></div>
-                                          <div class="but apart home office"><button>После затопления</button>
+                                          <div class="but apart home office show-class"><button>После затопления</button>
                                           <input type="hidden" value="aftzatop" data-view="900"></div>
                                           <div class="but home"><button>Придомовая территория</button>
                                           <input type="hidden" value="pridomter" data-view="1000"></div>
@@ -134,9 +134,12 @@
                                          <h4>4. Комплектация уборки</h4>
                                      </div>
                                       <div class="btns-complect">
-                                          <div class="but"><button>Уборка детской</button></div>
-                                          <div class="but"><button>Уборка за животными</button></div>
-                                          <div class="but"><button>Домработница на час</button></div>
+                                          <div class="but"><button>Уборка детской</button>
+                                          <input type="hidden" value="detska" data-complect="100"></div>
+                                          <div class="but"><button>Уборка за животными</button>
+                                          <input type="hidden" value="svery" data-complect="200"></div>
+                                          <div class="but"><button>Домработница на час</button>
+                                          <input type="hidden" value="sluzanka" data-complect="300"></div>
                                       </div>
                                   </fieldset>
                                   <fieldset>
@@ -152,26 +155,32 @@
                                           <div class="but-add">
                                               <div class="img"><img src="img/icons/ico-2.png" alt=""></div>
                                               <div class="ttl">Духовка</div>
+                                              <input type="hidden" value="duhovka" data-additionlly="300">
                                           </div>
                                           <div class="but-add">
                                               <div class="img"><img src="img/icons/ico-3.png" alt=""></div>
                                               <div class="ttl">СВЧ</div>
+                                              <input type="hidden" value="svch" data-additionlly="300">
                                           </div>
                                           <div class="but-add">
                                               <div class="img"><img src="img/icons/ico-4.png" alt=""></div>
                                               <div class="ttl">Холодильник</div>
+                                              <input type="hidden" value="holod" data-additionlly="300">
                                           </div>
-                                          <div class="but-add active">
+                                          <div class="but-add">
                                               <div class="img"><img src="img/icons/ico-5.png" alt=""></div>
                                               <div class="ttl">Вытяжка</div>
+                                              <input type="hidden" value="vitazka" data-additionlly="300">
                                           </div>
                                           <div class="but-add">
                                               <div class="img"><img src="img/icons/ico-6.png" alt=""></div>
                                               <div class="ttl">Глажка и стирка</div>
+                                              <input type="hidden" value="stirka" data-additionlly="300">
                                           </div>
                                           <div class="but-add">
                                               <div class="img"><img src="img/icons/ico-7.png" alt=""></div>
                                               <div class="ttl">Помыть посуду</div>
+                                              <input type="hidden" value="matposudu" data-additionlly="300">
                                           </div>
                                           <div class="but-add all-list-dop-serv">
                                               <div class="ttl">Просмотреть весь список услуг</div>
@@ -199,8 +208,7 @@
                                            </label>
                                       </div>
                                       <input type="text" id="filename" class="filename" disabled>
-                                     </div>
-                                      
+                                     </div> 
                                   </fieldset>
                                   <fieldset>
                                      <div class="title-block">
@@ -274,8 +282,15 @@
                                         
                                       </div>
                                     </div>
+                                    <div class="compl-usluga">
+                                      <div class="result-compl-usluga">Комплектация: 
+                                        <div id="result_compl_usluga"></div>
+                                      </div>
+                                    </div>
                                     <div class="dop-usluga">
-                                      <span class="result-dop-usluga">Дополнительно: </span><span>Духовка</span><span>Стирка</span>
+                                      <div class="result-dop-usluga">Дополнительно: 
+                                        <div id="result_dop_usluga"></div>
+                                      </div>
                                     </div>
                                     <div class="date-usluga">
                                       <div class="result-date-usluga">Дата: <span>12.08.2018</span></div>

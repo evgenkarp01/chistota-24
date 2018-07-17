@@ -1318,6 +1318,9 @@ header .menu #sandwich.active .sw_footer {
                     .but{
                         display: none;
                     }
+                    .show-class{
+                        display: block;
+                    }
                 }
                 .btns-complect{
                     display: flex;
@@ -1441,18 +1444,44 @@ header .menu #sandwich.active .sw_footer {
                 color: #1eefec;
                 font-weight: 600;
                 line-height: 19px;
+                display: inline-block;
                 span{
                     color: #ffffff;
                     font-weight: normal;
                 }
-            }
-            span:after{
-                content: ", ";
-                
-            }
-            span:last-child:after, span:first-child:after{
-                content: "";
-            }
+                #result_dop_usluga{
+                    span:after{
+                        content: ", ";
+                        
+                    }
+                    span:last-child:after{
+                        content: "";
+                    }
+                }
+            }  
+        }
+        .compl-usluga{
+            border-bottom: 1px solid $link-color;
+            padding: 15px 0;
+            .result-compl-usluga{
+                color: #1eefec;
+                font-weight: 600;
+                line-height: 19px;
+                display: inline-block;
+                span{
+                    color: #ffffff;
+                    font-weight: normal;
+                }
+                #result_compl_usluga{
+                    span:after{
+                        content: ", ";
+                        
+                    }
+                    span:last-child:after{
+                        content: "";
+                    }
+                }
+            }  
         }
         .date-usluga{
             border-bottom: 1px solid $link-color;
