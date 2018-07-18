@@ -150,6 +150,7 @@
                                           <div class="but-add" id="modal_window">
                                               <div class="img"><img src="img/icons/ico-1.png" alt=""></div>
                                               <div class="ttl">Окна</div>
+                                              <input type="hidden" value="noindex">
                                               <a class="mdc" href="#modal_calc_window"></a>
                                           </div>
                                           <div class="but-add">
@@ -182,8 +183,69 @@
                                               <div class="ttl">Помыть посуду</div>
                                               <input type="hidden" value="matposudu" data-additionlly="300">
                                           </div>
+                                          <div class="but-add">
+                                              <div class="img"><img src="img/icons/ico-8.png" alt=""></div>
+                                              <div class="ttl">Упаковка личных вещей</div>
+                                              <input type="hidden" value="uplichvesch" data-additionlly="300">
+                                          </div>
+                                          <div class="but-add">
+                                              <div class="img"><img src="img/icons/ico-9.png" alt=""></div>
+                                              <div class="ttl">Уборка гардеробной</div>
+                                              <input type="hidden" value="garderob" data-additionlly="300">
+                                          </div>
+                                          <div class="but-add">
+                                              <div class="img"><img src="img/icons/ico-10.png" alt=""></div>
+                                              <div class="ttl">Мытьё стен</div>
+                                              <input type="hidden" value="mitsten" data-additionlly="300">
+                                          </div>
+                                          <div class="but-add">
+                                              <div class="img"><img src="img/icons/ico-11.png" alt=""></div>
+                                              <div class="ttl">Мытьё натяжного <br>потолка</div>
+                                              <input type="hidden" value="mitnatpot" data-additionlly="300">
+                                          </div>
+                                          <div class="but-add">
+                                              <div class="img"><img src="img/icons/ico-12.png" alt=""></div>
+                                              <div class="ttl">Мойка входных и межкомнатных дверей  </div>
+                                              <input type="hidden" value="moykadver" data-additionlly="300">
+                                          </div>
+                                          <div class="but-add">
+                                              <div class="img"><img src="img/icons/ico-13.png" alt=""></div>
+                                              <div class="ttl">Люстры</div>
+                                              <input type="hidden" value="lustra" data-additionlly="300">
+                                          </div>
+                                          <div class="but-add">
+                                              <div class="img"><img src="img/icons/ico-14.png" alt=""></div>
+                                              <div class="ttl">Замена постельного белья</div>
+                                              <input type="hidden" value="posteelbele" data-additionlly="300">
+                                          </div>
+                                          <div class="but-add">
+                                              <div class="img"><img src="img/icons/ico-15.png" alt=""></div>
+                                              <div class="ttl">Уборка внутри кухонных шкафов</div>
+                                              <input type="hidden" value="uborkuhshkaf" data-additionlly="300">
+                                          </div>
+                                          <div class="but-add">
+                                              <div class="img"><img src="img/icons/ico-16.png" alt=""></div>
+                                              <div class="ttl">Разбор кладовки или балкона</div>
+                                              <input type="hidden" value="rasborbalkon" data-additionlly="300">
+                                          </div>
+                                          <div class="but-add">
+                                              <div class="img"><img src="img/icons/ico-17.png" alt=""></div>
+                                              <div class="ttl">Чистка обуви</div>
+                                              <input type="hidden" value="cistkaobuv" data-additionlly="300">
+                                          </div>
+                                          <div class="but-add">
+                                              <div class="img"><img src="img/icons/ico-18.png" alt=""></div>
+                                              <div class="ttl">Удаление неприятных запахов</div>
+                                              <input type="hidden" value="udalvon" data-additionlly="300">
+                                          </div>
+                                          <div class="but-add">
+                                              <div class="img"><img src="img/icons/ico-19.png" alt=""></div>
+                                              <div class="ttl">Видеонаблюдение</div>
+                                              <input type="hidden" value="videoshpion" data-additionlly="300">
+                                          </div>
                                           <div class="but-add all-list-dop-serv">
                                               <div class="ttl">Просмотреть весь список услуг</div>
+                                              <input type="hidden" value="noindex">
                                               <a class="mwa" href="#modal_window_allservices"></a>
                                           </div>
                                       </div>
@@ -193,7 +255,7 @@
                                          <h4>6. Ваш комментарий или пожелание</h4>
                                      </div>
                                       <div class="text-note">
-                                          <textarea name="" id="" cols="30" rows="10"></textarea>
+                                          <textarea name="comment_calculator" id="" cols="30" rows="10"></textarea>
                                       </div>
                                   </fieldset>
                                   <fieldset>
@@ -215,9 +277,9 @@
                                          <h4>8. Контактная информация</h4>
                                      </div>
                                       <div class="phone-input">
-                                          <input type="text" placeholder="Имя">
-                                          <input type="text" placeholder="Телефон">
-                                          <input type="text" placeholder="e-mail">
+                                          <input required name="name_calculator" type="text" placeholder="Имя">
+                                          <input required name="phone_calculator" type="text" placeholder="Телефон">
+                                          <input name="email_calculator" type="text" placeholder="e-mail">
                                       </div>
                                   </fieldset>
                                   <fieldset>
@@ -225,11 +287,11 @@
                                          <h4>9. Адрес</h4>
                                      </div>
                                       <div class="address-input">
-                                          <input class="city" type="text" placeholder="Город">
-                                          <input class="street" type="text" placeholder="Улица">
-                                          <input class="home" type="text" placeholder="Дом">
-                                          <input class="apart" type="text" placeholder="Квартира">
-                                          <input class="entrance" type="text" placeholder="Подъезд">
+                                          <input name="city_calculator" class="city" type="text" placeholder="Город">
+                                          <input name="street_calculator" class="street" type="text" placeholder="Улица">
+                                          <input name="home_calculator" class="home" type="text" placeholder="Дом">
+                                          <input name="apart_calculator" class="apart" type="text" placeholder="Квартира">
+                                          <input name="entrance_calculator" class="entrance" type="text" placeholder="Подъезд">
                                       </div>
                                   </fieldset>
                                   <fieldset>
@@ -237,32 +299,32 @@
                                          <h4>10. Запланируем уборку на:</h4>
                                      </div>
                                       <div class="date-input">
-                                            <input type="date">
-                                            <select name="" id="">
-                                              <option value="">00:00</option>
-                                              <option value="">01:00</option>
-                                              <option value="">02:00</option>
-                                              <option value="">03:00</option>
-                                              <option value="">04:00</option>
-                                              <option value="">05:00</option>
-                                              <option value="">06:00</option>
-                                              <option value="">07:00</option>
-                                              <option value="">08:00</option>
-                                              <option value="">09:00</option>
-                                              <option value="">10:00</option>
-                                              <option value="">11:00</option>
-                                              <option value="">12:00</option>
-                                              <option value="">13:00</option>
-                                              <option value="">14:00</option>
-                                              <option value="">15:00</option>
-                                              <option value="">16:00</option>
-                                              <option value="">17:00</option>
-                                              <option value="">18:00</option>
-                                              <option value="">19:00</option>
-                                              <option value="">20:00</option>
-                                              <option value="">21:00</option>
-                                              <option value="">22:00</option>
-                                              <option value="">23:00</option>
+                                            <input name="date_calculator" type="date">
+                                            <select name="" id="option_time">
+                                              <option value="00:00">00:00</option>
+                                              <option value="01:00">01:00</option>
+                                              <option value="02:00">02:00</option>
+                                              <option value="03:00">03:00</option>
+                                              <option value="04:00">04:00</option>
+                                              <option value="05:00">05:00</option>
+                                              <option value="06:00">06:00</option>
+                                              <option value="07:00">07:00</option>
+                                              <option value="08:00">08:00</option>
+                                              <option value="09:00">09:00</option>
+                                              <option value="10:00">10:00</option>
+                                              <option value="11:00">11:00</option>
+                                              <option value="12:00">12:00</option>
+                                              <option value="13:00">13:00</option>
+                                              <option value="14:00">14:00</option>
+                                              <option value="15:00">15:00</option>
+                                              <option value="16:00">16:00</option>
+                                              <option value="17:00">17:00</option>
+                                              <option value="18:00">18:00</option>
+                                              <option value="19:00">19:00</option>
+                                              <option value="20:00">20:00</option>
+                                              <option value="21:00">21:00</option>
+                                              <option value="22:00">22:00</option>
+                                              <option value="23:00">23:00</option>
                                           </select>
                                       </div>
                                   </fieldset>
@@ -275,9 +337,9 @@
                                   <div class="wrap">
                                     <div class="view-usluga"><span>КВАРТИРА</span></div>
                                     <div class="option-usluga">
-                                      <div id="ploschad-usluga" class="ploschad">Площадь: <span>24</span></div>
-                                      <div id="komnat-usluga" class="komnat">Кол.комнат: <span>3</span></div>
-                                      <div id="sanusel-usluga" class="sanusel">Кол.санузлов: <span>5</span></div>
+                                      <div id="ploschad-usluga" class="ploschad">Площадь: <span>0</span></div>
+                                      <div id="komnat-usluga" class="komnat">Кол.комнат: <span>0</span></div>
+                                      <div id="sanusel-usluga" class="sanusel">Кол.санузлов: <span>0</span></div>
                                       <div class="plus-usluga" id="plus_usluga_result">
                                         
                                       </div>
@@ -293,14 +355,14 @@
                                       </div>
                                     </div>
                                     <div class="date-usluga">
-                                      <div class="result-date-usluga">Дата: <span>12.08.2018</span></div>
-                                      <div class="result-time-usluga">Время: <span>12:00</span></div>
+                                      <div class="result-date-usluga">Дата: <span></span></div>
+                                      <div class="result-time-usluga">Время: <span></span></div>
                                     </div>
                                     <div class="cost-usluga">
                                       <div class="summa-cost">К оплате: <span>222 222руб</span></div>
                                     </div>
                                   </div>
-                                  <div class="btn btn-calc-result"><button>Отправить расчет</button></div>
+                                  <div class="btn btn-calc-result"><button id="send_raschet">Отправить расчет</button></div>
                                   <div class="ofer">
                                     <p>
                                       Нажимая кнопку "Отправить" вы соглашаетесь с <a href="">Пользовательским соглашением</a> и <a href="">Положением о Персональных данных</a>
@@ -346,102 +408,126 @@
      <h2>Выберите окно</h2>
    </div>
    <div class="window-wrapper">
+
      <div class="item">
        <div class="img"><img src="img/win1.png" alt=""></div>
        <div class="ttl-win">
-         <h4>1-a створка</h4>
+         <h4>1 створка</h4>
        </div>
        <div class="input-data"><input type="text" id="col_one" placeholder="Количество"></div>
        <div class="btn btn-win"><button>Выбрать</button></div>
        <a href="/"></a>
+       <input type="hidden" value="odnastv" data-additionlly="300">
      </div>
+
     <div class="item">
        <div class="img"><img src="img/win2.png" alt=""></div>
        <div class="ttl-win">
-         <h4>1-a створка</h4>
+         <h4>1 створка с фрамугой</h4>
        </div>
        <div class="input-data"><input type="text" placeholder="Количество"></div>
        <div class="btn btn-win"><button>Выбрать</button></div>
+       <input type="hidden" value="odnastvfram" data-additionlly="300">
      </div>
+
      <div class="item">
        <div class="img"><img src="img/win3.png" alt=""></div>
        <div class="ttl-win">
-         <h4>1-a створка</h4>
+         <h4>2 створки</h4>
        </div>
        <div class="input-data"><input type="text" placeholder="Количество"></div>
        <div class="btn btn-win"><button>Выбрать</button></div>
+       <input type="hidden" value="dvastv" data-additionlly="300">
      </div>
+
      <div class="item">
        <div class="img"><img src="img/win4.png" alt=""></div>
        <div class="ttl-win">
-         <h4>1-a створка</h4>
+         <h4>2 створки с фрамугой</h4>
        </div>
        <div class="input-data"><input type="text" placeholder="Количество"></div>
        <div class="btn btn-win"><button>Выбрать</button></div>
+       <input type="hidden" value="dvastvfra" data-additionlly="300">
      </div>
-     <div class="item active">
+
+     <div class="item">
        <div class="img"><img src="img/win5.png" alt=""></div>
        <div class="ttl-win">
-         <h4>1-a створка</h4>
+         <h4>3 створки</h4>
        </div>
        <div class="input-data"><input type="text" placeholder="Количество"></div>
        <div class="btn btn-win"><button>Выбрать</button></div>
+       <input type="hidden" value="tristv" data-additionlly="300">
      </div>
+
      <div class="item">
        <div class="img"><img src="img/win6.png" alt=""></div>
        <div class="ttl-win">
-         <h4>1-a створка</h4>
+         <h4>3 створки</h4>
        </div>
        <div class="input-data"><input type="text" placeholder="Количество"></div>
        <div class="btn btn-win"><button>Выбрать</button></div>
+       <input type="hidden" value="tristvvardva" data-additionlly="300">
      </div>
+
      <div class="item">
        <div class="img"><img src="img/win7.png" alt=""></div>
        <div class="ttl-win">
-         <h4>1-a створка</h4>
+         <h4>3 створки с фрамугой</h4>
        </div>
        <div class="input-data"><input type="text" placeholder="Количество"></div>
        <div class="btn btn-win"><button>Выбрать</button></div>
+       <input type="hidden" value="tristvfra" data-additionlly="300">
      </div>
+
      <div class="item">
        <div class="img"><img src="img/win8.png" alt=""></div>
        <div class="ttl-win">
-         <h4>1-a створка</h4>
+         <h4>3 створки с фрамугой</h4>
        </div>
        <div class="input-data"><input type="text" placeholder="Количество"></div>
        <div class="btn btn-win"><button>Выбрать</button></div>
+       <input type="hidden" value="tristvfravardva" data-additionlly="300">
      </div>
+
      <div class="item">
        <div class="img"><img src="img/win9.png" alt=""></div>
        <div class="ttl-win">
-         <h4>1-a створка</h4>
+         <h4>1 балконная стеклянная дверь</h4>
        </div>
        <div class="input-data"><input type="text" placeholder="Количество"></div>
        <div class="btn btn-win"><button>Выбрать</button></div>
+       <input type="hidden" value="balkdver" data-additionlly="300">
      </div>
+
      <div class="item">
        <div class="img"><img src="img/win10.png" alt=""></div>
        <div class="ttl-win">
-         <h4>1-a створка</h4>
+         <h4>1 балконная дверь с фрамугой</h4>
        </div>
        <div class="input-data"><input type="text" placeholder="Количество"></div>
        <div class="btn btn-win"><button>Выбрать</button></div>
+       <input type="hidden" value="balkdverfra" data-additionlly="300">
      </div>
+
      <div class="item">
        <div class="img"><img src="img/win11.png" alt=""></div>
        <div class="ttl-win">
-         <h4>1-a створка</h4>
+         <h4>1 балконная дверь</h4>
        </div>
        <div class="input-data"><input type="text" placeholder="Количество"></div>
        <div class="btn btn-win"><button>Выбрать</button></div>
+       <input type="hidden" value="balkdvervardva" data-additionlly="300">
      </div>
+
      <div class="item">
        <div class="img"><img src="img/win12.png" alt=""></div>
        <div class="ttl-win">
-         <h4>1-a створка</h4>
+         <h4>Балкон 4 створки, последующие +190р</h4>
        </div>
        <div class="input-data"><input type="text" placeholder="Количество"></div>
        <div class="btn btn-win"><button>Выбрать</button></div>
+       <input type="hidden" value="balkdverchetstvor" data-additionlly="300">
      </div>
 
    </div>
@@ -457,6 +543,7 @@
          <div class="item-input-dop-us">
           <input type="text" placeholder="Площадь">
         </div>
+        <input type="hidden" value="mitemaskitki" data-additionlly="300">
        </div>
        <div class="item">
          <div class="item-ttl-dop-us">
@@ -465,11 +552,13 @@
          <div class="item-input-dop-us">
           <input type="text" placeholder="Площадь">
         </div>
+        <input type="hidden" value="mitezalusi" data-additionlly="300">
        </div>
        <div class="item">
          <div class="item-ttl-dop-us">
            <p>Сильная степень загрязнения окон +30% к заказу</p>
          </div>
+         <input type="hidden" value="silnograz" data-additionlly="300">
        </div>
        <div class="item">
          <div class="item-ttl-dop-us">
@@ -478,16 +567,19 @@
          <div class="item-input-dop-us">
           <input type="text" placeholder="Площадь">
         </div>
+        <input type="hidden" value="derevookno" data-additionlly="300">
        </div>
        <div class="item">
          <div class="item-ttl-dop-us">
            <p>Решётки на окнах +30% к заказу</p>
          </div>
+         <input type="hidden" value="reshetkaokno" data-additionlly="300">
        </div>
-       <div class="item active">
+       <div class="item">
          <div class="item-ttl-dop-us">
            <p>Мытьё зеркал +100 руб</p>
          </div>
+         <input type="hidden" value="mitezerkal" data-additionlly="300">
        </div>
      </div>
      <div class="btn btn-dop-usl-window"><button>Назад в калькулятор</button></div>
@@ -499,97 +591,184 @@
        </div>
        <div class="allservices">
            <div class="wrap">
+
                <div class="item-allservices">
-                   <div class="img"><img src="img/icons/ico-1.png" alt=""></div>
+                   <div class="img"><img src="img/icons/ico-serv-4.png" alt=""></div>
                    <div class="ttl-allservices">
-                       <p>Разбор кладовки или балкона</p>
+                       <p>Генеральная уборка квартиры</p>
                    </div>
+                   <input type="hidden" value="index1" data-additionlly="300">
                </div>
+
                <div class="item-allservices">
-                   <div class="img"><img src="img/icons/ico-7.png" alt=""></div>
+                   <div class="img"><img src="img/icons/ico-serv-5.png" alt=""></div>
                    <div class="ttl-allservices">
-                       <p>Разбор кладовки или балкона</p>
+                       <p>Генеральная уборка коттеджей и домов</p>
                    </div>
+                   <input type="hidden" value="index2" data-additionlly="300">
                </div>
+
                <div class="item-allservices">
-                   <div class="img"><img src="img/icons/ico-3.png" alt=""></div>
+                   <div class="img"><img src="img/icons/ico-serv-6.png" alt=""></div>
                    <div class="ttl-allservices">
-                       <p>Разбор или балкона</p>
+                       <p>Генеральная уборка офиса</p>
                    </div>
+                   <input type="hidden" value="index3" data-additionlly="300">
                </div>
+
                <div class="item-allservices">
-                   <div class="img"><img src="img/icons/ico-9.png" alt=""></div>
+                   <div class="img"><img src="img/icons/ico-serv-22.png" alt=""></div>
                    <div class="ttl-allservices">
-                       <p>Разбор кладовки или балкона</p>
+                       <p>Домработница на час</p>
                    </div>
+                   <input type="hidden" value="index4" data-additionlly="300">
                </div>
-               <div class="item-allservices active">
-                   <div class="img"><img src="img/icons/ico-8.png" alt=""></div>
+
+               <div class="item-allservices">
+                   <div class="img"><img src="img/icons/ico-serv-3.png" alt=""></div>
                    <div class="ttl-allservices">
-                       <p>Разбор кладовки или балкона</p>
+                       <p>Ежедневная уборка офиса по графику</p>
                    </div>
+                   <input type="hidden" value="index5" data-additionlly="300">
                </div>
+
                <div class="item-allservices">
                    <div class="img"><img src="img/icons/ico-6.png" alt=""></div>
                    <div class="ttl-allservices">
                        <p>Разбор кладовки или балкона</p>
                    </div>
+                   <input type="hidden" value="index6" data-additionlly="300">
                </div>
+
                <div class="item-allservices">
                    <div class="img"><img src="img/icons/ico-2.png" alt=""></div>
                    <div class="ttl-allservices">
                        <p>кладовки или балкона</p>
                    </div>
+                   <input type="hidden" value="index7" data-additionlly="300">
                </div>
+
                <div class="item-allservices">
                    <div class="img"><img src="img/icons/ico-3.png" alt=""></div>
                    <div class="ttl-allservices">
                        <p>Разбор или балкона</p>
                    </div>
+                   <input type="hidden" value="index8" data-additionlly="300">
                </div>
+
                <div class="item-allservices">
                    <div class="img"><img src="img/icons/ico-3.png" alt=""></div>
                    <div class="ttl-allservices">
                        <p>Разбор кладовки или балкона</p>
                    </div>
+                   <input type="hidden" value="index9" data-additionlly="300">
                </div>
+
                <div class="item-allservices">
                    <div class="img"><img src="img/icons/ico-1.png" alt=""></div>
                    <div class="ttl-allservices">
                        <p>Разбор кладовки или</p>
                    </div>
+                   <input type="hidden" value="index10" data-additionlly="300">
                </div>
+
                <div class="item-allservices">
                    <div class="img"><img src="img/icons/ico-4.png" alt=""></div>
                    <div class="ttl-allservices">
                        <p>Разбор кладовки или балкона</p>
                    </div>
+                   <input type="hidden" value="index11" data-additionlly="300">
                </div>
+
                <div class="item-allservices">
                    <div class="img"><img src="img/icons/ico-1.png" alt=""></div>
                    <div class="ttl-allservices">
                        <p>Разбор кладовки или балкона</p>
                    </div>
+                   <input type="hidden" value="index12" data-additionlly="300">
                </div>
+
                <div class="item-allservices">
                    <div class="img"><img src="img/icons/ico-3.png" alt=""></div>
                    <div class="ttl-allservices">
                        <p>Разбор или балкона</p>
                    </div>
+                   <input type="hidden" value="index13" data-additionlly="300">
                </div>
+
                <div class="item-allservices">
                    <div class="img"><img src="img/icons/ico-2.png" alt=""></div>
                    <div class="ttl-allservices">
                        <p>Разбор кладовки балкона</p>
                    </div>
+                   <input type="hidden" value="index14" data-additionlly="300">
                </div>
+
                <div class="item-allservices">
                    <div class="img"><img src="img/icons/ico-9.png" alt=""></div>
                    <div class="ttl-allservices">
                        <p>Разбор кладовки или балкона</p>
                    </div>
+                   <input type="hidden" value="index15" data-additionlly="300">
+               </div>
+
+               <div class="item-allservices">
+                   <div class="img"><img src="img/icons/ico-9.png" alt=""></div>
+                   <div class="ttl-allservices">
+                       <p>Разбор кладовки или балкона</p>
+                   </div>
+                   <input type="hidden" value="index16" data-additionlly="300">
+               </div>
+
+               <div class="item-allservices">
+                   <div class="img"><img src="img/icons/ico-9.png" alt=""></div>
+                   <div class="ttl-allservices">
+                       <p>Разбор кладовки или балкона</p>
+                   </div>
+                   <input type="hidden" value="index17" data-additionlly="300">
+               </div>
+
+               <div class="item-allservices">
+                   <div class="img"><img src="img/icons/ico-9.png" alt=""></div>
+                   <div class="ttl-allservices">
+                       <p>Разбор кладовки или балкона</p>
+                   </div>
+                   <input type="hidden" value="index18" data-additionlly="300">
+               </div>
+
+               <div class="item-allservices">
+                   <div class="img"><img src="img/icons/ico-9.png" alt=""></div>
+                   <div class="ttl-allservices">
+                       <p>Разбор кладовки или балкона</p>
+                   </div>
+                   <input type="hidden" value="index19" data-additionlly="300">
+               </div>
+
+               <div class="item-allservices">
+                   <div class="img"><img src="img/icons/ico-9.png" alt=""></div>
+                   <div class="ttl-allservices">
+                       <p>Разбор кладовки или балкона</p>
+                   </div>
+                   <input type="hidden" value="index20" data-additionlly="300">
+               </div>
+
+               <div class="item-allservices">
+                   <div class="img"><img src="img/icons/ico-9.png" alt=""></div>
+                   <div class="ttl-allservices">
+                       <p>Разбор кладовки или балкона</p>
+                   </div>
+                   <input type="hidden" value="index21" data-additionlly="300">
+               </div>
+
+               <div class="item-allservices">
+                   <div class="img"><img src="img/icons/ico-9.png" alt=""></div>
+                   <div class="ttl-allservices">
+                       <p>Разбор кладовки или балкона</p>
+                   </div>
+                   <input type="hidden" value="index22" data-additionlly="300">
                </div>
            </div>
+
            <div class="forma-no-service">
                <form action="">
                    <div class="ttl-forma-no-service">

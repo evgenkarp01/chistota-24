@@ -1364,6 +1364,8 @@ header .menu #sandwich.active .sw_footer {
   padding: 20px 25px;
   position: fixed;
   max-width: 280px;
+  height: 80vh;
+  overflow: auto;
 }
 .calc-page .resultat .view-usluga {
   font-size: 16px;
@@ -1636,7 +1638,7 @@ header .menu #sandwich.active .sw_footer {
 }
 .but-add .ttl {
   position: absolute;
-  bottom: 30px;
+  top: 110px;
   margin: 0 auto;
   left: 0;
   right: 0;
@@ -1818,7 +1820,7 @@ input:-ms-input-placeholder {
   transition: all 0.3s;
 }
 .modal-calc-window .window-wrapper .item .img {
-  margin-top: 24px;
+  margin-top: 10px;
 }
 .modal-calc-window .window-wrapper .item .img img {
   max-height: 110px;
@@ -1863,6 +1865,9 @@ input:-ms-input-placeholder {
 }
 .modal-calc-window .window-wrapper .item.active .ttl-win h4 {
   color: #000;
+}
+.modal-calc-window .window-wrapper .item .ttl-win h4 {
+  font-weight: 600;
 }
 .modal-calc-window .dop-usl-window {
   margin-top: 40px;
@@ -1932,7 +1937,7 @@ input:-ms-input-placeholder {
 }
 .modal-window-allservices .allservices .wrap {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   flex-wrap: wrap;
 }
 .modal-window-allservices .allservices .item-allservices {
