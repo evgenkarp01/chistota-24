@@ -311,7 +311,7 @@ header .menu nav ul li {
   justify-content: space-between;
   align-items: center;
   padding: 0 15px;
-  transition: all 0.3s;
+  transition: background 0.3s;
 }
 header .menu nav ul li a {
   font-size: 18px;
@@ -742,6 +742,9 @@ section {
 }
 .review-index .rev .item .auhtor {
   padding-top: 40px;
+}
+.review-index .rev .item .auhtor img{
+    border-radius: 50%;
 }
 .review-index .rev .item .name {
   margin-top: 23px;
