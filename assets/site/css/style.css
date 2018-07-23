@@ -1084,10 +1084,10 @@ header .menu #sandwich.active .sw_footer {
   margin-bottom: 50px;
 }
 
-.services .oplet {
+.vilet .oplet {
   margin-top: 50px;
 }
-.services .ttl-services {
+.vilet .ttl-services {
   padding-top: 56px;
 }
 .services-card {
@@ -1367,7 +1367,7 @@ header .menu #sandwich.active .sw_footer {
   padding: 20px 25px;
   position: fixed;
   max-width: 280px;
-  height: 80vh;
+  height: 72vh;
   overflow: auto;
 }
 .calc-page .resultat .view-usluga {

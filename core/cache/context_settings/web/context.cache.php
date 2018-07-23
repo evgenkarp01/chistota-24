@@ -9,7 +9,7 @@
     'dostup-zapreshhen.html' => 3,
     'sajt-vremenno-nedostupen.html' => 4,
     'vse-uslugi/' => 5,
-    'o-nas.html' => 6,
+    'o-nas/' => 6,
     'kalkulyator.html' => 7,
     'kontaktyi.html' => 8,
     'robots.txt' => 9,
@@ -29,6 +29,9 @@
     'vse-uslugi/uborka-kvartiryi-posle-pozhara.html' => 20,
     'vse-uslugi/uborka-pridomovoj-territorii-kottedzhej/domov.html' => 21,
     'vse-uslugi/ximchistka-myagkoj-mebeli.html' => 22,
+    'o-nas/pogovorim-na-chistotu.html' => 44,
+    'o-nas/nashi-preimushhestva.html' => 45,
+    'o-nas/sertifikatyi.html' => 46,
     'index/slajder/slajd-pervyij.html' => 23,
     'index/slajder/slajd-vtoroj.html' => 24,
     'index/slajder/slajd-tretij.html' => 25,
@@ -80,6 +83,12 @@
       9 => 20,
       10 => 21,
       11 => 22,
+    ),
+    6 => 
+    array (
+      0 => 44,
+      1 => 45,
+      2 => 46,
     ),
     26 => 
     array (

@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.31, created on 2018-07-23 13:10:15
+/* Smarty version 3.1.31, created on 2018-07-23 18:51:10
   from "/mnt/sites/chistota-24/core/components/migx/templates/mgr/iframewindow.tpl" */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.31',
-  'unifunc' => 'content_5b55d3b79a27c4_31901131',
+  'unifunc' => 'content_5b56239e2c42a3_29375882',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '56a582f6d1ca0e9b7e9e8049996e87e7d6ed104a' => 
     array (
       0 => '/mnt/sites/chistota-24/core/components/migx/templates/mgr/iframewindow.tpl',
-      1 => 1532326243,
+      1 => 1532028309,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5b55d3b79a27c4_31901131 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5b56239e2c42a3_29375882 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
 
 

@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.31, created on 2018-07-23 13:10:15
+/* Smarty version 3.1.31, created on 2018-07-23 18:51:10
   from "/mnt/sites/chistota-24/manager/templates/default/element/tv/renders/input/number.tpl" */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.31',
-  'unifunc' => 'content_5b55d3b77582c1_46187708',
+  'unifunc' => 'content_5b56239e252e19_69149393',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'd71f4d6acc686af2c66c62359036d5f9f25f4cf7' => 
     array (
       0 => '/mnt/sites/chistota-24/manager/templates/default/element/tv/renders/input/number.tpl',
-      1 => 1532326244,
+      1 => 1531361206,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5b55d3b77582c1_46187708 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5b56239e252e19_69149393 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
 <input id="tv<?php echo $_smarty_tpl->tpl_vars['tv']->value->id;?>
 " name="tv<?php echo $_smarty_tpl->tpl_vars['tv']->value->id;?>

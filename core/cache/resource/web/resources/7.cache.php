@@ -25,7 +25,7 @@
     'createdby' => 1,
     'createdon' => 1532029286,
     'editedby' => 1,
-    'editedon' => 1532354217,
+    'editedon' => 1532372292,
     'deleted' => 0,
     'deletedon' => 0,
     'deletedby' => 0,
@@ -48,7 +48,7 @@
     'wheeCalcOneCostTv' => 
     array (
       0 => 'wheeCalcOneCostTv',
-      1 => '',
+      1 => '21',
       2 => 'default',
       3 => NULL,
       4 => 'number',
@@ -56,7 +56,7 @@
     'wheeCalcTwoCostTv' => 
     array (
       0 => 'wheeCalcTwoCostTv',
-      1 => '',
+      1 => '22',
       2 => 'default',
       3 => NULL,
       4 => 'number',
@@ -64,7 +64,7 @@
     'wheeCalcThreeCostTv' => 
     array (
       0 => 'wheeCalcThreeCostTv',
-      1 => '',
+      1 => '23',
       2 => 'default',
       3 => NULL,
       4 => 'number',
@@ -72,7 +72,7 @@
     'wheeCalcFourCostTv' => 
     array (
       0 => 'wheeCalcFourCostTv',
-      1 => '',
+      1 => '24',
       2 => 'default',
       3 => NULL,
       4 => 'number',
@@ -104,7 +104,7 @@
     'standartViewTv' => 
     array (
       0 => 'standartViewTv',
-      1 => '',
+      1 => '11',
       2 => 'default',
       3 => NULL,
       4 => 'number',
@@ -112,7 +112,7 @@
     'mymebViewTv' => 
     array (
       0 => 'mymebViewTv',
-      1 => '',
+      1 => '12',
       2 => 'default',
       3 => NULL,
       4 => 'number',
@@ -120,7 +120,7 @@
     'kovrViewTv' => 
     array (
       0 => 'kovrViewTv',
-      1 => '',
+      1 => '13',
       2 => 'default',
       3 => NULL,
       4 => 'number',
@@ -128,7 +128,7 @@
     'shtorViewTv' => 
     array (
       0 => 'shtorViewTv',
-      1 => '',
+      1 => '14',
       2 => 'default',
       3 => NULL,
       4 => 'number',
@@ -136,7 +136,7 @@
     'generalViewTv' => 
     array (
       0 => 'generalViewTv',
-      1 => '',
+      1 => '15',
       2 => 'default',
       3 => NULL,
       4 => 'number',
@@ -144,7 +144,7 @@
     'poslremViewTv' => 
     array (
       0 => 'poslremViewTv',
-      1 => '',
+      1 => '16',
       2 => 'default',
       3 => NULL,
       4 => 'number',
@@ -152,7 +152,7 @@
     'poslpagViewTv' => 
     array (
       0 => 'poslpagViewTv',
-      1 => '',
+      1 => '17',
       2 => 'default',
       3 => NULL,
       4 => 'number',
@@ -160,7 +160,7 @@
     'ezednevViewTv' => 
     array (
       0 => 'ezednevViewTv',
-      1 => '',
+      1 => '18',
       2 => 'default',
       3 => NULL,
       4 => 'number',
@@ -168,7 +168,7 @@
     'zatopViewTv' => 
     array (
       0 => 'zatopViewTv',
-      1 => '',
+      1 => '19',
       2 => 'default',
       3 => NULL,
       4 => 'number',
@@ -176,7 +176,7 @@
     'pridomterritViewTv' => 
     array (
       0 => 'pridomterritViewTv',
-      1 => '',
+      1 => '110',
       2 => 'default',
       3 => NULL,
       4 => 'number',
@@ -208,7 +208,7 @@
     'dopOptionsCalcTv' => 
     array (
       0 => 'dopOptionsCalcTv',
-      1 => '[{"MIGX_id":"1","title":"\\u0414\\u0443\\u0445\\u043e\\u0432\\u043a\\u0430","description":"400","showBtn":"","image":"ico-2.png","alias":"duhovka","published":1,"published_ro":"{\\"MIGX_id\\":2,\\"name\\":\\"published\\",\\"use_as_fallback\\":\\"\\",\\"value\\":1,\\"clickaction\\":\\"switchOption\\",\\"handler\\":\\"\\",\\"image\\":\\"assets\\\\\\/components\\\\\\/migx\\\\\\/style\\\\\\/images\\\\\\/cb_ticked.png\\",\\"idx\\":1,\\"_renderer\\":\\"this.renderSwitchStatusOptions\\",\\"selectorconfig\\":\\"\\"}","deleted":"0"},{"MIGX_id":"2","title":"\\u0421\\u0412\\u0427","description":"10","showBtn":"yes","image":"ico-3.png","alias":"svch","published":1,"published_ro":"{\\"MIGX_id\\":2,\\"name\\":\\"published\\",\\"use_as_fallback\\":\\"\\",\\"value\\":1,\\"clickaction\\":\\"switchOption\\",\\"handler\\":\\"\\",\\"image\\":\\"assets\\\\\\/components\\\\\\/migx\\\\\\/style\\\\\\/images\\\\\\/cb_ticked.png\\",\\"idx\\":1,\\"_renderer\\":\\"this.renderSwitchStatusOptions\\",\\"selectorconfig\\":\\"\\"}","deleted":"0"},{"MIGX_id":"3","image":"ico-4.png","deleted":"0","published":"1","published_ro":"{\\"MIGX_id\\":2,\\"name\\":\\"published\\",\\"use_as_fallback\\":\\"\\",\\"value\\":1,\\"clickaction\\":\\"switchOption\\",\\"handler\\":\\"\\",\\"image\\":\\"assets\\\\\\/components\\\\\\/migx\\\\\\/style\\\\\\/images\\\\\\/cb_ticked.png\\",\\"idx\\":1,\\"_renderer\\":\\"this.renderSwitchStatusOptions\\",\\"selectorconfig\\":\\"\\"}","title":"\\u0425\\u043e\\u043b\\u043e\\u0434\\u0438\\u043b\\u044c\\u043d\\u0438\\u043a","alias":"holodilnik"},{"MIGX_id":"4","image":"ico-10.png","deleted":"0","published":"1","published_ro":"{\\"MIGX_id\\":2,\\"name\\":\\"published\\",\\"use_as_fallback\\":\\"\\",\\"value\\":1,\\"clickaction\\":\\"switchOption\\",\\"handler\\":\\"\\",\\"image\\":\\"assets\\\\\\/components\\\\\\/migx\\\\\\/style\\\\\\/images\\\\\\/cb_ticked.png\\",\\"idx\\":1,\\"_renderer\\":\\"this.renderSwitchStatusOptions\\",\\"selectorconfig\\":\\"\\"}"},{"MIGX_id":"5","image":"ico-11.png","deleted":"0","published":"1","published_ro":"{\\"MIGX_id\\":2,\\"name\\":\\"published\\",\\"use_as_fallback\\":\\"\\",\\"value\\":1,\\"clickaction\\":\\"switchOption\\",\\"handler\\":\\"\\",\\"image\\":\\"assets\\\\\\/components\\\\\\/migx\\\\\\/style\\\\\\/images\\\\\\/cb_ticked.png\\",\\"idx\\":1,\\"_renderer\\":\\"this.renderSwitchStatusOptions\\",\\"selectorconfig\\":\\"\\"}"},{"MIGX_id":"6","image":"ico-12.png","deleted":"0","published":"1","published_ro":"{\\"MIGX_id\\":2,\\"name\\":\\"published\\",\\"use_as_fallback\\":\\"\\",\\"value\\":1,\\"clickaction\\":\\"switchOption\\",\\"handler\\":\\"\\",\\"image\\":\\"assets\\\\\\/components\\\\\\/migx\\\\\\/style\\\\\\/images\\\\\\/cb_ticked.png\\",\\"idx\\":1,\\"_renderer\\":\\"this.renderSwitchStatusOptions\\",\\"selectorconfig\\":\\"\\"}"},{"MIGX_id":"7","image":"ico-13.png","deleted":"0","published":"1","published_ro":"{\\"MIGX_id\\":2,\\"name\\":\\"published\\",\\"use_as_fallback\\":\\"\\",\\"value\\":1,\\"clickaction\\":\\"switchOption\\",\\"handler\\":\\"\\",\\"image\\":\\"assets\\\\\\/components\\\\\\/migx\\\\\\/style\\\\\\/images\\\\\\/cb_ticked.png\\",\\"idx\\":1,\\"_renderer\\":\\"this.renderSwitchStatusOptions\\",\\"selectorconfig\\":\\"\\"}"},{"MIGX_id":"8","image":"ico-14.png","deleted":"0","published":"1","published_ro":"{\\"MIGX_id\\":2,\\"name\\":\\"published\\",\\"use_as_fallback\\":\\"\\",\\"value\\":1,\\"clickaction\\":\\"switchOption\\",\\"handler\\":\\"\\",\\"image\\":\\"assets\\\\\\/components\\\\\\/migx\\\\\\/style\\\\\\/images\\\\\\/cb_ticked.png\\",\\"idx\\":1,\\"_renderer\\":\\"this.renderSwitchStatusOptions\\",\\"selectorconfig\\":\\"\\"}"},{"MIGX_id":"9","image":"ico-15.png","deleted":"0","published":"1","published_ro":"{\\"MIGX_id\\":2,\\"name\\":\\"published\\",\\"use_as_fallback\\":\\"\\",\\"value\\":1,\\"clickaction\\":\\"switchOption\\",\\"handler\\":\\"\\",\\"image\\":\\"assets\\\\\\/components\\\\\\/migx\\\\\\/style\\\\\\/images\\\\\\/cb_ticked.png\\",\\"idx\\":1,\\"_renderer\\":\\"this.renderSwitchStatusOptions\\",\\"selectorconfig\\":\\"\\"}"},{"MIGX_id":"10","image":"ico-16.png","deleted":"0","published":"1","published_ro":"{\\"MIGX_id\\":2,\\"name\\":\\"published\\",\\"use_as_fallback\\":\\"\\",\\"value\\":1,\\"clickaction\\":\\"switchOption\\",\\"handler\\":\\"\\",\\"image\\":\\"assets\\\\\\/components\\\\\\/migx\\\\\\/style\\\\\\/images\\\\\\/cb_ticked.png\\",\\"idx\\":1,\\"_renderer\\":\\"this.renderSwitchStatusOptions\\",\\"selectorconfig\\":\\"\\"}"},{"MIGX_id":"11","image":"ico-17.png","deleted":"0","published":"1","published_ro":"{\\"MIGX_id\\":2,\\"name\\":\\"published\\",\\"use_as_fallback\\":\\"\\",\\"value\\":1,\\"clickaction\\":\\"switchOption\\",\\"handler\\":\\"\\",\\"image\\":\\"assets\\\\\\/components\\\\\\/migx\\\\\\/style\\\\\\/images\\\\\\/cb_ticked.png\\",\\"idx\\":1,\\"_renderer\\":\\"this.renderSwitchStatusOptions\\",\\"selectorconfig\\":\\"\\"}"},{"MIGX_id":"12","image":"ico-18.png","deleted":"0","published":"1","published_ro":"{\\"MIGX_id\\":2,\\"name\\":\\"published\\",\\"use_as_fallback\\":\\"\\",\\"value\\":1,\\"clickaction\\":\\"switchOption\\",\\"handler\\":\\"\\",\\"image\\":\\"assets\\\\\\/components\\\\\\/migx\\\\\\/style\\\\\\/images\\\\\\/cb_ticked.png\\",\\"idx\\":1,\\"_renderer\\":\\"this.renderSwitchStatusOptions\\",\\"selectorconfig\\":\\"\\"}"},{"MIGX_id":"13","image":"ico-19.png","deleted":"0","published":"1","published_ro":"{\\"MIGX_id\\":2,\\"name\\":\\"published\\",\\"use_as_fallback\\":\\"\\",\\"value\\":1,\\"clickaction\\":\\"switchOption\\",\\"handler\\":\\"\\",\\"image\\":\\"assets\\\\\\/components\\\\\\/migx\\\\\\/style\\\\\\/images\\\\\\/cb_ticked.png\\",\\"idx\\":1,\\"_renderer\\":\\"this.renderSwitchStatusOptions\\",\\"selectorconfig\\":\\"\\"}"},{"MIGX_id":"14","image":"ico-5.png","deleted":"0","published":"1","published_ro":"{\\"MIGX_id\\":2,\\"name\\":\\"published\\",\\"use_as_fallback\\":\\"\\",\\"value\\":1,\\"clickaction\\":\\"switchOption\\",\\"handler\\":\\"\\",\\"image\\":\\"assets\\\\\\/components\\\\\\/migx\\\\\\/style\\\\\\/images\\\\\\/cb_ticked.png\\",\\"idx\\":1,\\"_renderer\\":\\"this.renderSwitchStatusOptions\\",\\"selectorconfig\\":\\"\\"}"},{"MIGX_id":"15","image":"ico-6.png","deleted":"0","published":"1","published_ro":"{\\"MIGX_id\\":2,\\"name\\":\\"published\\",\\"use_as_fallback\\":\\"\\",\\"value\\":1,\\"clickaction\\":\\"switchOption\\",\\"handler\\":\\"\\",\\"image\\":\\"assets\\\\\\/components\\\\\\/migx\\\\\\/style\\\\\\/images\\\\\\/cb_ticked.png\\",\\"idx\\":1,\\"_renderer\\":\\"this.renderSwitchStatusOptions\\",\\"selectorconfig\\":\\"\\"}"},{"MIGX_id":"16","image":"ico-7.png","deleted":"0","published":"1","published_ro":"{\\"MIGX_id\\":2,\\"name\\":\\"published\\",\\"use_as_fallback\\":\\"\\",\\"value\\":1,\\"clickaction\\":\\"switchOption\\",\\"handler\\":\\"\\",\\"image\\":\\"assets\\\\\\/components\\\\\\/migx\\\\\\/style\\\\\\/images\\\\\\/cb_ticked.png\\",\\"idx\\":1,\\"_renderer\\":\\"this.renderSwitchStatusOptions\\",\\"selectorconfig\\":\\"\\"}"},{"MIGX_id":"17","image":"ico-8.png","deleted":"0","published":"1","published_ro":"{\\"MIGX_id\\":2,\\"name\\":\\"published\\",\\"use_as_fallback\\":\\"\\",\\"value\\":1,\\"clickaction\\":\\"switchOption\\",\\"handler\\":\\"\\",\\"image\\":\\"assets\\\\\\/components\\\\\\/migx\\\\\\/style\\\\\\/images\\\\\\/cb_ticked.png\\",\\"idx\\":1,\\"_renderer\\":\\"this.renderSwitchStatusOptions\\",\\"selectorconfig\\":\\"\\"}"},{"MIGX_id":"18","image":"ico-9.png","deleted":"0","published":"1","published_ro":"{\\"MIGX_id\\":2,\\"name\\":\\"published\\",\\"use_as_fallback\\":\\"\\",\\"value\\":1,\\"clickaction\\":\\"switchOption\\",\\"handler\\":\\"\\",\\"image\\":\\"assets\\\\\\/components\\\\\\/migx\\\\\\/style\\\\\\/images\\\\\\/cb_ticked.png\\",\\"idx\\":1,\\"_renderer\\":\\"this.renderSwitchStatusOptions\\",\\"selectorconfig\\":\\"\\"}"}]',
+      1 => '[{"MIGX_id":"1","title":"Духовка","description":"400","showBtn":"","image":"ico-2.png","alias":"duhovka","published":1,"published_ro":"{\\"MIGX_id\\":2,\\"name\\":\\"published\\",\\"use_as_fallback\\":\\"\\",\\"value\\":1,\\"clickaction\\":\\"switchOption\\",\\"handler\\":\\"\\",\\"image\\":\\"assets\\\\/components\\\\/migx\\\\/style\\\\/images\\\\/cb_ticked.png\\",\\"idx\\":1,\\"_renderer\\":\\"this.renderSwitchStatusOptions\\",\\"selectorconfig\\":\\"\\"}","deleted":"0"},{"MIGX_id":"2","title":"СВЧ","description":"10","showBtn":"yes","image":"ico-3.png","alias":"svch","published":1,"published_ro":"{\\"MIGX_id\\":2,\\"name\\":\\"published\\",\\"use_as_fallback\\":\\"\\",\\"value\\":1,\\"clickaction\\":\\"switchOption\\",\\"handler\\":\\"\\",\\"image\\":\\"assets\\\\/components\\\\/migx\\\\/style\\\\/images\\\\/cb_ticked.png\\",\\"idx\\":1,\\"_renderer\\":\\"this.renderSwitchStatusOptions\\",\\"selectorconfig\\":\\"\\"}","deleted":"0"},{"MIGX_id":"3","image":"ico-4.png","deleted":"0","published":"1","published_ro":"{\\"MIGX_id\\":2,\\"name\\":\\"published\\",\\"use_as_fallback\\":\\"\\",\\"value\\":1,\\"clickaction\\":\\"switchOption\\",\\"handler\\":\\"\\",\\"image\\":\\"assets\\\\/components\\\\/migx\\\\/style\\\\/images\\\\/cb_ticked.png\\",\\"idx\\":1,\\"_renderer\\":\\"this.renderSwitchStatusOptions\\",\\"selectorconfig\\":\\"\\"}","title":"Холодильник","alias":"holodilnik"},{"MIGX_id":"4","image":"ico-10.png","deleted":"0","published":"1","published_ro":"{\\"MIGX_id\\":2,\\"name\\":\\"published\\",\\"use_as_fallback\\":\\"\\",\\"value\\":1,\\"clickaction\\":\\"switchOption\\",\\"handler\\":\\"\\",\\"image\\":\\"assets\\\\/components\\\\/migx\\\\/style\\\\/images\\\\/cb_ticked.png\\",\\"idx\\":1,\\"_renderer\\":\\"this.renderSwitchStatusOptions\\",\\"selectorconfig\\":\\"\\"}"},{"MIGX_id":"5","image":"ico-11.png","deleted":"0","published":"1","published_ro":"{\\"MIGX_id\\":2,\\"name\\":\\"published\\",\\"use_as_fallback\\":\\"\\",\\"value\\":1,\\"clickaction\\":\\"switchOption\\",\\"handler\\":\\"\\",\\"image\\":\\"assets\\\\/components\\\\/migx\\\\/style\\\\/images\\\\/cb_ticked.png\\",\\"idx\\":1,\\"_renderer\\":\\"this.renderSwitchStatusOptions\\",\\"selectorconfig\\":\\"\\"}"},{"MIGX_id":"6","image":"ico-12.png","deleted":"0","published":"1","published_ro":"{\\"MIGX_id\\":2,\\"name\\":\\"published\\",\\"use_as_fallback\\":\\"\\",\\"value\\":1,\\"clickaction\\":\\"switchOption\\",\\"handler\\":\\"\\",\\"image\\":\\"assets\\\\/components\\\\/migx\\\\/style\\\\/images\\\\/cb_ticked.png\\",\\"idx\\":1,\\"_renderer\\":\\"this.renderSwitchStatusOptions\\",\\"selectorconfig\\":\\"\\"}"},{"MIGX_id":"7","image":"ico-13.png","deleted":"0","published":"1","published_ro":"{\\"MIGX_id\\":2,\\"name\\":\\"published\\",\\"use_as_fallback\\":\\"\\",\\"value\\":1,\\"clickaction\\":\\"switchOption\\",\\"handler\\":\\"\\",\\"image\\":\\"assets\\\\/components\\\\/migx\\\\/style\\\\/images\\\\/cb_ticked.png\\",\\"idx\\":1,\\"_renderer\\":\\"this.renderSwitchStatusOptions\\",\\"selectorconfig\\":\\"\\"}"},{"MIGX_id":"8","image":"ico-14.png","deleted":"0","published":"1","published_ro":"{\\"MIGX_id\\":2,\\"name\\":\\"published\\",\\"use_as_fallback\\":\\"\\",\\"value\\":1,\\"clickaction\\":\\"switchOption\\",\\"handler\\":\\"\\",\\"image\\":\\"assets\\\\/components\\\\/migx\\\\/style\\\\/images\\\\/cb_ticked.png\\",\\"idx\\":1,\\"_renderer\\":\\"this.renderSwitchStatusOptions\\",\\"selectorconfig\\":\\"\\"}"},{"MIGX_id":"9","image":"ico-15.png","deleted":"0","published":"1","published_ro":"{\\"MIGX_id\\":2,\\"name\\":\\"published\\",\\"use_as_fallback\\":\\"\\",\\"value\\":1,\\"clickaction\\":\\"switchOption\\",\\"handler\\":\\"\\",\\"image\\":\\"assets\\\\/components\\\\/migx\\\\/style\\\\/images\\\\/cb_ticked.png\\",\\"idx\\":1,\\"_renderer\\":\\"this.renderSwitchStatusOptions\\",\\"selectorconfig\\":\\"\\"}"},{"MIGX_id":"10","image":"ico-16.png","deleted":"0","published":"1","published_ro":"{\\"MIGX_id\\":2,\\"name\\":\\"published\\",\\"use_as_fallback\\":\\"\\",\\"value\\":1,\\"clickaction\\":\\"switchOption\\",\\"handler\\":\\"\\",\\"image\\":\\"assets\\\\/components\\\\/migx\\\\/style\\\\/images\\\\/cb_ticked.png\\",\\"idx\\":1,\\"_renderer\\":\\"this.renderSwitchStatusOptions\\",\\"selectorconfig\\":\\"\\"}"},{"MIGX_id":"11","image":"ico-17.png","deleted":"0","published":"1","published_ro":"{\\"MIGX_id\\":2,\\"name\\":\\"published\\",\\"use_as_fallback\\":\\"\\",\\"value\\":1,\\"clickaction\\":\\"switchOption\\",\\"handler\\":\\"\\",\\"image\\":\\"assets\\\\/components\\\\/migx\\\\/style\\\\/images\\\\/cb_ticked.png\\",\\"idx\\":1,\\"_renderer\\":\\"this.renderSwitchStatusOptions\\",\\"selectorconfig\\":\\"\\"}"},{"MIGX_id":"12","image":"ico-18.png","deleted":"0","published":"1","published_ro":"{\\"MIGX_id\\":2,\\"name\\":\\"published\\",\\"use_as_fallback\\":\\"\\",\\"value\\":1,\\"clickaction\\":\\"switchOption\\",\\"handler\\":\\"\\",\\"image\\":\\"assets\\\\/components\\\\/migx\\\\/style\\\\/images\\\\/cb_ticked.png\\",\\"idx\\":1,\\"_renderer\\":\\"this.renderSwitchStatusOptions\\",\\"selectorconfig\\":\\"\\"}"},{"MIGX_id":"13","image":"ico-19.png","deleted":"0","published":"1","published_ro":"{\\"MIGX_id\\":2,\\"name\\":\\"published\\",\\"use_as_fallback\\":\\"\\",\\"value\\":1,\\"clickaction\\":\\"switchOption\\",\\"handler\\":\\"\\",\\"image\\":\\"assets\\\\/components\\\\/migx\\\\/style\\\\/images\\\\/cb_ticked.png\\",\\"idx\\":1,\\"_renderer\\":\\"this.renderSwitchStatusOptions\\",\\"selectorconfig\\":\\"\\"}"},{"MIGX_id":"14","image":"ico-5.png","deleted":"0","published":"1","published_ro":"{\\"MIGX_id\\":2,\\"name\\":\\"published\\",\\"use_as_fallback\\":\\"\\",\\"value\\":1,\\"clickaction\\":\\"switchOption\\",\\"handler\\":\\"\\",\\"image\\":\\"assets\\\\/components\\\\/migx\\\\/style\\\\/images\\\\/cb_ticked.png\\",\\"idx\\":1,\\"_renderer\\":\\"this.renderSwitchStatusOptions\\",\\"selectorconfig\\":\\"\\"}"},{"MIGX_id":"15","image":"ico-6.png","deleted":"0","published":"1","published_ro":"{\\"MIGX_id\\":2,\\"name\\":\\"published\\",\\"use_as_fallback\\":\\"\\",\\"value\\":1,\\"clickaction\\":\\"switchOption\\",\\"handler\\":\\"\\",\\"image\\":\\"assets\\\\/components\\\\/migx\\\\/style\\\\/images\\\\/cb_ticked.png\\",\\"idx\\":1,\\"_renderer\\":\\"this.renderSwitchStatusOptions\\",\\"selectorconfig\\":\\"\\"}"},{"MIGX_id":"16","image":"ico-7.png","deleted":"0","published":"1","published_ro":"{\\"MIGX_id\\":2,\\"name\\":\\"published\\",\\"use_as_fallback\\":\\"\\",\\"value\\":1,\\"clickaction\\":\\"switchOption\\",\\"handler\\":\\"\\",\\"image\\":\\"assets\\\\/components\\\\/migx\\\\/style\\\\/images\\\\/cb_ticked.png\\",\\"idx\\":1,\\"_renderer\\":\\"this.renderSwitchStatusOptions\\",\\"selectorconfig\\":\\"\\"}"},{"MIGX_id":"17","image":"ico-8.png","deleted":"0","published":"1","published_ro":"{\\"MIGX_id\\":2,\\"name\\":\\"published\\",\\"use_as_fallback\\":\\"\\",\\"value\\":1,\\"clickaction\\":\\"switchOption\\",\\"handler\\":\\"\\",\\"image\\":\\"assets\\\\/components\\\\/migx\\\\/style\\\\/images\\\\/cb_ticked.png\\",\\"idx\\":1,\\"_renderer\\":\\"this.renderSwitchStatusOptions\\",\\"selectorconfig\\":\\"\\"}"},{"MIGX_id":"18","image":"ico-9.png","deleted":"0","published":"1","published_ro":"{\\"MIGX_id\\":2,\\"name\\":\\"published\\",\\"use_as_fallback\\":\\"\\",\\"value\\":1,\\"clickaction\\":\\"switchOption\\",\\"handler\\":\\"\\",\\"image\\":\\"assets\\\\/components\\\\/migx\\\\/style\\\\/images\\\\/cb_ticked.png\\",\\"idx\\":1,\\"_renderer\\":\\"this.renderSwitchStatusOptions\\",\\"selectorconfig\\":\\"\\"}","alias":"shkaf"}]',
       2 => 'default',
       3 => NULL,
       4 => 'migx',
@@ -216,7 +216,7 @@
     'dopOptionsWindowsCalcTv' => 
     array (
       0 => 'dopOptionsWindowsCalcTv',
-      1 => '[{"MIGX_id":"1","title":"1-\\u0430 \\u0441\\u0442\\u0432\\u043e\\u0440\\u043a\\u0430","description":"100","showBtn":"","image":"win1.png","alias":"1stvorka","published":1,"published_ro":"{\\"MIGX_id\\":2,\\"name\\":\\"published\\",\\"use_as_fallback\\":\\"\\",\\"value\\":1,\\"clickaction\\":\\"switchOption\\",\\"handler\\":\\"\\",\\"image\\":\\"assets\\\\\\/components\\\\\\/migx\\\\\\/style\\\\\\/images\\\\\\/cb_ticked.png\\",\\"idx\\":1,\\"_renderer\\":\\"this.renderSwitchStatusOptions\\",\\"selectorconfig\\":\\"\\"}"},{"MIGX_id":"6","image":"win3.png","deleted":"0","published":"1","published_ro":"{\\"MIGX_id\\":2,\\"name\\":\\"published\\",\\"use_as_fallback\\":\\"\\",\\"value\\":1,\\"clickaction\\":\\"switchOption\\",\\"handler\\":\\"\\",\\"image\\":\\"assets\\\\\\/components\\\\\\/migx\\\\\\/style\\\\\\/images\\\\\\/cb_ticked.png\\",\\"idx\\":1,\\"_renderer\\":\\"this.renderSwitchStatusOptions\\",\\"selectorconfig\\":\\"\\"}","alias":""},{"MIGX_id":"5","image":"win2.png","deleted":"0","published":"1","published_ro":"{\\"MIGX_id\\":2,\\"name\\":\\"published\\",\\"use_as_fallback\\":\\"\\",\\"value\\":1,\\"clickaction\\":\\"switchOption\\",\\"handler\\":\\"\\",\\"image\\":\\"assets\\\\\\/components\\\\\\/migx\\\\\\/style\\\\\\/images\\\\\\/cb_ticked.png\\",\\"idx\\":1,\\"_renderer\\":\\"this.renderSwitchStatusOptions\\",\\"selectorconfig\\":\\"\\"}","alias":""},{"MIGX_id":"7","image":"win4.png","deleted":"0","published":"1","published_ro":"{\\"MIGX_id\\":2,\\"name\\":\\"published\\",\\"use_as_fallback\\":\\"\\",\\"value\\":1,\\"clickaction\\":\\"switchOption\\",\\"handler\\":\\"\\",\\"image\\":\\"assets\\\\\\/components\\\\\\/migx\\\\\\/style\\\\\\/images\\\\\\/cb_ticked.png\\",\\"idx\\":1,\\"_renderer\\":\\"this.renderSwitchStatusOptions\\",\\"selectorconfig\\":\\"\\"}","alias":""},{"MIGX_id":"8","image":"win5.png","deleted":"0","published":"1","published_ro":"{\\"MIGX_id\\":2,\\"name\\":\\"published\\",\\"use_as_fallback\\":\\"\\",\\"value\\":1,\\"clickaction\\":\\"switchOption\\",\\"handler\\":\\"\\",\\"image\\":\\"assets\\\\\\/components\\\\\\/migx\\\\\\/style\\\\\\/images\\\\\\/cb_ticked.png\\",\\"idx\\":1,\\"_renderer\\":\\"this.renderSwitchStatusOptions\\",\\"selectorconfig\\":\\"\\"}","alias":""},{"MIGX_id":"9","image":"win6.png","deleted":"0","published":"1","published_ro":"{\\"MIGX_id\\":2,\\"name\\":\\"published\\",\\"use_as_fallback\\":\\"\\",\\"value\\":1,\\"clickaction\\":\\"switchOption\\",\\"handler\\":\\"\\",\\"image\\":\\"assets\\\\\\/components\\\\\\/migx\\\\\\/style\\\\\\/images\\\\\\/cb_ticked.png\\",\\"idx\\":1,\\"_renderer\\":\\"this.renderSwitchStatusOptions\\",\\"selectorconfig\\":\\"\\"}"},{"MIGX_id":"10","image":"win7.png","deleted":"0","published":"1","published_ro":"{\\"MIGX_id\\":2,\\"name\\":\\"published\\",\\"use_as_fallback\\":\\"\\",\\"value\\":1,\\"clickaction\\":\\"switchOption\\",\\"handler\\":\\"\\",\\"image\\":\\"assets\\\\\\/components\\\\\\/migx\\\\\\/style\\\\\\/images\\\\\\/cb_ticked.png\\",\\"idx\\":1,\\"_renderer\\":\\"this.renderSwitchStatusOptions\\",\\"selectorconfig\\":\\"\\"}"},{"MIGX_id":"11","image":"win8.png","deleted":"0","published":"1","published_ro":"{\\"MIGX_id\\":2,\\"name\\":\\"published\\",\\"use_as_fallback\\":\\"\\",\\"value\\":1,\\"clickaction\\":\\"switchOption\\",\\"handler\\":\\"\\",\\"image\\":\\"assets\\\\\\/components\\\\\\/migx\\\\\\/style\\\\\\/images\\\\\\/cb_ticked.png\\",\\"idx\\":1,\\"_renderer\\":\\"this.renderSwitchStatusOptions\\",\\"selectorconfig\\":\\"\\"}"},{"MIGX_id":"12","image":"win9.png","deleted":"0","published":"1","published_ro":"{\\"MIGX_id\\":2,\\"name\\":\\"published\\",\\"use_as_fallback\\":\\"\\",\\"value\\":1,\\"clickaction\\":\\"switchOption\\",\\"handler\\":\\"\\",\\"image\\":\\"assets\\\\\\/components\\\\\\/migx\\\\\\/style\\\\\\/images\\\\\\/cb_ticked.png\\",\\"idx\\":1,\\"_renderer\\":\\"this.renderSwitchStatusOptions\\",\\"selectorconfig\\":\\"\\"}"},{"MIGX_id":"2","image":"win10.png","deleted":"0","published":"1","published_ro":"{\\"MIGX_id\\":2,\\"name\\":\\"published\\",\\"use_as_fallback\\":\\"\\",\\"value\\":1,\\"clickaction\\":\\"switchOption\\",\\"handler\\":\\"\\",\\"image\\":\\"assets\\\\\\/components\\\\\\/migx\\\\\\/style\\\\\\/images\\\\\\/cb_ticked.png\\",\\"idx\\":1,\\"_renderer\\":\\"this.renderSwitchStatusOptions\\",\\"selectorconfig\\":\\"\\"}"},{"MIGX_id":"3","image":"win11.png","deleted":"0","published":"1","published_ro":"{\\"MIGX_id\\":2,\\"name\\":\\"published\\",\\"use_as_fallback\\":\\"\\",\\"value\\":1,\\"clickaction\\":\\"switchOption\\",\\"handler\\":\\"\\",\\"image\\":\\"assets\\\\\\/components\\\\\\/migx\\\\\\/style\\\\\\/images\\\\\\/cb_ticked.png\\",\\"idx\\":1,\\"_renderer\\":\\"this.renderSwitchStatusOptions\\",\\"selectorconfig\\":\\"\\"}"},{"MIGX_id":"4","image":"win12.png","deleted":"0","published":"1","published_ro":"{\\"MIGX_id\\":2,\\"name\\":\\"published\\",\\"use_as_fallback\\":\\"\\",\\"value\\":1,\\"clickaction\\":\\"switchOption\\",\\"handler\\":\\"\\",\\"image\\":\\"assets\\\\\\/components\\\\\\/migx\\\\\\/style\\\\\\/images\\\\\\/cb_ticked.png\\",\\"idx\\":1,\\"_renderer\\":\\"this.renderSwitchStatusOptions\\",\\"selectorconfig\\":\\"\\"}"}]',
+      1 => '[{"MIGX_id":"1","title":"1-а створка","description":"100","showBtn":"","image":"win1.png","alias":"1stvorka","published":1,"published_ro":"{\\"MIGX_id\\":2,\\"name\\":\\"published\\",\\"use_as_fallback\\":\\"\\",\\"value\\":1,\\"clickaction\\":\\"switchOption\\",\\"handler\\":\\"\\",\\"image\\":\\"assets\\\\/components\\\\/migx\\\\/style\\\\/images\\\\/cb_ticked.png\\",\\"idx\\":1,\\"_renderer\\":\\"this.renderSwitchStatusOptions\\",\\"selectorconfig\\":\\"\\"}"},{"MIGX_id":"6","image":"win3.png","deleted":"0","published":"1","published_ro":"{\\"MIGX_id\\":2,\\"name\\":\\"published\\",\\"use_as_fallback\\":\\"\\",\\"value\\":1,\\"clickaction\\":\\"switchOption\\",\\"handler\\":\\"\\",\\"image\\":\\"assets\\\\/components\\\\/migx\\\\/style\\\\/images\\\\/cb_ticked.png\\",\\"idx\\":1,\\"_renderer\\":\\"this.renderSwitchStatusOptions\\",\\"selectorconfig\\":\\"\\"}","alias":"2stvorki","title":"2-у створки"},{"MIGX_id":"5","image":"win2.png","deleted":"0","published":"1","published_ro":"{\\"MIGX_id\\":2,\\"name\\":\\"published\\",\\"use_as_fallback\\":\\"\\",\\"value\\":1,\\"clickaction\\":\\"switchOption\\",\\"handler\\":\\"\\",\\"image\\":\\"assets\\\\/components\\\\/migx\\\\/style\\\\/images\\\\/cb_ticked.png\\",\\"idx\\":1,\\"_renderer\\":\\"this.renderSwitchStatusOptions\\",\\"selectorconfig\\":\\"\\"}","alias":""},{"MIGX_id":"7","image":"win4.png","deleted":"0","published":"1","published_ro":"{\\"MIGX_id\\":2,\\"name\\":\\"published\\",\\"use_as_fallback\\":\\"\\",\\"value\\":1,\\"clickaction\\":\\"switchOption\\",\\"handler\\":\\"\\",\\"image\\":\\"assets\\\\/components\\\\/migx\\\\/style\\\\/images\\\\/cb_ticked.png\\",\\"idx\\":1,\\"_renderer\\":\\"this.renderSwitchStatusOptions\\",\\"selectorconfig\\":\\"\\"}","alias":""},{"MIGX_id":"8","image":"win5.png","deleted":"0","published":"1","published_ro":"{\\"MIGX_id\\":2,\\"name\\":\\"published\\",\\"use_as_fallback\\":\\"\\",\\"value\\":1,\\"clickaction\\":\\"switchOption\\",\\"handler\\":\\"\\",\\"image\\":\\"assets\\\\/components\\\\/migx\\\\/style\\\\/images\\\\/cb_ticked.png\\",\\"idx\\":1,\\"_renderer\\":\\"this.renderSwitchStatusOptions\\",\\"selectorconfig\\":\\"\\"}","alias":""},{"MIGX_id":"9","image":"win6.png","deleted":"0","published":"1","published_ro":"{\\"MIGX_id\\":2,\\"name\\":\\"published\\",\\"use_as_fallback\\":\\"\\",\\"value\\":1,\\"clickaction\\":\\"switchOption\\",\\"handler\\":\\"\\",\\"image\\":\\"assets\\\\/components\\\\/migx\\\\/style\\\\/images\\\\/cb_ticked.png\\",\\"idx\\":1,\\"_renderer\\":\\"this.renderSwitchStatusOptions\\",\\"selectorconfig\\":\\"\\"}"},{"MIGX_id":"10","image":"win7.png","deleted":"0","published":"1","published_ro":"{\\"MIGX_id\\":2,\\"name\\":\\"published\\",\\"use_as_fallback\\":\\"\\",\\"value\\":1,\\"clickaction\\":\\"switchOption\\",\\"handler\\":\\"\\",\\"image\\":\\"assets\\\\/components\\\\/migx\\\\/style\\\\/images\\\\/cb_ticked.png\\",\\"idx\\":1,\\"_renderer\\":\\"this.renderSwitchStatusOptions\\",\\"selectorconfig\\":\\"\\"}"},{"MIGX_id":"11","image":"win8.png","deleted":"0","published":"1","published_ro":"{\\"MIGX_id\\":2,\\"name\\":\\"published\\",\\"use_as_fallback\\":\\"\\",\\"value\\":1,\\"clickaction\\":\\"switchOption\\",\\"handler\\":\\"\\",\\"image\\":\\"assets\\\\/components\\\\/migx\\\\/style\\\\/images\\\\/cb_ticked.png\\",\\"idx\\":1,\\"_renderer\\":\\"this.renderSwitchStatusOptions\\",\\"selectorconfig\\":\\"\\"}"},{"MIGX_id":"12","image":"win9.png","deleted":"0","published":"1","published_ro":"{\\"MIGX_id\\":2,\\"name\\":\\"published\\",\\"use_as_fallback\\":\\"\\",\\"value\\":1,\\"clickaction\\":\\"switchOption\\",\\"handler\\":\\"\\",\\"image\\":\\"assets\\\\/components\\\\/migx\\\\/style\\\\/images\\\\/cb_ticked.png\\",\\"idx\\":1,\\"_renderer\\":\\"this.renderSwitchStatusOptions\\",\\"selectorconfig\\":\\"\\"}"},{"MIGX_id":"2","image":"win10.png","deleted":"0","published":"1","published_ro":"{\\"MIGX_id\\":2,\\"name\\":\\"published\\",\\"use_as_fallback\\":\\"\\",\\"value\\":1,\\"clickaction\\":\\"switchOption\\",\\"handler\\":\\"\\",\\"image\\":\\"assets\\\\/components\\\\/migx\\\\/style\\\\/images\\\\/cb_ticked.png\\",\\"idx\\":1,\\"_renderer\\":\\"this.renderSwitchStatusOptions\\",\\"selectorconfig\\":\\"\\"}"},{"MIGX_id":"3","image":"win11.png","deleted":"0","published":"1","published_ro":"{\\"MIGX_id\\":2,\\"name\\":\\"published\\",\\"use_as_fallback\\":\\"\\",\\"value\\":1,\\"clickaction\\":\\"switchOption\\",\\"handler\\":\\"\\",\\"image\\":\\"assets\\\\/components\\\\/migx\\\\/style\\\\/images\\\\/cb_ticked.png\\",\\"idx\\":1,\\"_renderer\\":\\"this.renderSwitchStatusOptions\\",\\"selectorconfig\\":\\"\\"}"},{"MIGX_id":"4","image":"win12.png","deleted":"0","published":"1","published_ro":"{\\"MIGX_id\\":2,\\"name\\":\\"published\\",\\"use_as_fallback\\":\\"\\",\\"value\\":1,\\"clickaction\\":\\"switchOption\\",\\"handler\\":\\"\\",\\"image\\":\\"assets\\\\/components\\\\/migx\\\\/style\\\\/images\\\\/cb_ticked.png\\",\\"idx\\":1,\\"_renderer\\":\\"this.renderSwitchStatusOptions\\",\\"selectorconfig\\":\\"\\"}"}]',
       2 => 'default',
       3 => NULL,
       4 => 'migx',
@@ -368,7 +368,7 @@
     'dopOptionsHiddenCalcTv' => 
     array (
       0 => 'dopOptionsHiddenCalcTv',
-      1 => '[{"MIGX_id":"1","title":"Генеральная уборка квартиры","description":"33","showBtn":"","image":"ico-serv-4.png","alias":"generaclean","published":1,"published_ro":"{\\"MIGX_id\\":2,\\"name\\":\\"published\\",\\"use_as_fallback\\":\\"\\",\\"value\\":1,\\"clickaction\\":\\"switchOption\\",\\"handler\\":\\"\\",\\"image\\":\\"assets/components/migx/style/images/cb_ticked.png\\",\\"idx\\":1,\\"_renderer\\":\\"this.renderSwitchStatusOptions\\",\\"selectorconfig\\":\\"\\",\\"tv_type\\":\\"migx\\"}"}]',
+      1 => '[{"MIGX_id":"1","title":"Генеральная уборка квартиры","description":"33","showBtn":"","image":"ico-serv-4.png","alias":"generaclean","published":1,"published_ro":"{\\"MIGX_id\\":2,\\"name\\":\\"published\\",\\"use_as_fallback\\":\\"\\",\\"value\\":1,\\"clickaction\\":\\"switchOption\\",\\"handler\\":\\"\\",\\"image\\":\\"assets\\\\/components\\\\/migx\\\\/style\\\\/images\\\\/cb_ticked.png\\",\\"idx\\":1,\\"_renderer\\":\\"this.renderSwitchStatusOptions\\",\\"selectorconfig\\":\\"\\"}","deleted":"0"},{"MIGX_id":"2","title":"Уборка участка","description":"350","showBtn":"","image":"ico-serv-5.png","alias":"uborkauchastka","published":1,"published_ro":"{\\"MIGX_id\\":2,\\"name\\":\\"published\\",\\"use_as_fallback\\":\\"\\",\\"value\\":1,\\"clickaction\\":\\"switchOption\\",\\"handler\\":\\"\\",\\"image\\":\\"assets/components/migx/style/images/cb_ticked.png\\",\\"idx\\":1,\\"_renderer\\":\\"this.renderSwitchStatusOptions\\",\\"selectorconfig\\":\\"\\",\\"tv_type\\":\\"migx\\"}"}]',
       2 => 'default',
       3 => NULL,
       4 => 'migx',
@@ -410,7 +410,7 @@
 				</div>
 				<div class="menu">
 					<nav>
-    <ul class=""><li class="first"><a href="/" >Главная</a></li><li><a href="vse-uslugi/" >Услуги</a></li><li><a href="o-nas.html" >О нас</a></li><li class="active"><a href="kalkulyator.html" >Калькулятор</a></li><li class="last"><a href="kontaktyi.html" >Контакты</a></li></ul>
+    <ul class=""><li class="first"><a href="/" >Главная</a></li><li><a href="vse-uslugi/" >Услуги</a></li><li><a href="o-nas/" >О нас</a></li><li class="active"><a href="kalkulyator.html" >Калькулятор</a></li><li class="last"><a href="kontaktyi.html" >Контакты</a></li></ul>
 </nav>
 					<div id="sandwich">
 						<div class="sw_top"></div>
@@ -446,13 +446,13 @@
    <div class="btn btn-win"><button>Выбрать</button></div>
    <input type="hidden" value="1stvorka" data-additionlly="100">
 </div><div class="item">
-   <div class="img"><img src="assets/site/img/windows/win3.png" alt="[[+title]]"></div>
+   <div class="img"><img src="assets/site/img/windows/win3.png" alt="2-у створки"></div>
    <div class="ttl-win">
-     <h4>[[+title]]</h4>
+     <h4>2-у створки</h4>
    </div>
    <div class="input-data"><input type="text" placeholder="Количество"></div>
    <div class="btn btn-win"><button>Выбрать</button></div>
-   <input type="hidden" value="" data-additionlly="[[+description]]">
+   <input type="hidden" value="2stvorki" data-additionlly="[[+description]]">
 </div><div class="item">
    <div class="img"><img src="assets/site/img/windows/win2.png" alt="[[+title]]"></div>
    <div class="ttl-win">
@@ -602,6 +602,12 @@
        <p>Генеральная уборка квартиры</p>
    </div>
    <input type="hidden" value="generaclean" data-additionlly="33">
+</div><div class="item-allservices">
+   <div class="img"><img src="assets/site/img/calchidden/ico-serv-5.png" alt="Уборка участка"></div>
+   <div class="ttl-allservices">
+       <p>Уборка участка</p>
+   </div>
+   <input type="hidden" value="uborkauchastka" data-additionlly="350">
 </div>      
        </div>
        <div class="forma-no-service">
@@ -628,7 +634,7 @@
 				<div class="menu-footer"><nav>
 					<ul>
 						<nav>
-    <ul class=""><li class="first"><a href="/" >Главная</a></li><li><a href="vse-uslugi/" >Услуги</a></li><li><a href="o-nas.html" >О нас</a></li><li class="active"><a href="kalkulyator.html" >Калькулятор</a></li><li class="last"><a href="kontaktyi.html" >Контакты</a></li></ul>
+    <ul class=""><li class="first"><a href="/" >Главная</a></li><li><a href="vse-uslugi/" >Услуги</a></li><li><a href="o-nas/" >О нас</a></li><li class="active"><a href="kalkulyator.html" >Калькулятор</a></li><li class="last"><a href="kontaktyi.html" >Контакты</a></li></ul>
 </nav>
 					</ul>
 				</nav></div>
@@ -709,9 +715,9 @@
         &level=`1`
         &parents=`0`
         &tpl=`@INLINE <li[[+classes]]><a href="[[+link]]" [[+attributes]]>[[+menutitle]]</a></li>`
-    ]]' => '<ul class=""><li class="first"><a href="/" >Главная</a></li><li><a href="vse-uslugi/" >Услуги</a></li><li><a href="o-nas.html" >О нас</a></li><li class="active"><a href="kalkulyator.html" >Калькулятор</a></li><li class="last"><a href="kontaktyi.html" >Контакты</a></li></ul>',
+    ]]' => '<ul class=""><li class="first"><a href="/" >Главная</a></li><li><a href="vse-uslugi/" >Услуги</a></li><li><a href="o-nas/" >О нас</a></li><li class="active"><a href="kalkulyator.html" >Калькулятор</a></li><li class="last"><a href="kontaktyi.html" >Контакты</a></li></ul>',
     '[[$menu]]' => '<nav>
-    <ul class=""><li class="first"><a href="/" >Главная</a></li><li><a href="vse-uslugi/" >Услуги</a></li><li><a href="o-nas.html" >О нас</a></li><li class="active"><a href="kalkulyator.html" >Калькулятор</a></li><li class="last"><a href="kontaktyi.html" >Контакты</a></li></ul>
+    <ul class=""><li class="first"><a href="/" >Главная</a></li><li><a href="vse-uslugi/" >Услуги</a></li><li><a href="o-nas/" >О нас</a></li><li class="active"><a href="kalkulyator.html" >Калькулятор</a></li><li class="last"><a href="kontaktyi.html" >Контакты</a></li></ul>
 </nav>',
     '[[$header]]' => '<header>
 	<div class="container">
@@ -732,7 +738,7 @@
 				</div>
 				<div class="menu">
 					<nav>
-    <ul class=""><li class="first"><a href="/" >Главная</a></li><li><a href="vse-uslugi/" >Услуги</a></li><li><a href="o-nas.html" >О нас</a></li><li class="active"><a href="kalkulyator.html" >Калькулятор</a></li><li class="last"><a href="kontaktyi.html" >Контакты</a></li></ul>
+    <ul class=""><li class="first"><a href="/" >Главная</a></li><li><a href="vse-uslugi/" >Услуги</a></li><li><a href="o-nas/" >О нас</a></li><li class="active"><a href="kalkulyator.html" >Калькулятор</a></li><li class="last"><a href="kontaktyi.html" >Контакты</a></li></ul>
 </nav>
 					<div id="sandwich">
 						<div class="sw_top"></div>
@@ -757,13 +763,13 @@
    <div class="btn btn-win"><button>Выбрать</button></div>
    <input type="hidden" value="1stvorka" data-additionlly="100">
 </div><div class="item">
-   <div class="img"><img src="assets/site/img/windows/win3.png" alt="[[+title]]"></div>
+   <div class="img"><img src="assets/site/img/windows/win3.png" alt="2-у створки"></div>
    <div class="ttl-win">
-     <h4>[[+title]]</h4>
+     <h4>2-у створки</h4>
    </div>
    <div class="input-data"><input type="text" placeholder="Количество"></div>
    <div class="btn btn-win"><button>Выбрать</button></div>
-   <input type="hidden" value="" data-additionlly="[[+description]]">
+   <input type="hidden" value="2stvorki" data-additionlly="[[+description]]">
 </div><div class="item">
    <div class="img"><img src="assets/site/img/windows/win2.png" alt="[[+title]]"></div>
    <div class="ttl-win">
@@ -900,6 +906,12 @@
        <p>Генеральная уборка квартиры</p>
    </div>
    <input type="hidden" value="generaclean" data-additionlly="33">
+</div><div class="item-allservices">
+   <div class="img"><img src="assets/site/img/calchidden/ico-serv-5.png" alt="Уборка участка"></div>
+   <div class="ttl-allservices">
+       <p>Уборка участка</p>
+   </div>
+   <input type="hidden" value="uborkauchastka" data-additionlly="350">
 </div>',
     '[[$modalPopup]]' => '<div class="modal-calc-window mfp-hide white-popup-block" id="modal_calc_window">
    <div class="ttl-head ttl-modal-calc-window">
@@ -915,13 +927,13 @@
    <div class="btn btn-win"><button>Выбрать</button></div>
    <input type="hidden" value="1stvorka" data-additionlly="100">
 </div><div class="item">
-   <div class="img"><img src="assets/site/img/windows/win3.png" alt="[[+title]]"></div>
+   <div class="img"><img src="assets/site/img/windows/win3.png" alt="2-у створки"></div>
    <div class="ttl-win">
-     <h4>[[+title]]</h4>
+     <h4>2-у створки</h4>
    </div>
    <div class="input-data"><input type="text" placeholder="Количество"></div>
    <div class="btn btn-win"><button>Выбрать</button></div>
-   <input type="hidden" value="" data-additionlly="[[+description]]">
+   <input type="hidden" value="2stvorki" data-additionlly="[[+description]]">
 </div><div class="item">
    <div class="img"><img src="assets/site/img/windows/win2.png" alt="[[+title]]"></div>
    <div class="ttl-win">
@@ -1071,6 +1083,12 @@
        <p>Генеральная уборка квартиры</p>
    </div>
    <input type="hidden" value="generaclean" data-additionlly="33">
+</div><div class="item-allservices">
+   <div class="img"><img src="assets/site/img/calchidden/ico-serv-5.png" alt="Уборка участка"></div>
+   <div class="ttl-allservices">
+       <p>Уборка участка</p>
+   </div>
+   <input type="hidden" value="uborkauchastka" data-additionlly="350">
 </div>      
        </div>
        <div class="forma-no-service">
@@ -1098,7 +1116,7 @@
 				<div class="menu-footer"><nav>
 					<ul>
 						<nav>
-    <ul class=""><li class="first"><a href="/" >Главная</a></li><li><a href="vse-uslugi/" >Услуги</a></li><li><a href="o-nas.html" >О нас</a></li><li class="active"><a href="kalkulyator.html" >Калькулятор</a></li><li class="last"><a href="kontaktyi.html" >Контакты</a></li></ul>
+    <ul class=""><li class="first"><a href="/" >Главная</a></li><li><a href="vse-uslugi/" >Услуги</a></li><li><a href="o-nas/" >О нас</a></li><li class="active"><a href="kalkulyator.html" >Калькулятор</a></li><li class="last"><a href="kontaktyi.html" >Контакты</a></li></ul>
 </nav>
 					</ul>
 				</nav></div>
@@ -1194,7 +1212,7 @@
 </div><div class="but-add">
   <div class="img"><img src="assets/site/img/calc/ico-9.png" alt="[[+title]]"></div>
   <div class="ttl">[[+title]]</div>
-  <input type="hidden" value="[[+alias]]" data-additionlly="[[+description]]">
+  <input type="hidden" value="shkaf" data-additionlly="[[+description]]">
 </div>',
   ),
   'sourceCache' => 

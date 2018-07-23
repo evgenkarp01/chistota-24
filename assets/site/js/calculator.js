@@ -174,7 +174,7 @@ $( document ).ready(function() {
     var ploschad = $("#ploschad_area").val();
     var colComnat = $("#col_komnat_area").val();
     var colSanUsel = $("#col_sanus_area").val();
-    var comment = $('input[name="comment_calculator"]').val();
+    var comment = $('textarea[name="comment_calculator"]').val();
     var photo = $('input[name="file"]').val();
     var name = $('input[name="name_calculator"]').val();
     var phone = $('input[name="phone_calculator"]').val();
@@ -187,13 +187,10 @@ $( document ).ready(function() {
     var date = $('input[name="date_calculator"]').val();
     var time = $("#option_time").val();
 
-    var url = '../php/calc.php';
-
-
 
         $.ajax({
           type: 'POST',
-          url: '../php/calc.php',
+          url: 'assets/site/php/send.php',
           data: { 
             "viewWhere": viewWhere,
             "ploschad": ploschad,

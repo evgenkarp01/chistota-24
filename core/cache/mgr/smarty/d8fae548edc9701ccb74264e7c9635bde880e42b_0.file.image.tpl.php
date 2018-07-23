@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.31, created on 2018-07-23 13:21:41
+/* Smarty version 3.1.31, created on 2018-07-23 18:56:54
   from "/mnt/sites/chistota-24/manager/templates/default/element/tv/renders/input/image.tpl" */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.31',
-  'unifunc' => 'content_5b55d6653d20e7_42103423',
+  'unifunc' => 'content_5b5624f6d46be5_54722831',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'd8fae548edc9701ccb74264e7c9635bde880e42b' => 
     array (
       0 => '/mnt/sites/chistota-24/manager/templates/default/element/tv/renders/input/image.tpl',
-      1 => 1532326244,
+      1 => 1531361206,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5b55d6653d20e7_42103423 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5b5624f6d46be5_54722831 (Smarty_Internal_Template $_smarty_tpl) {
 if (!is_callable('smarty_modifier_replace')) require_once '/mnt/sites/chistota-24/core/model/smarty/plugins/modifier.replace.php';
 ?>
 <div id="tv-image-<?php echo $_smarty_tpl->tpl_vars['tv']->value->id;?>

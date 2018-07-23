@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.31, created on 2018-07-23 12:26:11
+/* Smarty version 3.1.31, created on 2018-07-23 18:51:10
   from "/mnt/sites/chistota-24/manager/templates/default/header.tpl" */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.31',
-  'unifunc' => 'content_5b55c96343a497_09298821',
+  'unifunc' => 'content_5b56239e44ac26_91751484',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'ce13617f9a7d0edc7d2991b4b3174af6947b501b' => 
     array (
       0 => '/mnt/sites/chistota-24/manager/templates/default/header.tpl',
-      1 => 1532326244,
+      1 => 1531361206,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5b55c96343a497_09298821 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5b56239e44ac26_91751484 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" dir="<?php echo $_smarty_tpl->tpl_vars['_config']->value['manager_direction'];?>

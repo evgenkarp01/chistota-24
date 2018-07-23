@@ -3336,4 +3336,51 @@
     'context_key' => 'web',
     'source_class_key' => 'sources.modFileMediaSource',
   ),
+  72 => 
+  array (
+    'basePath' => 'assets/site/img/services/',
+    'basePathRelative' => true,
+    'baseUrl' => 'assets/site/img/services/',
+    'baseUrlRelative' => true,
+    'allowedFileTypes' => '',
+    'imageExtensions' => 'jpg,jpeg,png,gif,svg',
+    'thumbnailType' => 'png',
+    'thumbnailQuality' => 90,
+    'skipFiles' => '.svn,.git,_notes,nbproject,.idea,.DS_Store',
+    'id' => NULL,
+    'name' => 'services',
+    'description' => '',
+    'class_key' => 'modFileMediaSource',
+    'properties' => 
+    array (
+      'basePath' => 
+      array (
+        'name' => 'basePath',
+        'desc' => 'prop_file.basePath_desc',
+        'type' => 'textfield',
+        'options' => 
+        array (
+        ),
+        'value' => 'assets/site/img/services/',
+        'lexicon' => 'core:source',
+      ),
+      'baseUrl' => 
+      array (
+        'name' => 'baseUrl',
+        'desc' => 'prop_file.baseUrl_desc',
+        'type' => 'textfield',
+        'options' => 
+        array (
+        ),
+        'value' => 'assets/site/img/services/',
+        'lexicon' => 'core:source',
+      ),
+    ),
+    'is_stream' => true,
+    'source' => 5,
+    'object_class' => 'modTemplateVar',
+    'object' => 72,
+    'context_key' => 'web',
+    'source_class_key' => 'sources.modFileMediaSource',
+  ),
 );

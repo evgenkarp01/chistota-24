@@ -5,7 +5,7 @@
 $database_type = 'mysql';
 $database_server = 'localhost';
 $database_user = 'ewal';
-$database_password = '13051987';
+$database_password = 'qwer4321';
 $database_connection_charset = 'utf8';
 $dbase = 'chistota';
 $table_prefix = 'chisto_';

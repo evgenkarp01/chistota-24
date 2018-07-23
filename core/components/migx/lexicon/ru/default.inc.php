@@ -25,6 +25,11 @@ $_lang['migx.preview'] = 'Просмотр';
 $_lang['migx.save_resource'] = 'Перед добавлением новых элементов, вам необходимо сохранить этот ресурс!';
 $_lang['migx.save_object'] = 'Перед добавлением новых элементов, вам необходимо сохранить этот объект!';
 
+$_lang['migx.upload_images'] = 'Загрузить иконку';
+$_lang['migx.load_from_source'] = 'Импорт из пространства';
+$_lang['migx.max_records_alert'] = 'Максимальное количество записей достигнуто';
+
+
 $_lang['migx.show_trash'] = 'Просмотр корзины';
 $_lang['migx.show_normal'] = 'Нормальный вид';
 $_lang['migx.loadgrid'] = 'Загрузка сетки';

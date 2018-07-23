@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.31, created on 2018-07-23 13:10:12
+/* Smarty version 3.1.31, created on 2018-07-23 18:51:10
   from "/mnt/sites/chistota-24/manager/templates/default/resource/sections/tvs.tpl" */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.31',
-  'unifunc' => 'content_5b55d3b4d34254_52520087',
+  'unifunc' => 'content_5b56239e3bed30_42985901',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '68263e45a83c3c514a833b9399221d9a576709b3' => 
     array (
       0 => '/mnt/sites/chistota-24/manager/templates/default/resource/sections/tvs.tpl',
-      1 => 1532326244,
+      1 => 1531361208,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5b55d3b4d34254_52520087 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5b56239e3bed30_42985901 (Smarty_Internal_Template $_smarty_tpl) {
 if (!is_callable('smarty_function_cycle')) require_once '/mnt/sites/chistota-24/core/model/smarty/plugins/function.cycle.php';
 echo $_smarty_tpl->tpl_vars['OnResourceTVFormPrerender']->value;?>
 

@@ -1,11 +1,13 @@
 <?php
-
+//ini_set('error_reporting', E_ALL);
+//ini_set('display_errors', 1);
+//ini_set('display_startup_errors', 1);
 
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
-	require_once($_SERVER['DOCUMENT_ROOT'].'/lib/phpmailer/src/Exception.php');
-	require_once($_SERVER['DOCUMENT_ROOT'].'/lib/phpmailer/src/PHPMailer.php');
-	require_once($_SERVER['DOCUMENT_ROOT'].'/lib/phpmailer/src/SMTP.php');
+	require_once($_SERVER['DOCUMENT_ROOT'].'/assets/site/lib/phpmailer/src/Exception.php');
+	require_once($_SERVER['DOCUMENT_ROOT'].'/assets/site/lib/phpmailer/src/PHPMailer.php');
+	require_once($_SERVER['DOCUMENT_ROOT'].'/assets/site/lib/phpmailer/src/SMTP.php');
 
 $mail = new PHPMailer;
 	$sendto   = "evgenkarp01@ya.ru";
@@ -27,7 +29,7 @@ $mail = new PHPMailer;
 		
 
 		$siteName = "Сервис чистоты";
-		$siteUrl ="chistota-24.ru";
+		$siteUrl = "chistota-24.ru";
 		$subject  = "Новое сообщение - с сайта chistota-24.ru";
 		$thema = "Заявка с кальулятора сайта";
 			
@@ -77,69 +79,73 @@ $mail = new PHPMailer;
 		if(isset($_POST['name'])){
 			$name = htmlspecialchars($_POST['name']);
 			$name = trim($name);
+            $name = strip_tags($name);
 			$msg .= "<p><strong>Имя клиента:</strong> ".$name."</p>\r\n";
 		}
 		
 		if(isset($_POST['phone'])){
 			$phone = htmlspecialchars($_POST['phone']);
 			$phone = trim($phone);
+            $phone = strip_tags($phone);
 			$msg .= "<p><strong>Контактрый телефон:</strong> ".$phone."</p>\r\n";
 		}
 		if(isset($_POST['email'])){
 			$email = htmlspecialchars($_POST['email']);
 			$email = trim($email);
+            $email = strip_tags($email);
 			$msg .= "<p><strong>e-mail:</strong> ".$email."</p>\r\n";
 		}
-		if(isset($_POST['name'])){
-			$name = htmlspecialchars($_POST['name']);
-			$name = trim($name);
-			$msg .= "<p><strong>Имя клиента:</strong> ".$name."</p>\r\n";
-		} 
-		
 		if(isset($_POST['city'])){
 			$city = htmlspecialchars($_POST['city']);
 			$city = trim($city);
+            $city = strip_tags($city);
 			$msg .= "<p><strong>Адрес:</strong> ".$city.", ".($_POST['street'])." ".($_POST['home'])." кв.".($_POST['apart'])." подъезд ".($_POST['entrance'])."</p>\r\n";
 		}
 		
 		if(isset($_POST['date'])){
 			$date = htmlspecialchars($_POST['date']);
 			$date = trim($date);
-			$msg .= "<p><strong>Дата </strong> ".$date."<strong>Время </strong>".($_POST['time'])."</p>\r\n";
+            $date = strip_tags($date);
+			$msg .= "<p><strong>Дата </strong> ".$date."<strong> Время </strong>".($_POST['time'])."</p>\r\n";
 		}
 		
 		if(isset($_POST['viewWhere'])){
 			$viewWhere = htmlspecialchars($_POST['viewWhere']);
 			$viewWhere = trim($viewWhere);
+            $viewWhere = strip_tags($viewWhere);
 			$msg .= "<p><strong>Где убираем:</strong> ".$viewWhere."</p>\r\n";
 		}
 		
 		if(isset($_POST['ploschad'])){
 			$ploschad = htmlspecialchars($_POST['ploschad']);
 			$ploschad = trim($ploschad);
+            $ploschad = strip_tags($ploschad);
 			$msg .= "<p><strong>Площадь помещения:</strong> ".$ploschad."</p>\r\n";
 		}
 		
 		if(isset($_POST['colComnat'])){
 			$colComnat = htmlspecialchars($_POST['colComnat']);
 			$colComnat = trim($colComnat);
+            $colComnat = strip_tags($colComnat);
 			$msg .= "<p><strong>Количество комнат:</strong> ".$colComnat."</p>\r\n";
 		}
 		
 		if(isset($_POST['colSanUsel'])){
 			$colSanUsel = htmlspecialchars($_POST['colSanUsel']);
 			$colSanUsel = trim($colSanUsel);
+            $colSanUsel = strip_tags($colSanUsel);
 			$msg .= "<p><strong>Количество санузлов:</strong> ".$colSanUsel."</p>\r\n";
 		}
 		
 		if(isset($_POST['viewVivod'])){
-			$viewVivod = htmlspecialchars($_POST['viewVivod']);
+			$viewVivod = strip_tags($_POST['viewVivod']);
+            $viewVivod = htmlspecialchars($viewVivod);
 			$viewVivod = trim($viewVivod);
 			$msg .= "<p><strong>Вид уборки:</strong> ".$viewVivod."</p>\r\n";
 		}
 		
 		if(isset($_POST['complectVivod'])){
-			$complectVivod = htmlspecialchars($_POST['complectVivod']);
+			$complectVivod = htmlspecialchars(strip_tags($_POST['complectVivod']));
 			$complectVivod = trim($complectVivod);
 			$msg .= "<p><strong>Комплектация уборки:</strong> ".$complectVivod."</p>\r\n";
 		}
@@ -155,15 +161,15 @@ $mail = new PHPMailer;
 		if(isset($_POST['additionllyVivod'])){
 			$additionllyVivod = htmlspecialchars($_POST['additionllyVivod']);
 			$additionllyVivod = trim($additionllyVivod);
-			$msg .= "<p><strong>Дополнительные опции::</strong> ".$additionllyVivod."</p>\r\n";
+			$msg .= "<p><strong>Дополнительные опции::</strong> ".$additionllyVivod."<br /><br /><br /></p>\r\n";
 		}
 		
 		
 		$msg .='<!--КНОПКА Button--><table class="buttonwrapper" bgcolor="#e05443" border="0" cellspacing="0" cellpadding="0"><tr><td class="button" height="45" style="text-align: center; font-size: 18px; font-family: sans-serif; font-weight: bold; padding: 0 30px 0 30px;"><!--ТЕКСТ И ССЫЛКА КНОПКИ--><a style="color: #ffffff; text-decoration: none;" href="http:'.$siteUrl.'">Перейти на сайт</a></td></tr></table><!--/Button--></td></tr><!--/НАЧАЛО-->';
-		$msg .= '<tr><td style="color: #153643; font-family: sans-serif; font-size: 16px; line-height: 22px;"><p>Отличного дня!<br /><strong>Обработчик</strong></p></td></tr><!--/ОКОНЧАНИЕ ПИСЬМА--></table></td></tr>';
+		$msg .= '<tr><td style="color: #153643; font-family: sans-serif; font-size: 12px; line-height: 22px;"><p><br /><br /><br /><hr>Отличного дня!<br /><strong>Обработчик</strong></p></td></tr><!--/ОКОНЧАНИЕ ПИСЬМА--></table></td></tr>';
 		$msg .= '<!--Footer--><tr><td class="footer" bgcolor="#008F8D" style="padding: 20px 30px 15px 30px;">';
 		$msg .= '<table width="100%" border="0" cellspacing="0" cellpadding="0">';
-		$msg .= '<tr><td align="center" style="font-family: sans-serif; font-size: 14px; color: #ffffff;">&reg;Все права щащищены!<br/><a href="'.$siteUrl.'" style="color: #ffffff; text-decoration: underline;">'.$siteUrl.'</a></td></tr>';
+		$msg .= '<tr><td align="center" style="font-family: sans-serif; font-size: 12px; color: #ffffff;">&reg;Все права защищены!<br/><a href="'.$siteUrl.'" style="color: #ffffff; text-decoration: underline;">'.$siteUrl.'</a></td></tr>';
 		$msg .= '<tr><td align="center" style="padding: 20px 0 0 0;"><table border="0" cellspacing="0" cellpadding="0"><tr>';
 		$msg .= '</tr></table></td></tr></table><!--[if (gte mso 9)|(IE)]></td></tr></table><![endif]--></body></html>';
 
