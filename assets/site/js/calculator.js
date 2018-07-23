@@ -238,7 +238,9 @@ $( document ).ready(function() {
     });
     
     
-    
+    $(".btn-dop-usl-window button, .btn-services-back-calc button").on('click', function(){
+            $.magnificPopup.close();
+    });
     
     
     
