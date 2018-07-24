@@ -272,7 +272,7 @@ header .oplet {
   position: relative;
 }
 header .logo a img {
-  max-width: 90px;
+  max-width: 165px;
 }
 header .phone ul li {
   list-style: none;
@@ -553,19 +553,24 @@ section {
 .price-index .prc-index .markup {
   min-height: 253px;
   background-color: #00b4b1;
-  padding: 25px 70px;
+  padding: 25px 45px;
 }
 .price-index .prc-index .markup .ttl {
   text-align: center;
 }
 .price-index .prc-index .markup-list {
   margin-top: 20px;
+transition: all 0.5s;
+}
+.price-index .prc-index .dops{
+    padding-bottom: 50px;
 }
 .price-index .prc-index .markup-list ul li {
   list-style: none;
   position: relative;
   padding: 6px 0;
   padding-left: 10px;
+  margin-left: 30px;
   list-style-image: url(../img/list.png);
 }
 .price-index .prc-index .markup:first-child {
@@ -576,6 +581,7 @@ section {
 }
 .price-index .prc-index .distance {
   min-height: 447px;
+  position: relative;
 }
 .price-index .prc-index .distance-dist ul {
   -webkit-column-count: 2;
@@ -592,6 +598,15 @@ section {
 .price-index .prc-index .distance .down {
   text-align: center;
   margin-top: 40px;
+  position: absolute;
+  bottom: 20px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  display: none;
+}
+.price-index .prc-index .distance img.rotate {
+    transform: rotate(180deg); 
 }
 .price-index .prc-index .distance .down img {
   cursor: pointer;
@@ -875,7 +890,7 @@ footer .oplet {
   margin-top: 30px;
 }
 footer .logo-footer a img {
-  max-width: 90px;
+  max-width: 133px;
 }
 footer .menu-footer nav ul li {
   display: inline-block;
@@ -996,6 +1011,7 @@ header .menu #sandwich.active .sw_footer {
     text-decoration: none;
     text-transform: uppercase;
     border-right: 1px solid #fff;
+    transition: opacity 0.6s;
   }
 
   header .menu .mmenu ul li:last-child a {
@@ -1007,10 +1023,10 @@ header .menu #sandwich.active .sw_footer {
     width: 100%;
     display: none;
     position: absolute;
-    top: 92px;
+    top: 117px;
     border-bottom: none;
     height: auto;
-    background: rgba(0, 0, 0, 0.5);
+    background: rgb(3, 154, 152);
     min-height: 100%;
   }
 
@@ -2013,6 +2029,9 @@ input:-ms-input-placeholder {
 
 article p {
   padding: 8px 0;
+}
+#hidden_area{
+    display: none;
 }
 
 /*//////////////////////////////

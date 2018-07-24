@@ -381,6 +381,9 @@
     <title>Калькулятор</title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="">
+    <meta name="keywords" lang="ru" content="">
+    <meta HTTP-EQUIV="Content-language" content ="ru">
 	<link rel="stylesheet" href="assets/site/slick/slick-theme.css">
 	<link rel="stylesheet" href="assets/site/slick/slick.css">
 	<link rel="stylesheet" href="assets/site/css/magnific-popup.css">
@@ -409,7 +412,7 @@
 					</ul>
 				</div>
 				<div class="menu">
-					<nav>
+					<nav class="mmenu">
     <ul class=""><li class="first"><a href="/" >Главная</a></li><li><a href="vse-uslugi/" >Услуги</a></li><li><a href="o-nas/" >О нас</a></li><li class="active"><a href="kalkulyator.html" >Калькулятор</a></li><li class="last"><a href="kontaktyi.html" >Контакты</a></li></ul>
 </nav>
 					<div id="sandwich">
@@ -633,7 +636,7 @@
 				<div class="logo-footer"><a href="/"><img src="assets/site/img/logo.png" alt="Сервис чистоты" title="Сервис чистоты"></a></div>
 				<div class="menu-footer"><nav>
 					<ul>
-						<nav>
+						<nav class="mmenu">
     <ul class=""><li class="first"><a href="/" >Главная</a></li><li><a href="vse-uslugi/" >Услуги</a></li><li><a href="o-nas/" >О нас</a></li><li class="active"><a href="kalkulyator.html" >Калькулятор</a></li><li class="last"><a href="kontaktyi.html" >Контакты</a></li></ul>
 </nav>
 					</ul>
@@ -703,6 +706,9 @@
     <title>Калькулятор</title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="">
+    <meta name="keywords" lang="ru" content="">
+    <meta HTTP-EQUIV="Content-language" content ="ru">
 	<link rel="stylesheet" href="assets/site/slick/slick-theme.css">
 	<link rel="stylesheet" href="assets/site/slick/slick.css">
 	<link rel="stylesheet" href="assets/site/css/magnific-popup.css">
@@ -716,7 +722,7 @@
         &parents=`0`
         &tpl=`@INLINE <li[[+classes]]><a href="[[+link]]" [[+attributes]]>[[+menutitle]]</a></li>`
     ]]' => '<ul class=""><li class="first"><a href="/" >Главная</a></li><li><a href="vse-uslugi/" >Услуги</a></li><li><a href="o-nas/" >О нас</a></li><li class="active"><a href="kalkulyator.html" >Калькулятор</a></li><li class="last"><a href="kontaktyi.html" >Контакты</a></li></ul>',
-    '[[$menu]]' => '<nav>
+    '[[$menu]]' => '<nav class="mmenu">
     <ul class=""><li class="first"><a href="/" >Главная</a></li><li><a href="vse-uslugi/" >Услуги</a></li><li><a href="o-nas/" >О нас</a></li><li class="active"><a href="kalkulyator.html" >Калькулятор</a></li><li class="last"><a href="kontaktyi.html" >Контакты</a></li></ul>
 </nav>',
     '[[$header]]' => '<header>
@@ -737,7 +743,7 @@
 					</ul>
 				</div>
 				<div class="menu">
-					<nav>
+					<nav class="mmenu">
     <ul class=""><li class="first"><a href="/" >Главная</a></li><li><a href="vse-uslugi/" >Услуги</a></li><li><a href="o-nas/" >О нас</a></li><li class="active"><a href="kalkulyator.html" >Калькулятор</a></li><li class="last"><a href="kontaktyi.html" >Контакты</a></li></ul>
 </nav>
 					<div id="sandwich">
@@ -1115,7 +1121,7 @@
 				<div class="logo-footer"><a href="/"><img src="assets/site/img/logo.png" alt="Сервис чистоты" title="Сервис чистоты"></a></div>
 				<div class="menu-footer"><nav>
 					<ul>
-						<nav>
+						<nav class="mmenu">
     <ul class=""><li class="first"><a href="/" >Главная</a></li><li><a href="vse-uslugi/" >Услуги</a></li><li><a href="o-nas/" >О нас</a></li><li class="active"><a href="kalkulyator.html" >Калькулятор</a></li><li class="last"><a href="kontaktyi.html" >Контакты</a></li></ul>
 </nav>
 					</ul>
@@ -1234,9 +1240,12 @@
           'snippet' => '<head>
     <base href="[[!++site_url]]" />
     <meta charset="UTF-8">
-    <title>[[*title:default=`[[*pagetitle]]`]]</title>
+    <title>[[*longtitle:default=`[[*pagetitle]]`]]</title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="[[*descript:default=`[[*description]]`]]">
+    <meta name="keywords" lang="ru" content="[[*keywords]]">
+    <meta HTTP-EQUIV="Content-language" content ="ru">
 	<link rel="stylesheet" href="assets/site/slick/slick-theme.css">
 	<link rel="stylesheet" href="assets/site/slick/slick.css">
 	<link rel="stylesheet" href="assets/site/css/magnific-popup.css">
@@ -1254,9 +1263,12 @@
           'content' => '<head>
     <base href="[[!++site_url]]" />
     <meta charset="UTF-8">
-    <title>[[*title:default=`[[*pagetitle]]`]]</title>
+    <title>[[*longtitle:default=`[[*pagetitle]]`]]</title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="[[*descript:default=`[[*description]]`]]">
+    <meta name="keywords" lang="ru" content="[[*keywords]]">
+    <meta HTTP-EQUIV="Content-language" content ="ru">
 	<link rel="stylesheet" href="assets/site/slick/slick-theme.css">
 	<link rel="stylesheet" href="assets/site/slick/slick.css">
 	<link rel="stylesheet" href="assets/site/css/magnific-popup.css">
@@ -1429,7 +1441,7 @@
           'editor_type' => 0,
           'category' => 7,
           'cache_type' => 0,
-          'snippet' => '<nav>
+          'snippet' => '<nav class="mmenu">
     [[pdoMenu?
         &level=`1`
         &parents=`0`
@@ -1442,7 +1454,7 @@
           ),
           'static' => false,
           'static_file' => '',
-          'content' => '<nav>
+          'content' => '<nav class="mmenu">
     [[pdoMenu?
         &level=`1`
         &parents=`0`
@@ -4910,6 +4922,149 @@ return $o;',
     ),
     'modTemplateVar' => 
     array (
+      'descript' => 
+      array (
+        'fields' => 
+        array (
+          'id' => 74,
+          'source' => 2,
+          'property_preprocess' => false,
+          'type' => 'text',
+          'name' => 'descript',
+          'caption' => 'Description описание ',
+          'description' => 'Нужно для сниппетов ПС, если не заполнено, автоматически берется из ОПИСАНИЯ страниц',
+          'editor_type' => 0,
+          'category' => 25,
+          'locked' => false,
+          'elements' => '',
+          'rank' => 101,
+          'display' => 'default',
+          'default_text' => '',
+          'properties' => 
+          array (
+          ),
+          'input_properties' => 
+          array (
+            'allowBlank' => 'true',
+            'minLength' => '',
+            'maxLength' => '',
+            'regex' => '',
+            'regexText' => '',
+          ),
+          'output_properties' => 
+          array (
+          ),
+          'static' => false,
+          'static_file' => '',
+          'content' => '',
+        ),
+        'policies' => 
+        array (
+        ),
+        'source' => 
+        array (
+          'id' => 2,
+          'name' => 'images',
+          'description' => '',
+          'class_key' => 'sources.modFileMediaSource',
+          'properties' => 
+          array (
+            'basePath' => 
+            array (
+              'name' => 'basePath',
+              'desc' => 'prop_file.basePath_desc',
+              'type' => 'textfield',
+              'options' => 
+              array (
+              ),
+              'value' => 'assets/site/img/',
+              'lexicon' => 'core:source',
+            ),
+            'baseUrl' => 
+            array (
+              'name' => 'baseUrl',
+              'desc' => 'prop_file.baseUrl_desc',
+              'type' => 'textfield',
+              'options' => 
+              array (
+              ),
+              'value' => 'assets/site/img/',
+              'lexicon' => 'core:source',
+            ),
+          ),
+          'is_stream' => true,
+        ),
+      ),
+      'keywords' => 
+      array (
+        'fields' => 
+        array (
+          'id' => 73,
+          'source' => 2,
+          'property_preprocess' => false,
+          'type' => 'autotag',
+          'name' => 'keywords',
+          'caption' => 'Ключевые слова',
+          'description' => '',
+          'editor_type' => 0,
+          'category' => 25,
+          'locked' => false,
+          'elements' => '',
+          'rank' => 100,
+          'display' => 'default',
+          'default_text' => '',
+          'properties' => 
+          array (
+          ),
+          'input_properties' => 
+          array (
+            'allowBlank' => 'true',
+            'parent_resources' => '',
+          ),
+          'output_properties' => 
+          array (
+          ),
+          'static' => false,
+          'static_file' => '',
+          'content' => '',
+        ),
+        'policies' => 
+        array (
+        ),
+        'source' => 
+        array (
+          'id' => 2,
+          'name' => 'images',
+          'description' => '',
+          'class_key' => 'sources.modFileMediaSource',
+          'properties' => 
+          array (
+            'basePath' => 
+            array (
+              'name' => 'basePath',
+              'desc' => 'prop_file.basePath_desc',
+              'type' => 'textfield',
+              'options' => 
+              array (
+              ),
+              'value' => 'assets/site/img/',
+              'lexicon' => 'core:source',
+            ),
+            'baseUrl' => 
+            array (
+              'name' => 'baseUrl',
+              'desc' => 'prop_file.baseUrl_desc',
+              'type' => 'textfield',
+              'options' => 
+              array (
+              ),
+              'value' => 'assets/site/img/',
+              'lexicon' => 'core:source',
+            ),
+          ),
+          'is_stream' => true,
+        ),
+      ),
       'moskitkaDesc' => 
       array (
         'fields' => 

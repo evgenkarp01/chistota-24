@@ -51,13 +51,17 @@ $( document ).ready(function() {
 		{
 			if(men==false)
 			{
+                $("header .menu .mmenu ul li a").css("opacity","0");
 				$(".mmenu").slideUp();
 				men=!men;
+
 			}
 			else
 			{
+                
 				$(".mmenu").slideDown();
 				men=!men;
+                $("header .menu .mmenu ul li a").css("opacity","1");
 			}
 		});
 	$("#sandwich, .menu_item").click(function() {
@@ -133,10 +137,35 @@ $( document ).ready(function() {
         }
     
     */
-    
-    
-    
-    
+   
+
+    var htmls = $("#hidden_area li").map(function(){
+        return $(this).prop('outerHTML');
+    }).get();
+    var num = 16;
+    var arrDop ="";
+    function arrDopus(num, arrDop){
+        if(htmls.length<num){
+            num=htmls.length;
+        }
+        for (i=0; i<num; i++){
+            arrDop += htmls[i];
+        }
+        $("#arrListDops").html(arrDop);
+        if((htmls.length)>num){
+            $(".price-index .prc-index .distance .down").show();
+        }
+    }
+    arrDopus(num, arrDop);
+    $(".prc-index .distance .down img").on('click', function(){
+        if($(this).hasClass("rotate")){
+            num = 16;
+        }else{
+            num = htmls.length;
+        }
+        arrDopus(num, arrDop);
+        $(this).toggleClass("rotate");
+    });
     
     
     

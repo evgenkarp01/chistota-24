@@ -3383,4 +3383,98 @@
     'context_key' => 'web',
     'source_class_key' => 'sources.modFileMediaSource',
   ),
+  73 => 
+  array (
+    'basePath' => 'assets/site/img/',
+    'basePathRelative' => true,
+    'baseUrl' => 'assets/site/img/',
+    'baseUrlRelative' => true,
+    'allowedFileTypes' => '',
+    'imageExtensions' => 'jpg,jpeg,png,gif,svg',
+    'thumbnailType' => 'png',
+    'thumbnailQuality' => 90,
+    'skipFiles' => '.svn,.git,_notes,nbproject,.idea,.DS_Store',
+    'id' => NULL,
+    'name' => 'images',
+    'description' => '',
+    'class_key' => 'modFileMediaSource',
+    'properties' => 
+    array (
+      'basePath' => 
+      array (
+        'name' => 'basePath',
+        'desc' => 'prop_file.basePath_desc',
+        'type' => 'textfield',
+        'options' => 
+        array (
+        ),
+        'value' => 'assets/site/img/',
+        'lexicon' => 'core:source',
+      ),
+      'baseUrl' => 
+      array (
+        'name' => 'baseUrl',
+        'desc' => 'prop_file.baseUrl_desc',
+        'type' => 'textfield',
+        'options' => 
+        array (
+        ),
+        'value' => 'assets/site/img/',
+        'lexicon' => 'core:source',
+      ),
+    ),
+    'is_stream' => true,
+    'source' => 2,
+    'object_class' => 'modTemplateVar',
+    'object' => 73,
+    'context_key' => 'web',
+    'source_class_key' => 'sources.modFileMediaSource',
+  ),
+  74 => 
+  array (
+    'basePath' => 'assets/site/img/',
+    'basePathRelative' => true,
+    'baseUrl' => 'assets/site/img/',
+    'baseUrlRelative' => true,
+    'allowedFileTypes' => '',
+    'imageExtensions' => 'jpg,jpeg,png,gif,svg',
+    'thumbnailType' => 'png',
+    'thumbnailQuality' => 90,
+    'skipFiles' => '.svn,.git,_notes,nbproject,.idea,.DS_Store',
+    'id' => NULL,
+    'name' => 'images',
+    'description' => '',
+    'class_key' => 'modFileMediaSource',
+    'properties' => 
+    array (
+      'basePath' => 
+      array (
+        'name' => 'basePath',
+        'desc' => 'prop_file.basePath_desc',
+        'type' => 'textfield',
+        'options' => 
+        array (
+        ),
+        'value' => 'assets/site/img/',
+        'lexicon' => 'core:source',
+      ),
+      'baseUrl' => 
+      array (
+        'name' => 'baseUrl',
+        'desc' => 'prop_file.baseUrl_desc',
+        'type' => 'textfield',
+        'options' => 
+        array (
+        ),
+        'value' => 'assets/site/img/',
+        'lexicon' => 'core:source',
+      ),
+    ),
+    'is_stream' => true,
+    'source' => 2,
+    'object_class' => 'modTemplateVar',
+    'object' => 74,
+    'context_key' => 'web',
+    'source_class_key' => 'sources.modFileMediaSource',
+  ),
 );

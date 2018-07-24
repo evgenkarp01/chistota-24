@@ -36,7 +36,7 @@
     'createdby' => 1,
     'createdon' => 1532028064,
     'editedby' => 1,
-    'editedon' => 1532291786,
+    'editedon' => 1532438670,
     'deleted' => 0,
     'deletedon' => 0,
     'deletedby' => 0,
@@ -83,7 +83,7 @@
     'rowTablePriceTv' => 
     array (
       0 => 'rowTablePriceTv',
-      1 => '[{"MIGX_id":"1","listItemType":"1 \\u043a\\u043e\\u043c\\u043d\\u0430\\u0442\\u043d\\u0430\\u044f \\u043a\\u0432\\u0430\\u0440\\u0442\\u0438\\u0440\\u0430","listItemOne":"113","listItemMonth":"2222","listItemTwoWeek":"3333","listItemAlwaysWeek":"4444"},{"MIGX_id":"2","listItemType":"2 \\u043a\\u043e\\u043c\\u043d\\u0430\\u0442\\u043d\\u0430\\u044f \\u043a\\u0432\\u0430\\u0440\\u0442\\u0438\\u0440\\u0430","listItemOne":"333","listItemMonth":"44","listItemTwoWeek":"55","listItemAlwaysWeek":"6"},{"MIGX_id":"3","listItemType":"3 \\u043a\\u043e\\u043c\\u043d\\u0430\\u0442\\u043d\\u0430\\u044f \\u043a\\u0432\\u0430\\u0440\\u0442\\u0438\\u0440\\u0430","listItemOne":"3","listItemMonth":"2","listItemTwoWeek":"4","listItemAlwaysWeek":"5"},{"MIGX_id":"4","listItemType":"4 \\u043a\\u043e\\u043c\\u043d\\u0430\\u0442\\u043d\\u0430\\u044f \\u043a\\u0432\\u0430\\u0440\\u0442\\u0438\\u0440\\u0430","listItemOne":"323","listItemMonth":"243","listItemTwoWeek":"2342","listItemAlwaysWeek":"2342343"},{"MIGX_id":"5","listItemType":"5 \\u043a\\u043e\\u043c\\u043d\\u0430\\u0442\\u043d\\u0430\\u044f \\u043a\\u0432\\u0430\\u0440\\u0442\\u0438\\u0440\\u0430","listItemOne":"4r34r","listItemMonth":"34r534534","listItemTwoWeek":"345345","listItemAlwaysWeek":"34"},{"MIGX_id":"6","listItemType":"\\u0414\\u043e\\u043c (\\u043a\\u043e\\u0442\\u0442\\u0435\\u0434\\u0436, \\u0442\\u0430\\u0443\\u043d\\u0445\\u0430\\u0443\\u0441, \\u0434\\u0430\\u0447\\u0430)","listItemOne":"34","listItemMonth":"33","listItemTwoWeek":"22","listItemAlwaysWeek":"5"}]',
+      1 => '[{"MIGX_id":"1","listItemType":"1 \\u043a\\u043e\\u043c\\u043d\\u0430\\u0442\\u043d\\u0430\\u044f \\u043a\\u0432\\u0430\\u0440\\u0442\\u0438\\u0440\\u0430","listItemOne":"113","listItemMonth":"2222","listItemTwoWeek":"3333","listItemAlwaysWeek":"4444"},{"MIGX_id":"2","listItemType":"2 \\u043a\\u043e\\u043c\\u043d\\u0430\\u0442\\u043d\\u0430\\u044f \\u043a\\u0432\\u0430\\u0440\\u0442\\u0438\\u0440\\u0430","listItemOne":"333","listItemMonth":"44","listItemTwoWeek":"55","listItemAlwaysWeek":"6"},{"MIGX_id":"3","listItemType":"3 \\u043a\\u043e\\u043c\\u043d\\u0430\\u0442\\u043d\\u0430\\u044f \\u043a\\u0432\\u0430\\u0440\\u0442\\u0438\\u0440\\u0430","listItemOne":"3","listItemMonth":"2","listItemTwoWeek":"4","listItemAlwaysWeek":"5"},{"MIGX_id":"4","listItemType":"4 \\u043a\\u043e\\u043c\\u043d\\u0430\\u0442\\u043d\\u0430\\u044f \\u043a\\u0432\\u0430\\u0440\\u0442\\u0438\\u0440\\u0430","listItemOne":"323","listItemMonth":"243","listItemTwoWeek":"2342","listItemAlwaysWeek":"2342343"},{"MIGX_id":"5","listItemType":"5 \\u043a\\u043e\\u043c\\u043d\\u0430\\u0442\\u043d\\u0430\\u044f \\u043a\\u0432\\u0430\\u0440\\u0442\\u0438\\u0440\\u0430","listItemOne":"4r34r","listItemMonth":"1","listItemTwoWeek":"345345","listItemAlwaysWeek":"34"},{"MIGX_id":"6","listItemType":"\\u0414\\u043e\\u043c (\\u043a\\u043e\\u0442\\u0442\\u0435\\u0434\\u0436, \\u0442\\u0430\\u0443\\u043d\\u0445\\u0430\\u0443\\u0441, \\u0434\\u0430\\u0447\\u0430)","listItemOne":"34","listItemMonth":"33","listItemTwoWeek":"22","listItemAlwaysWeek":"5"}]',
       2 => 'default',
       3 => NULL,
       4 => 'migx',
@@ -240,14 +240,33 @@
       3 => NULL,
       4 => 'migx',
     ),
+    'keywords' => 
+    array (
+      0 => 'keywords',
+      1 => '',
+      2 => 'default',
+      3 => NULL,
+      4 => 'autotag',
+    ),
+    'descript' => 
+    array (
+      0 => 'descript',
+      1 => '',
+      2 => 'default',
+      3 => NULL,
+      4 => 'text',
+    ),
     '_content' => '<!DOCTYPE html>
 <html lang="ru">
 <head>
     <base href="[[!++site_url]]" />
     <meta charset="UTF-8">
-    <title>Главная</title>
+    <title>Профессиональный клининг</title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="">
+    <meta name="keywords" lang="ru" content="">
+    <meta HTTP-EQUIV="Content-language" content ="ru">
 	<link rel="stylesheet" href="assets/site/slick/slick-theme.css">
 	<link rel="stylesheet" href="assets/site/slick/slick.css">
 	<link rel="stylesheet" href="assets/site/css/magnific-popup.css">
@@ -276,7 +295,7 @@
 					</ul>
 				</div>
 				<div class="menu">
-					<nav>
+					<nav class="mmenu">
     <ul class=""><li class="first active"><a href="/" >Главная</a></li><li><a href="vse-uslugi/" >Услуги</a></li><li><a href="o-nas/" >О нас</a></li><li><a href="kalkulyator.html" >Калькулятор</a></li><li class="last"><a href="kontaktyi.html" >Контакты</a></li></ul>
 </nav>
 					<div id="sandwich">
@@ -351,43 +370,7 @@
 		                          </tr>
 		                        </thead>
 		                        <tbody>
-		                            <tr>
-    <td data-label="Тип квартиры">1 комнатная квартира</td>
-    <td data-label="Разовая">113</td>
-    <td data-label="Каждый месяц – 10% скидка">2222</td>
-    <td data-label="Каждые две недели – 15% скидка">3333</td>
-    <td data-label="Каждую неделю – 20% скидка">4444</td>             
-</tr><tr>
-    <td data-label="Тип квартиры">2 комнатная квартира</td>
-    <td data-label="Разовая">333</td>
-    <td data-label="Каждый месяц – 10% скидка">44</td>
-    <td data-label="Каждые две недели – 15% скидка">55</td>
-    <td data-label="Каждую неделю – 20% скидка">6</td>             
-</tr><tr>
-    <td data-label="Тип квартиры">3 комнатная квартира</td>
-    <td data-label="Разовая">3</td>
-    <td data-label="Каждый месяц – 10% скидка">2</td>
-    <td data-label="Каждые две недели – 15% скидка">4</td>
-    <td data-label="Каждую неделю – 20% скидка">5</td>             
-</tr><tr>
-    <td data-label="Тип квартиры">4 комнатная квартира</td>
-    <td data-label="Разовая">323</td>
-    <td data-label="Каждый месяц – 10% скидка">243</td>
-    <td data-label="Каждые две недели – 15% скидка">2342</td>
-    <td data-label="Каждую неделю – 20% скидка">2342343</td>             
-</tr><tr>
-    <td data-label="Тип квартиры">5 комнатная квартира</td>
-    <td data-label="Разовая">4r34r</td>
-    <td data-label="Каждый месяц – 10% скидка">34r534534</td>
-    <td data-label="Каждые две недели – 15% скидка">345345</td>
-    <td data-label="Каждую неделю – 20% скидка">34</td>             
-</tr><tr>
-    <td data-label="Тип квартиры">Дом (коттедж, таунхаус, дача)</td>
-    <td data-label="Разовая">34</td>
-    <td data-label="Каждый месяц – 10% скидка">33</td>
-    <td data-label="Каждые две недели – 15% скидка">22</td>
-    <td data-label="Каждую неделю – 20% скидка">5</td>             
-</tr>
+		                            [[!getImageList? &tvname=`rowTablePriceTv` &tpl=`priceListTableTpl`]]
 		                        </tbody>
 		                    </table>
 						</div>
@@ -400,7 +383,7 @@
 										</div>
 										<div class="markup-list">
 											<ul>
-											    <li>Генеральная уборка – 400 р/кв.метр</li><li>Уборка после строительства и ремонта – 500 р/кв.метр</li><li>МАЛЫШ +40% к стоимости</li><li>ПИТОМЕЦ +40% к стоимости</li><li>Супер задание – 1 час работы/150-200руб</li>
+											    [[!getImageList? &tvname=`underPriceTv` &tpl=`underPriceTpl`]]
 											</ul>
 										</div>
 									</div>
@@ -419,9 +402,14 @@
 										<div class="ttl">
 											<h4>Дополнительные услуги</h4>
 										</div>
-										<div class="markup-list distance-dist">
-											<ul>
-												<li>Доставка ключей</li><li>Индивидуальные протирочные материалы</li><li>Холодильник</li><li>Духовка</li><li>Микроволновка</li><li>Балконы</li><li>Окна</li><li>Видеонаблюдение</li><li>Мытье посуды</li><li>Люстры</li><li>Стирка и глажка</li><li>Внутри шкафов</li><li>Дополнительный санузел</li><li>Химчистка</li>
+										<div class="markup-list distance-dist dops">
+										    <div id="hidden_area">
+										        <ul>
+										            [[!getImageList? &tvname=`distanceServiceTv` &tpl=`distanceServiceTpl`]]
+										        </ul>
+										    </div>
+											<ul id="arrListDops">
+												
 											</ul>
 										</div>
 										<div class="down"><img src="assets/site/img/down.png" alt=""></div>
@@ -569,7 +557,7 @@
 				<div class="logo-footer"><a href="/"><img src="assets/site/img/logo.png" alt="Сервис чистоты" title="Сервис чистоты"></a></div>
 				<div class="menu-footer"><nav>
 					<ul>
-						<nav>
+						<nav class="mmenu">
     <ul class=""><li class="first active"><a href="/" >Главная</a></li><li><a href="vse-uslugi/" >Услуги</a></li><li><a href="o-nas/" >О нас</a></li><li><a href="kalkulyator.html" >Калькулятор</a></li><li class="last"><a href="kontaktyi.html" >Контакты</a></li></ul>
 </nav>
 					</ul>
@@ -613,9 +601,12 @@
     '[[$head]]' => '<head>
     <base href="[[!++site_url]]" />
     <meta charset="UTF-8">
-    <title>Главная</title>
+    <title>Профессиональный клининг</title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="">
+    <meta name="keywords" lang="ru" content="">
+    <meta HTTP-EQUIV="Content-language" content ="ru">
 	<link rel="stylesheet" href="assets/site/slick/slick-theme.css">
 	<link rel="stylesheet" href="assets/site/slick/slick.css">
 	<link rel="stylesheet" href="assets/site/css/magnific-popup.css">
@@ -629,7 +620,7 @@
         &parents=`0`
         &tpl=`@INLINE <li[[+classes]]><a href="[[+link]]" [[+attributes]]>[[+menutitle]]</a></li>`
     ]]' => '<ul class=""><li class="first active"><a href="/" >Главная</a></li><li><a href="vse-uslugi/" >Услуги</a></li><li><a href="o-nas/" >О нас</a></li><li><a href="kalkulyator.html" >Калькулятор</a></li><li class="last"><a href="kontaktyi.html" >Контакты</a></li></ul>',
-    '[[$menu]]' => '<nav>
+    '[[$menu]]' => '<nav class="mmenu">
     <ul class=""><li class="first active"><a href="/" >Главная</a></li><li><a href="vse-uslugi/" >Услуги</a></li><li><a href="o-nas/" >О нас</a></li><li><a href="kalkulyator.html" >Калькулятор</a></li><li class="last"><a href="kontaktyi.html" >Контакты</a></li></ul>
 </nav>',
     '[[$header]]' => '<header>
@@ -650,7 +641,7 @@
 					</ul>
 				</div>
 				<div class="menu">
-					<nav>
+					<nav class="mmenu">
     <ul class=""><li class="first active"><a href="/" >Главная</a></li><li><a href="vse-uslugi/" >Услуги</a></li><li><a href="o-nas/" >О нас</a></li><li><a href="kalkulyator.html" >Калькулятор</a></li><li class="last"><a href="kontaktyi.html" >Контакты</a></li></ul>
 </nav>
 					<div id="sandwich">
@@ -704,45 +695,6 @@
 	</div>
 	<div class="btn btn-services-index"><a href="vse-uslugi/"><button>Перейти в услуги</button></a></div>
 </section>',
-    '[[getImageList? &tvname=`rowTablePriceTv` &tpl=`priceListTableTpl`]]' => '<tr>
-    <td data-label="Тип квартиры">1 комнатная квартира</td>
-    <td data-label="Разовая">113</td>
-    <td data-label="Каждый месяц – 10% скидка">2222</td>
-    <td data-label="Каждые две недели – 15% скидка">3333</td>
-    <td data-label="Каждую неделю – 20% скидка">4444</td>             
-</tr><tr>
-    <td data-label="Тип квартиры">2 комнатная квартира</td>
-    <td data-label="Разовая">333</td>
-    <td data-label="Каждый месяц – 10% скидка">44</td>
-    <td data-label="Каждые две недели – 15% скидка">55</td>
-    <td data-label="Каждую неделю – 20% скидка">6</td>             
-</tr><tr>
-    <td data-label="Тип квартиры">3 комнатная квартира</td>
-    <td data-label="Разовая">3</td>
-    <td data-label="Каждый месяц – 10% скидка">2</td>
-    <td data-label="Каждые две недели – 15% скидка">4</td>
-    <td data-label="Каждую неделю – 20% скидка">5</td>             
-</tr><tr>
-    <td data-label="Тип квартиры">4 комнатная квартира</td>
-    <td data-label="Разовая">323</td>
-    <td data-label="Каждый месяц – 10% скидка">243</td>
-    <td data-label="Каждые две недели – 15% скидка">2342</td>
-    <td data-label="Каждую неделю – 20% скидка">2342343</td>             
-</tr><tr>
-    <td data-label="Тип квартиры">5 комнатная квартира</td>
-    <td data-label="Разовая">4r34r</td>
-    <td data-label="Каждый месяц – 10% скидка">34r534534</td>
-    <td data-label="Каждые две недели – 15% скидка">345345</td>
-    <td data-label="Каждую неделю – 20% скидка">34</td>             
-</tr><tr>
-    <td data-label="Тип квартиры">Дом (коттедж, таунхаус, дача)</td>
-    <td data-label="Разовая">34</td>
-    <td data-label="Каждый месяц – 10% скидка">33</td>
-    <td data-label="Каждые две недели – 15% скидка">22</td>
-    <td data-label="Каждую неделю – 20% скидка">5</td>             
-</tr>',
-    '[[getImageList? &tvname=`underPriceTv` &tpl=`underPriceTpl`]]' => '<li>Генеральная уборка – 400 р/кв.метр</li><li>Уборка после строительства и ремонта – 500 р/кв.метр</li><li>МАЛЫШ +40% к стоимости</li><li>ПИТОМЕЦ +40% к стоимости</li><li>Супер задание – 1 час работы/150-200руб</li>',
-    '[[getImageList? &tvname=`distanceServiceTv` &tpl=`distanceServiceTpl`]]' => '<li>Доставка ключей</li><li>Индивидуальные протирочные материалы</li><li>Холодильник</li><li>Духовка</li><li>Микроволновка</li><li>Балконы</li><li>Окна</li><li>Видеонаблюдение</li><li>Мытье посуды</li><li>Люстры</li><li>Стирка и глажка</li><li>Внутри шкафов</li><li>Дополнительный санузел</li><li>Химчистка</li>',
     '[[$priceIndex]]' => '<section class="price-index">
 			<div class="container">
 				<div class="row">
@@ -763,43 +715,7 @@
 		                          </tr>
 		                        </thead>
 		                        <tbody>
-		                            <tr>
-    <td data-label="Тип квартиры">1 комнатная квартира</td>
-    <td data-label="Разовая">113</td>
-    <td data-label="Каждый месяц – 10% скидка">2222</td>
-    <td data-label="Каждые две недели – 15% скидка">3333</td>
-    <td data-label="Каждую неделю – 20% скидка">4444</td>             
-</tr><tr>
-    <td data-label="Тип квартиры">2 комнатная квартира</td>
-    <td data-label="Разовая">333</td>
-    <td data-label="Каждый месяц – 10% скидка">44</td>
-    <td data-label="Каждые две недели – 15% скидка">55</td>
-    <td data-label="Каждую неделю – 20% скидка">6</td>             
-</tr><tr>
-    <td data-label="Тип квартиры">3 комнатная квартира</td>
-    <td data-label="Разовая">3</td>
-    <td data-label="Каждый месяц – 10% скидка">2</td>
-    <td data-label="Каждые две недели – 15% скидка">4</td>
-    <td data-label="Каждую неделю – 20% скидка">5</td>             
-</tr><tr>
-    <td data-label="Тип квартиры">4 комнатная квартира</td>
-    <td data-label="Разовая">323</td>
-    <td data-label="Каждый месяц – 10% скидка">243</td>
-    <td data-label="Каждые две недели – 15% скидка">2342</td>
-    <td data-label="Каждую неделю – 20% скидка">2342343</td>             
-</tr><tr>
-    <td data-label="Тип квартиры">5 комнатная квартира</td>
-    <td data-label="Разовая">4r34r</td>
-    <td data-label="Каждый месяц – 10% скидка">34r534534</td>
-    <td data-label="Каждые две недели – 15% скидка">345345</td>
-    <td data-label="Каждую неделю – 20% скидка">34</td>             
-</tr><tr>
-    <td data-label="Тип квартиры">Дом (коттедж, таунхаус, дача)</td>
-    <td data-label="Разовая">34</td>
-    <td data-label="Каждый месяц – 10% скидка">33</td>
-    <td data-label="Каждые две недели – 15% скидка">22</td>
-    <td data-label="Каждую неделю – 20% скидка">5</td>             
-</tr>
+		                            [[!getImageList? &tvname=`rowTablePriceTv` &tpl=`priceListTableTpl`]]
 		                        </tbody>
 		                    </table>
 						</div>
@@ -812,7 +728,7 @@
 										</div>
 										<div class="markup-list">
 											<ul>
-											    <li>Генеральная уборка – 400 р/кв.метр</li><li>Уборка после строительства и ремонта – 500 р/кв.метр</li><li>МАЛЫШ +40% к стоимости</li><li>ПИТОМЕЦ +40% к стоимости</li><li>Супер задание – 1 час работы/150-200руб</li>
+											    [[!getImageList? &tvname=`underPriceTv` &tpl=`underPriceTpl`]]
 											</ul>
 										</div>
 									</div>
@@ -831,9 +747,14 @@
 										<div class="ttl">
 											<h4>Дополнительные услуги</h4>
 										</div>
-										<div class="markup-list distance-dist">
-											<ul>
-												<li>Доставка ключей</li><li>Индивидуальные протирочные материалы</li><li>Холодильник</li><li>Духовка</li><li>Микроволновка</li><li>Балконы</li><li>Окна</li><li>Видеонаблюдение</li><li>Мытье посуды</li><li>Люстры</li><li>Стирка и глажка</li><li>Внутри шкафов</li><li>Дополнительный санузел</li><li>Химчистка</li>
+										<div class="markup-list distance-dist dops">
+										    <div id="hidden_area">
+										        <ul>
+										            [[!getImageList? &tvname=`distanceServiceTv` &tpl=`distanceServiceTpl`]]
+										        </ul>
+										    </div>
+											<ul id="arrListDops">
+												
 											</ul>
 										</div>
 										<div class="down"><img src="assets/site/img/down.png" alt=""></div>
@@ -996,7 +917,7 @@
 				<div class="logo-footer"><a href="/"><img src="assets/site/img/logo.png" alt="Сервис чистоты" title="Сервис чистоты"></a></div>
 				<div class="menu-footer"><nav>
 					<ul>
-						<nav>
+						<nav class="mmenu">
     <ul class=""><li class="first active"><a href="/" >Главная</a></li><li><a href="vse-uslugi/" >Услуги</a></li><li><a href="o-nas/" >О нас</a></li><li><a href="kalkulyator.html" >Калькулятор</a></li><li class="last"><a href="kontaktyi.html" >Контакты</a></li></ul>
 </nav>
 					</ul>
@@ -1019,7 +940,7 @@
 <script src="assets/site/js/jquery.magnific-popup.min.js"></script>
 <script src="assets/site/js/custom.js"></script>',
     '[[pdoResources?tpl=`sldrTpl`&returnIds=``&showLog=``&fastMode=``&sortby=`publishedon`&sortbyTV=``&sortbyTVType=``&sortdir=`DESC`&sortdirTV=`ASC`&limit=`20`&offset=`0`&depth=`0`&outputSeparator=`
-`&toPlaceholder=``&parents=`26`&includeContent=``&includeTVs=`imgSldrTv`&prepareTVs=`1`&processTVs=``&tvPrefix=`tv.`&tvFilters=``&tvFiltersAndDelimiter=`,`&tvFiltersOrDelimiter=`||`&where=``&showUnpublished=``&showDeleted=``&showHidden=`1`&hideContainers=``&context=``&idx=``&first=``&last=``&tplFirst=``&tplLast=``&tplOdd=``&tplWrapper=``&wrapIfEmpty=``&totalVar=`page.total`&resources=``&tplCondition=``&tplOperator=`==`&conditionalTpls=``&select=``&toSeparatePlaceholders=``&loadModels=``&scheme=``&useWeblinkUrl=``&plPrefix=``&maxLimit=`100`&page=`1`&pageVarKey=`page`&pageLimit=`5`&element=`pdoResources`&pageNavVar=`page.nav`&pageCountVar=`pageCount`&pageLinkScheme=``&tplPage=`@INLINE <li><a href="[[+href]]">[[+pageNo]]</a></li>`&tplPageWrapper=`@INLINE <div class="pagination"><ul class="pagination">[[+first]][[+prev]][[+pages]][[+next]][[+last]]</ul></div>`&tplPageActive=`@INLINE <li class="active"><a href="[[+href]]">[[+pageNo]]</a></li>`&tplPageFirst=`@INLINE <li class="control"><a href="[[+href]]">[[%pdopage_first]]</a></li>`&tplPageLast=`@INLINE <li class="control"><a href="[[+href]]">[[%pdopage_last]]</a></li>`&tplPagePrev=`@INLINE <li class="control"><a href="[[+href]]">&laquo;</a></li>`&tplPageNext=`@INLINE <li class="control"><a href="[[+href]]">&raquo;</a></li>`&tplPageSkip=`@INLINE <li class="disabled"><span>...</span></li>`&tplPageFirstEmpty=`@INLINE <li class="disabled"><span>[[%pdopage_first]]</span></li>`&tplPageLastEmpty=`@INLINE <li class="disabled"><span>[[%pdopage_last]]</span></li>`&tplPagePrevEmpty=`@INLINE <li class="disabled"><span>&laquo;</span></li>`&tplPageNextEmpty=`@INLINE <li class="disabled"><span>&raquo;</span></li>`&cache=``&cacheTime=`3600`&cacheAnonymous=``&ajax=``&ajaxMode=``&ajaxElemWrapper=`#pdopage`&ajaxElemRows=`#pdopage .rows`&ajaxElemPagination=`#pdopage .pagination`&ajaxElemLink=`#pdopage .pagination a`&ajaxElemMore=`#pdopage .btn-more`&ajaxTplMore=`@INLINE <button class="btn btn-default btn-more">[[%pdopage_more]]</button>`&ajaxHistory=``&setMeta=`1`&strictMode=`1`&request=`b8c0f50e15ff69dcf9ffd70436b8d8e0`&setTotal=`1`]]' => '<div class="item">
+`&toPlaceholder=``&parents=`26`&includeContent=``&includeTVs=`imgSldrTv`&prepareTVs=`1`&processTVs=``&tvPrefix=`tv.`&tvFilters=``&tvFiltersAndDelimiter=`,`&tvFiltersOrDelimiter=`||`&where=``&showUnpublished=``&showDeleted=``&showHidden=`1`&hideContainers=``&context=``&idx=``&first=``&last=``&tplFirst=``&tplLast=``&tplOdd=``&tplWrapper=``&wrapIfEmpty=``&totalVar=`page.total`&resources=``&tplCondition=``&tplOperator=`==`&conditionalTpls=``&select=``&toSeparatePlaceholders=``&loadModels=``&scheme=``&useWeblinkUrl=``&plPrefix=``&maxLimit=`100`&page=`1`&pageVarKey=`page`&pageLimit=`5`&element=`pdoResources`&pageNavVar=`page.nav`&pageCountVar=`pageCount`&pageLinkScheme=``&tplPage=`@INLINE <li><a href="[[+href]]">[[+pageNo]]</a></li>`&tplPageWrapper=`@INLINE <div class="pagination"><ul class="pagination">[[+first]][[+prev]][[+pages]][[+next]][[+last]]</ul></div>`&tplPageActive=`@INLINE <li class="active"><a href="[[+href]]">[[+pageNo]]</a></li>`&tplPageFirst=`@INLINE <li class="control"><a href="[[+href]]">[[%pdopage_first]]</a></li>`&tplPageLast=`@INLINE <li class="control"><a href="[[+href]]">[[%pdopage_last]]</a></li>`&tplPagePrev=`@INLINE <li class="control"><a href="[[+href]]">&laquo;</a></li>`&tplPageNext=`@INLINE <li class="control"><a href="[[+href]]">&raquo;</a></li>`&tplPageSkip=`@INLINE <li class="disabled"><span>...</span></li>`&tplPageFirstEmpty=`@INLINE <li class="disabled"><span>[[%pdopage_first]]</span></li>`&tplPageLastEmpty=`@INLINE <li class="disabled"><span>[[%pdopage_last]]</span></li>`&tplPagePrevEmpty=`@INLINE <li class="disabled"><span>&laquo;</span></li>`&tplPageNextEmpty=`@INLINE <li class="disabled"><span>&raquo;</span></li>`&cache=``&cacheTime=`3600`&cacheAnonymous=``&ajax=``&ajaxMode=``&ajaxElemWrapper=`#pdopage`&ajaxElemRows=`#pdopage .rows`&ajaxElemPagination=`#pdopage .pagination`&ajaxElemLink=`#pdopage .pagination a`&ajaxElemMore=`#pdopage .btn-more`&ajaxTplMore=`@INLINE <button class="btn btn-default btn-more">[[%pdopage_more]]</button>`&ajaxHistory=``&setMeta=`1`&strictMode=`1`&request=`e5f13414a3a5f9e24248148d067a5153`&setTotal=`1`]]' => '<div class="item">
     <div class="pic"><img src="/assets/cache_image/assets/site/img/slider/slide3_1920x850_8bd.jpg" alt="<h1>Уборка офиса — безопасность сотрудников<br>и престиж компании!</h1>"></div>
     <div class="opl">
     	<div class="desc"><h1>Уборка офиса — безопасность сотрудников<br>и престиж компании!</h1></div>
@@ -1041,7 +962,7 @@
     </div>
 </div>',
     '[[pdoResources?tpl=`advantageTpl`&returnIds=``&showLog=``&fastMode=``&sortby=`publishedon`&sortbyTV=``&sortbyTVType=``&sortdir=`DESC`&sortdirTV=`ASC`&limit=`39`&offset=`0`&depth=`0`&outputSeparator=`
-`&toPlaceholder=``&parents=`27`&includeContent=`1`&includeTVs=`imgAdvantageTv`&prepareTVs=`1`&processTVs=``&tvPrefix=`tv.`&tvFilters=``&tvFiltersAndDelimiter=`,`&tvFiltersOrDelimiter=`||`&where=``&showUnpublished=``&showDeleted=``&showHidden=`1`&hideContainers=``&context=``&idx=``&first=``&last=``&tplFirst=``&tplLast=``&tplOdd=``&tplWrapper=``&wrapIfEmpty=``&totalVar=`page.total`&resources=``&tplCondition=``&tplOperator=`==`&conditionalTpls=``&select=``&toSeparatePlaceholders=``&loadModels=``&scheme=``&useWeblinkUrl=``&plPrefix=``&maxLimit=`100`&page=`1`&pageVarKey=`page`&pageLimit=`5`&element=`pdoResources`&pageNavVar=`page.nav`&pageCountVar=`pageCount`&pageLinkScheme=``&tplPage=`@INLINE <li><a href="[[+href]]">[[+pageNo]]</a></li>`&tplPageWrapper=`@INLINE <div class="pagination"><ul class="pagination">[[+first]][[+prev]][[+pages]][[+next]][[+last]]</ul></div>`&tplPageActive=`@INLINE <li class="active"><a href="[[+href]]">[[+pageNo]]</a></li>`&tplPageFirst=`@INLINE <li class="control"><a href="[[+href]]">[[%pdopage_first]]</a></li>`&tplPageLast=`@INLINE <li class="control"><a href="[[+href]]">[[%pdopage_last]]</a></li>`&tplPagePrev=`@INLINE <li class="control"><a href="[[+href]]">&laquo;</a></li>`&tplPageNext=`@INLINE <li class="control"><a href="[[+href]]">&raquo;</a></li>`&tplPageSkip=`@INLINE <li class="disabled"><span>...</span></li>`&tplPageFirstEmpty=`@INLINE <li class="disabled"><span>[[%pdopage_first]]</span></li>`&tplPageLastEmpty=`@INLINE <li class="disabled"><span>[[%pdopage_last]]</span></li>`&tplPagePrevEmpty=`@INLINE <li class="disabled"><span>&laquo;</span></li>`&tplPageNextEmpty=`@INLINE <li class="disabled"><span>&raquo;</span></li>`&cache=``&cacheTime=`3600`&cacheAnonymous=``&ajax=``&ajaxMode=``&ajaxElemWrapper=`#pdopage`&ajaxElemRows=`#pdopage .rows`&ajaxElemPagination=`#pdopage .pagination`&ajaxElemLink=`#pdopage .pagination a`&ajaxElemMore=`#pdopage .btn-more`&ajaxTplMore=`@INLINE <button class="btn btn-default btn-more">[[%pdopage_more]]</button>`&ajaxHistory=``&setMeta=`1`&strictMode=`1`&request=`43c16f8ac1e223a719932defe410aea8`&setTotal=`1`]]' => '<div class="col-md-4 col-sm-6">
+`&toPlaceholder=``&parents=`27`&includeContent=`1`&includeTVs=`imgAdvantageTv`&prepareTVs=`1`&processTVs=``&tvPrefix=`tv.`&tvFilters=``&tvFiltersAndDelimiter=`,`&tvFiltersOrDelimiter=`||`&where=``&showUnpublished=``&showDeleted=``&showHidden=`1`&hideContainers=``&context=``&idx=``&first=``&last=``&tplFirst=``&tplLast=``&tplOdd=``&tplWrapper=``&wrapIfEmpty=``&totalVar=`page.total`&resources=``&tplCondition=``&tplOperator=`==`&conditionalTpls=``&select=``&toSeparatePlaceholders=``&loadModels=``&scheme=``&useWeblinkUrl=``&plPrefix=``&maxLimit=`100`&page=`1`&pageVarKey=`page`&pageLimit=`5`&element=`pdoResources`&pageNavVar=`page.nav`&pageCountVar=`pageCount`&pageLinkScheme=``&tplPage=`@INLINE <li><a href="[[+href]]">[[+pageNo]]</a></li>`&tplPageWrapper=`@INLINE <div class="pagination"><ul class="pagination">[[+first]][[+prev]][[+pages]][[+next]][[+last]]</ul></div>`&tplPageActive=`@INLINE <li class="active"><a href="[[+href]]">[[+pageNo]]</a></li>`&tplPageFirst=`@INLINE <li class="control"><a href="[[+href]]">[[%pdopage_first]]</a></li>`&tplPageLast=`@INLINE <li class="control"><a href="[[+href]]">[[%pdopage_last]]</a></li>`&tplPagePrev=`@INLINE <li class="control"><a href="[[+href]]">&laquo;</a></li>`&tplPageNext=`@INLINE <li class="control"><a href="[[+href]]">&raquo;</a></li>`&tplPageSkip=`@INLINE <li class="disabled"><span>...</span></li>`&tplPageFirstEmpty=`@INLINE <li class="disabled"><span>[[%pdopage_first]]</span></li>`&tplPageLastEmpty=`@INLINE <li class="disabled"><span>[[%pdopage_last]]</span></li>`&tplPagePrevEmpty=`@INLINE <li class="disabled"><span>&laquo;</span></li>`&tplPageNextEmpty=`@INLINE <li class="disabled"><span>&raquo;</span></li>`&cache=``&cacheTime=`3600`&cacheAnonymous=``&ajax=``&ajaxMode=``&ajaxElemWrapper=`#pdopage`&ajaxElemRows=`#pdopage .rows`&ajaxElemPagination=`#pdopage .pagination`&ajaxElemLink=`#pdopage .pagination a`&ajaxElemMore=`#pdopage .btn-more`&ajaxTplMore=`@INLINE <button class="btn btn-default btn-more">[[%pdopage_more]]</button>`&ajaxHistory=``&setMeta=`1`&strictMode=`1`&request=`431347f6122e1655907d433085ac7783`&setTotal=`1`]]' => '<div class="col-md-4 col-sm-6">
    <div class="item">
         <div class="ico">
             <img src="/assets/cache_image/assets/site/img/icons/ico-adv-1_90x90_fbd.png" alt="">
@@ -1141,7 +1062,7 @@
     </div>
 </div>',
     '[[pdoResources?tpl=`reviewTpl`&returnIds=``&showLog=``&fastMode=``&sortby=`publishedon`&sortbyTV=``&sortbyTVType=``&sortdir=`DESC`&sortdirTV=`ASC`&limit=`3`&offset=`0`&depth=`0`&outputSeparator=`
-`&toPlaceholder=``&parents=`40`&includeContent=`1`&includeTVs=`imgReviewIndexTv`&prepareTVs=`1`&processTVs=``&tvPrefix=`tv.`&tvFilters=``&tvFiltersAndDelimiter=`,`&tvFiltersOrDelimiter=`||`&where=``&showUnpublished=``&showDeleted=``&showHidden=`1`&hideContainers=``&context=``&idx=``&first=``&last=``&tplFirst=``&tplLast=``&tplOdd=``&tplWrapper=``&wrapIfEmpty=``&totalVar=`page.total`&resources=``&tplCondition=``&tplOperator=`==`&conditionalTpls=``&select=``&toSeparatePlaceholders=``&loadModels=``&scheme=``&useWeblinkUrl=``&plPrefix=``&maxLimit=`100`&page=`1`&pageVarKey=`page`&pageLimit=`5`&element=`pdoResources`&pageNavVar=`page.nav`&pageCountVar=`pageCount`&pageLinkScheme=``&tplPage=`@INLINE <li><a href="[[+href]]">[[+pageNo]]</a></li>`&tplPageWrapper=`@INLINE <div class="pagination"><ul class="pagination">[[+first]][[+prev]][[+pages]][[+next]][[+last]]</ul></div>`&tplPageActive=`@INLINE <li class="active"><a href="[[+href]]">[[+pageNo]]</a></li>`&tplPageFirst=`@INLINE <li class="control"><a href="[[+href]]">[[%pdopage_first]]</a></li>`&tplPageLast=`@INLINE <li class="control"><a href="[[+href]]">[[%pdopage_last]]</a></li>`&tplPagePrev=`@INLINE <li class="control"><a href="[[+href]]">&laquo;</a></li>`&tplPageNext=`@INLINE <li class="control"><a href="[[+href]]">&raquo;</a></li>`&tplPageSkip=`@INLINE <li class="disabled"><span>...</span></li>`&tplPageFirstEmpty=`@INLINE <li class="disabled"><span>[[%pdopage_first]]</span></li>`&tplPageLastEmpty=`@INLINE <li class="disabled"><span>[[%pdopage_last]]</span></li>`&tplPagePrevEmpty=`@INLINE <li class="disabled"><span>&laquo;</span></li>`&tplPageNextEmpty=`@INLINE <li class="disabled"><span>&raquo;</span></li>`&cache=``&cacheTime=`3600`&cacheAnonymous=``&ajax=``&ajaxMode=``&ajaxElemWrapper=`#pdopage`&ajaxElemRows=`#pdopage .rows`&ajaxElemPagination=`#pdopage .pagination`&ajaxElemLink=`#pdopage .pagination a`&ajaxElemMore=`#pdopage .btn-more`&ajaxTplMore=`@INLINE <button class="btn btn-default btn-more">[[%pdopage_more]]</button>`&ajaxHistory=``&setMeta=`1`&strictMode=`1`&request=`b03580866345ca7540947d83544ffded`&setTotal=`1`]]' => '<div class="col-sm-4 col-xs-12">
+`&toPlaceholder=``&parents=`40`&includeContent=`1`&includeTVs=`imgReviewIndexTv`&prepareTVs=`1`&processTVs=``&tvPrefix=`tv.`&tvFilters=``&tvFiltersAndDelimiter=`,`&tvFiltersOrDelimiter=`||`&where=``&showUnpublished=``&showDeleted=``&showHidden=`1`&hideContainers=``&context=``&idx=``&first=``&last=``&tplFirst=``&tplLast=``&tplOdd=``&tplWrapper=``&wrapIfEmpty=``&totalVar=`page.total`&resources=``&tplCondition=``&tplOperator=`==`&conditionalTpls=``&select=``&toSeparatePlaceholders=``&loadModels=``&scheme=``&useWeblinkUrl=``&plPrefix=``&maxLimit=`100`&page=`1`&pageVarKey=`page`&pageLimit=`5`&element=`pdoResources`&pageNavVar=`page.nav`&pageCountVar=`pageCount`&pageLinkScheme=``&tplPage=`@INLINE <li><a href="[[+href]]">[[+pageNo]]</a></li>`&tplPageWrapper=`@INLINE <div class="pagination"><ul class="pagination">[[+first]][[+prev]][[+pages]][[+next]][[+last]]</ul></div>`&tplPageActive=`@INLINE <li class="active"><a href="[[+href]]">[[+pageNo]]</a></li>`&tplPageFirst=`@INLINE <li class="control"><a href="[[+href]]">[[%pdopage_first]]</a></li>`&tplPageLast=`@INLINE <li class="control"><a href="[[+href]]">[[%pdopage_last]]</a></li>`&tplPagePrev=`@INLINE <li class="control"><a href="[[+href]]">&laquo;</a></li>`&tplPageNext=`@INLINE <li class="control"><a href="[[+href]]">&raquo;</a></li>`&tplPageSkip=`@INLINE <li class="disabled"><span>...</span></li>`&tplPageFirstEmpty=`@INLINE <li class="disabled"><span>[[%pdopage_first]]</span></li>`&tplPageLastEmpty=`@INLINE <li class="disabled"><span>[[%pdopage_last]]</span></li>`&tplPagePrevEmpty=`@INLINE <li class="disabled"><span>&laquo;</span></li>`&tplPageNextEmpty=`@INLINE <li class="disabled"><span>&raquo;</span></li>`&cache=``&cacheTime=`3600`&cacheAnonymous=``&ajax=``&ajaxMode=``&ajaxElemWrapper=`#pdopage`&ajaxElemRows=`#pdopage .rows`&ajaxElemPagination=`#pdopage .pagination`&ajaxElemLink=`#pdopage .pagination a`&ajaxElemMore=`#pdopage .btn-more`&ajaxTplMore=`@INLINE <button class="btn btn-default btn-more">[[%pdopage_more]]</button>`&ajaxHistory=``&setMeta=`1`&strictMode=`1`&request=`dc3c2076e7a31b648cbfe0129a978850`&setTotal=`1`]]' => '<div class="col-sm-4 col-xs-12">
 	<div class="item">
 		<div class="auhtor"><img src="/assets/cache_image/assets/site/img/lera_90x90_fbd.png" alt=""></div>
 		<div class="name">Алексей Павлов</div>
@@ -1197,9 +1118,12 @@
           'snippet' => '<head>
     <base href="[[!++site_url]]" />
     <meta charset="UTF-8">
-    <title>[[*title:default=`[[*pagetitle]]`]]</title>
+    <title>[[*longtitle:default=`[[*pagetitle]]`]]</title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="[[*descript:default=`[[*description]]`]]">
+    <meta name="keywords" lang="ru" content="[[*keywords]]">
+    <meta HTTP-EQUIV="Content-language" content ="ru">
 	<link rel="stylesheet" href="assets/site/slick/slick-theme.css">
 	<link rel="stylesheet" href="assets/site/slick/slick.css">
 	<link rel="stylesheet" href="assets/site/css/magnific-popup.css">
@@ -1217,9 +1141,12 @@
           'content' => '<head>
     <base href="[[!++site_url]]" />
     <meta charset="UTF-8">
-    <title>[[*title:default=`[[*pagetitle]]`]]</title>
+    <title>[[*longtitle:default=`[[*pagetitle]]`]]</title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="[[*descript:default=`[[*description]]`]]">
+    <meta name="keywords" lang="ru" content="[[*keywords]]">
+    <meta HTTP-EQUIV="Content-language" content ="ru">
 	<link rel="stylesheet" href="assets/site/slick/slick-theme.css">
 	<link rel="stylesheet" href="assets/site/slick/slick.css">
 	<link rel="stylesheet" href="assets/site/css/magnific-popup.css">
@@ -1392,7 +1319,7 @@
           'editor_type' => 0,
           'category' => 7,
           'cache_type' => 0,
-          'snippet' => '<nav>
+          'snippet' => '<nav class="mmenu">
     [[pdoMenu?
         &level=`1`
         &parents=`0`
@@ -1405,7 +1332,7 @@
           ),
           'static' => false,
           'static_file' => '',
-          'content' => '<nav>
+          'content' => '<nav class="mmenu">
     [[pdoMenu?
         &level=`1`
         &parents=`0`
@@ -1676,7 +1603,7 @@
 		                          </tr>
 		                        </thead>
 		                        <tbody>
-		                            [[getImageList? &tvname=`rowTablePriceTv` &tpl=`priceListTableTpl`]]
+		                            [[!getImageList? &tvname=`rowTablePriceTv` &tpl=`priceListTableTpl`]]
 		                        </tbody>
 		                    </table>
 						</div>
@@ -1689,7 +1616,7 @@
 										</div>
 										<div class="markup-list">
 											<ul>
-											    [[getImageList? &tvname=`underPriceTv` &tpl=`underPriceTpl`]]
+											    [[!getImageList? &tvname=`underPriceTv` &tpl=`underPriceTpl`]]
 											</ul>
 										</div>
 									</div>
@@ -1708,9 +1635,14 @@
 										<div class="ttl">
 											<h4>Дополнительные услуги</h4>
 										</div>
-										<div class="markup-list distance-dist">
-											<ul>
-												[[getImageList? &tvname=`distanceServiceTv` &tpl=`distanceServiceTpl`]]
+										<div class="markup-list distance-dist dops">
+										    <div id="hidden_area">
+										        <ul>
+										            [[!getImageList? &tvname=`distanceServiceTv` &tpl=`distanceServiceTpl`]]
+										        </ul>
+										    </div>
+											<ul id="arrListDops">
+												
 											</ul>
 										</div>
 										<div class="down"><img src="assets/site/img/down.png" alt=""></div>
@@ -1751,7 +1683,7 @@
 		                          </tr>
 		                        </thead>
 		                        <tbody>
-		                            [[getImageList? &tvname=`rowTablePriceTv` &tpl=`priceListTableTpl`]]
+		                            [[!getImageList? &tvname=`rowTablePriceTv` &tpl=`priceListTableTpl`]]
 		                        </tbody>
 		                    </table>
 						</div>
@@ -1764,7 +1696,7 @@
 										</div>
 										<div class="markup-list">
 											<ul>
-											    [[getImageList? &tvname=`underPriceTv` &tpl=`underPriceTpl`]]
+											    [[!getImageList? &tvname=`underPriceTv` &tpl=`underPriceTpl`]]
 											</ul>
 										</div>
 									</div>
@@ -1783,9 +1715,14 @@
 										<div class="ttl">
 											<h4>Дополнительные услуги</h4>
 										</div>
-										<div class="markup-list distance-dist">
-											<ul>
-												[[getImageList? &tvname=`distanceServiceTv` &tpl=`distanceServiceTpl`]]
+										<div class="markup-list distance-dist dops">
+										    <div id="hidden_area">
+										        <ul>
+										            [[!getImageList? &tvname=`distanceServiceTv` &tpl=`distanceServiceTpl`]]
+										        </ul>
+										    </div>
+											<ul id="arrListDops">
+												
 											</ul>
 										</div>
 										<div class="down"><img src="assets/site/img/down.png" alt=""></div>
@@ -8022,6 +7959,149 @@ return $output;',
     ),
     'modTemplateVar' => 
     array (
+      'descript' => 
+      array (
+        'fields' => 
+        array (
+          'id' => 74,
+          'source' => 2,
+          'property_preprocess' => false,
+          'type' => 'text',
+          'name' => 'descript',
+          'caption' => 'Description описание ',
+          'description' => 'Нужно для сниппетов ПС, если не заполнено, автоматически берется из ОПИСАНИЯ страниц',
+          'editor_type' => 0,
+          'category' => 25,
+          'locked' => false,
+          'elements' => '',
+          'rank' => 101,
+          'display' => 'default',
+          'default_text' => '',
+          'properties' => 
+          array (
+          ),
+          'input_properties' => 
+          array (
+            'allowBlank' => 'true',
+            'minLength' => '',
+            'maxLength' => '',
+            'regex' => '',
+            'regexText' => '',
+          ),
+          'output_properties' => 
+          array (
+          ),
+          'static' => false,
+          'static_file' => '',
+          'content' => '',
+        ),
+        'policies' => 
+        array (
+        ),
+        'source' => 
+        array (
+          'id' => 2,
+          'name' => 'images',
+          'description' => '',
+          'class_key' => 'sources.modFileMediaSource',
+          'properties' => 
+          array (
+            'basePath' => 
+            array (
+              'name' => 'basePath',
+              'desc' => 'prop_file.basePath_desc',
+              'type' => 'textfield',
+              'options' => 
+              array (
+              ),
+              'value' => 'assets/site/img/',
+              'lexicon' => 'core:source',
+            ),
+            'baseUrl' => 
+            array (
+              'name' => 'baseUrl',
+              'desc' => 'prop_file.baseUrl_desc',
+              'type' => 'textfield',
+              'options' => 
+              array (
+              ),
+              'value' => 'assets/site/img/',
+              'lexicon' => 'core:source',
+            ),
+          ),
+          'is_stream' => true,
+        ),
+      ),
+      'keywords' => 
+      array (
+        'fields' => 
+        array (
+          'id' => 73,
+          'source' => 2,
+          'property_preprocess' => false,
+          'type' => 'autotag',
+          'name' => 'keywords',
+          'caption' => 'Ключевые слова',
+          'description' => '',
+          'editor_type' => 0,
+          'category' => 25,
+          'locked' => false,
+          'elements' => '',
+          'rank' => 100,
+          'display' => 'default',
+          'default_text' => '',
+          'properties' => 
+          array (
+          ),
+          'input_properties' => 
+          array (
+            'allowBlank' => 'true',
+            'parent_resources' => '',
+          ),
+          'output_properties' => 
+          array (
+          ),
+          'static' => false,
+          'static_file' => '',
+          'content' => '',
+        ),
+        'policies' => 
+        array (
+        ),
+        'source' => 
+        array (
+          'id' => 2,
+          'name' => 'images',
+          'description' => '',
+          'class_key' => 'sources.modFileMediaSource',
+          'properties' => 
+          array (
+            'basePath' => 
+            array (
+              'name' => 'basePath',
+              'desc' => 'prop_file.basePath_desc',
+              'type' => 'textfield',
+              'options' => 
+              array (
+              ),
+              'value' => 'assets/site/img/',
+              'lexicon' => 'core:source',
+            ),
+            'baseUrl' => 
+            array (
+              'name' => 'baseUrl',
+              'desc' => 'prop_file.baseUrl_desc',
+              'type' => 'textfield',
+              'options' => 
+              array (
+              ),
+              'value' => 'assets/site/img/',
+              'lexicon' => 'core:source',
+            ),
+          ),
+          'is_stream' => true,
+        ),
+      ),
       'titleAdvantage' => 
       array (
         'fields' => 
