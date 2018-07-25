@@ -4,13 +4,42 @@ $( document ).ready(function() {
     var viewVivod = "";
     var complectVivod = "";
     var additionllyVivod = {};
+    var summaResult = 0;
+    var whereAttribute = $(".btns-where .but button.active").siblings().val();
+    var whereSummMinus = 0;
+    var ploAreaSummDecrement = 0;
+    var sanAreaSummDecrement = 0;
+    var komAreaSummDecrement = 0;
+    var whereSumma = Number($(".btns-where .but button.active").siblings().attr("data-whereSumm"));
+    summ(whereSumma);
+
+
+
+
+    function summ(varOne){
+        if(varOne==0){varOne=0;}
+            summaResult += varOne;
+            var varper = summaResult;
+        $(".resultat .cost-usluga .summa-cost span").text(varper+ploAreaSummDecrement+sanAreaSummDecrement+komAreaSummDecrement+" руб");
+    }
     
 
     $(".btns-where .but button").on('click', function(event){
         event.preventDefault();
+        whereSummMinus = Number($('input[value="'+whereAttribute+'"]').attr("data-whereSumm"));
+        whereAttribute = $(this).siblings("input").val();
+
+        if($(this).hasClass("active")){
+            whereSumm = 0;
+        }else{
+            whereSumm = Number($(this).siblings().attr("data-whereSumm"));
+            whereSumm -= whereSummMinus;
+            
+        }
+
         $(".btns-where .but button").removeClass("active");
         $(this).addClass("active");
-        var where = $(this).siblings("input").val();
+        
         var whereActiveClass = $(this).parent().attr("data-where");
         if($(".btns-view .but").hasClass(whereActiveClass)){
             $(".btns-view .but").hide();
@@ -21,11 +50,16 @@ $( document ).ready(function() {
         
          $(".btns-view .but button").removeClass("active");
         viewVivod = '';
-        $("#plus_usluga_result").html(viewVivod);
+        $("#plus_usluga_result").html(viewVivod);       
+        
+        summ(whereSumm);
         
     });
     
     $(".btns-area .val-decr").on('click', function(){
+        var costPloscadArea = Number($("#ploschad_area").attr("data-ploshad"));
+        var costKomnatArea = Number($("#col_komnat_area").attr("data-komnati"));
+        var costSanuselArea = Number($("#col_sanus_area").attr("data-sanusel"));
         var area = $(this).siblings("input").val();
         area = Number(area);
         if(area>0){
@@ -34,12 +68,29 @@ $( document ).ready(function() {
             area=0;
             $(this).siblings("input").val(area);
         }
+        var ploArea = Number($("#ploschad_area").val());
+        var komArea = $("#col_komnat_area").val();
+        var sanAr = $("#col_sanus_area").val();
         $("#ploschad-usluga span").text($("#ploschad_area").val());
         $("#komnat-usluga span").text($("#col_komnat_area").val());
         $("#sanusel-usluga span").text($("#col_sanus_area").val());
+        if(($(this).siblings('input').attr('id')) == 'ploschad_area'){
+            if(area >= 50){
+                ploAreaSummDecrement = costPloscadArea * (area % 50);  
+            }else{ploAreaSummDecrement=0;}
+        }else if((($(this).siblings('input').attr('id')) == 'col_sanus_area')){
+            sanAreaSummDecrement = costSanuselArea * area;
+        }else{
+            komAreaSummDecrement = costKomnatArea * area;
+        }
+        var NullVar = 0;
+        summ(NullVar);
     });
     
     $(".btns-area .val-incr").on('click', function(){
+        var costPloscadArea = Number($("#ploschad_area").attr("data-ploshad"));
+        var costKomnatArea = Number($("#col_komnat_area").attr("data-komnati"));
+        var costSanuselArea = Number($("#col_sanus_area").attr("data-sanusel"));
         var area = $(this).siblings("input").val();
         area = Number(area);
         if(area>=0){
@@ -51,6 +102,17 @@ $( document ).ready(function() {
         $("#ploschad-usluga span").text($("#ploschad_area").val());
         $("#komnat-usluga span").text($("#col_komnat_area").val());
         $("#sanusel-usluga span").text($("#col_sanus_area").val());
+        if(($(this).siblings('input').attr('id')) == 'ploschad_area'){
+            if(area >= 50){
+                ploAreaSummDecrement = costPloscadArea * (area % 50);
+            }else{ploAreaSummDecrement=0;}
+        }else if((($(this).siblings('input').attr('id')) == 'col_sanus_area')){
+            sanAreaSummDecrement = costSanuselArea * area;
+        }else{
+            komAreaSummDecrement = costKomnatArea * area;
+        }
+        var NullVar = 0;
+        summ(NullVar);
     });
     
     
@@ -190,7 +252,7 @@ $( document ).ready(function() {
 
         $.ajax({
           type: 'POST',
-          url: 'assets/site/php/send.php',
+          url: '..//assets/site/php/send.php',
           data: { 
             "viewWhere": viewWhere,
             "ploschad": ploschad,
