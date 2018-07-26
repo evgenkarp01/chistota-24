@@ -3,13 +3,17 @@ $( document ).ready(function() {
     var viewWhere ="";
     var viewVivod = "";
     var complectVivod = "";
-    var additionllyVivod = {};
+    var additionllyVivod = new Object();
     var summaResult = 0;
     var whereAttribute = $(".btns-where .but button.active").siblings().val();
     var whereSummMinus = 0;
     var ploAreaSummDecrement = 0;
     var sanAreaSummDecrement = 0;
     var komAreaSummDecrement = 0;
+    var viewServiceSumm = 0;
+    var complectSumm = 0;
+    var dopoptSumm = 0;
+    var dopoptSummWindow = 0;
     var whereSumma = Number($(".btns-where .but button.active").siblings().attr("data-whereSumm"));
     summ(whereSumma);
 
@@ -20,7 +24,7 @@ $( document ).ready(function() {
         if(varOne==0){varOne=0;}
             summaResult += varOne;
             var varper = summaResult;
-        $(".resultat .cost-usluga .summa-cost span").text(varper+ploAreaSummDecrement+sanAreaSummDecrement+komAreaSummDecrement+" руб");
+        $(".resultat .cost-usluga .summa-cost span").text(varper+ploAreaSummDecrement+sanAreaSummDecrement+komAreaSummDecrement+viewServiceSumm+complectSumm+dopoptSumm+" руб");
     }
     
 
@@ -50,12 +54,11 @@ $( document ).ready(function() {
         
          $(".btns-view .but button").removeClass("active");
         viewVivod = '';
+        viewServiceSumm = 0;
         $("#plus_usluga_result").html(viewVivod);       
         
         summ(whereSumm);
-        
     });
-    
     $(".btns-area .val-decr").on('click', function(){
         var costPloscadArea = Number($("#ploschad_area").attr("data-ploshad"));
         var costKomnatArea = Number($("#col_komnat_area").attr("data-komnati"));
@@ -76,7 +79,7 @@ $( document ).ready(function() {
         $("#sanusel-usluga span").text($("#col_sanus_area").val());
         if(($(this).siblings('input').attr('id')) == 'ploschad_area'){
             if(area >= 50){
-                ploAreaSummDecrement = costPloscadArea * (area % 50);  
+                ploAreaSummDecrement = costPloscadArea * (area - 50);  
             }else{ploAreaSummDecrement=0;}
         }else if((($(this).siblings('input').attr('id')) == 'col_sanus_area')){
             sanAreaSummDecrement = costSanuselArea * area;
@@ -86,7 +89,6 @@ $( document ).ready(function() {
         var NullVar = 0;
         summ(NullVar);
     });
-    
     $(".btns-area .val-incr").on('click', function(){
         var costPloscadArea = Number($("#ploschad_area").attr("data-ploshad"));
         var costKomnatArea = Number($("#col_komnat_area").attr("data-komnati"));
@@ -104,7 +106,7 @@ $( document ).ready(function() {
         $("#sanusel-usluga span").text($("#col_sanus_area").val());
         if(($(this).siblings('input').attr('id')) == 'ploschad_area'){
             if(area >= 50){
-                ploAreaSummDecrement = costPloscadArea * (area % 50);
+                ploAreaSummDecrement = costPloscadArea * (area - 50);
             }else{ploAreaSummDecrement=0;}
         }else if((($(this).siblings('input').attr('id')) == 'col_sanus_area')){
             sanAreaSummDecrement = costSanuselArea * area;
@@ -114,43 +116,76 @@ $( document ).ready(function() {
         var NullVar = 0;
         summ(NullVar);
     });
-    
-    
+    $(".btns-area .val-input input").on('input', function(){
+        var costPloscadArea = Number($("#ploschad_area").attr("data-ploshad"));
+        var costKomnatArea = Number($("#col_komnat_area").attr("data-komnati"));
+        var costSanuselArea = Number($("#col_sanus_area").attr("data-sanusel"));
+
+        var area = $(this).val();
+
+        area = Number(area);
+        $("#ploschad-usluga span").text($("#ploschad_area").val());
+        $("#komnat-usluga span").text($("#col_komnat_area").val());
+        $("#sanusel-usluga span").text($("#col_sanus_area").val());
+        if(($(this).attr('id')) == 'ploschad_area'){
+            if(area >= 50){
+                ploAreaSummDecrement = costPloscadArea * (area - 50);
+            }else{ploAreaSummDecrement=0;}
+        }else if((($(this).attr('id')) == 'col_sanus_area')){
+            sanAreaSummDecrement = costSanuselArea * area;
+        }else{
+            komAreaSummDecrement = costKomnatArea * area;
+        }
+        var NullVar = 0;
+        console.log(area);
+        summ(NullVar);
+    }); 
     $(".btns-view .but button").on('click', function(event){
         event.preventDefault(); 
+        var viewCost = $(this).siblings("input").attr("data-view");
         $(".btns-view .but button").removeClass("active");
         $(this).addClass("active");
+        if($(this).hasClass("active")){
+            viewServiceSumm = Number(viewCost);
+        }else{
+            viewServiceSumm = 0;
+        }
+        
         viewVivod = '<span>'+($(this).text())+'</span>';
         $("#plus_usluga_result").html(viewVivod); 
+        var nullView = 0;
+        summ(nullView);
     });
-    
-    
     $(".btns-complect .but button").on('click', function(event){
         event.preventDefault(); 
+        var complectCost = $(this).siblings("input").attr("data-complect");
         complectVivod = '<span>'+($(this).text())+'</span>';
         if($(this).hasClass('active')){
             $(this).toggleClass("active");
+            complectSumm = 0;
             complectVivod ='';
         }else{
             $(".btns-complect .but button").removeClass("active");
-
+            complectSumm = Number(complectCost);
             $(this).addClass("active");
         }
         $("#result_compl_usluga").html(complectVivod);
+        var nullComplect = 0;
+        summ(nullComplect);
     });
-
-
-   
     $(".btns-additionlly .but-add").on('click', function(){
         var snachDop = '<span>'+$(this).text()+'</span>';
         var indexMas= $(this).children("input").val();
+        var dopoptCost = $(this).children("input").attr("data-additionlly");
         if(($(this).children("input").val())!="noindex"){
             if($(this).hasClass('active')){
                 $(this).toggleClass("active");
                 delete additionllyVivod[indexMas];
+                dopoptSumm -= Number(dopoptCost);
             }else{
                 $(this).addClass("active");
                 additionllyVivod[indexMas] = snachDop;
+                dopoptSumm += Number(dopoptCost);
             }
             var str = ""; 
             for(k in additionllyVivod) { 
@@ -158,27 +193,49 @@ $( document ).ready(function() {
             }
             $("#result_dop_usluga").html(str);
         }
+        var nullDopopt = 0;
+        summ(nullDopopt);
     });
 
     $(".window-wrapper .item").on('click', function(){
         var snachDop = '<span>'+$(this).children().children("h4").text()+'</span>';
         var indexMas= $(this).children("input[type='hidden']").val();
+        var dopoptWindowCost = Number($(this).children("input[type='hidden']").attr("data-additionlly"));
+        var dopoptWindowCol = Number($(this).children(".input-data").children("input").val());
         $(".window-wrapper .item input[type='text']").on('click', function(e){
             e.preventDefault();
             e.stopPropagation();
         });
+        
         if($(this).hasClass('active')){
+            
             $(this).toggleClass("active");
             delete additionllyVivod[indexMas];
+            dopoptWindowCol = "";
+            indexMas= $(this).children(".input-data").children("input").val(dopoptWindowCol);
         }else{
             $(this).addClass("active");
             additionllyVivod[indexMas] = snachDop;
+
+            if(isNaN(dopoptWindowCol)){
+                dopoptWindowCol = 1;
+                indexMas= $(this).children(".input-data").children("input").val(dopoptWindowCol);
+            }else if(dopoptWindowCol < 1 || dopoptWindowCol == ""){
+                dopoptWindowCol = 1;
+                indexMas = $(this).children(".input-data").children("input").val(dopoptWindowCol);
+            }
+            dopoptSummWindow = dopoptWindowCost * dopoptWindowCol;
         }
         var str = ""; 
         for(k in additionllyVivod) { 
             str += additionllyVivod[k]; 
         }
+        console.log(dopoptWindowCost);
+        console.log(dopoptWindowCol);
         $("#result_dop_usluga").html(str);
+
+        var nullDopoptDopoptWindow = 0;
+        summ(nullDopoptDopoptWindow);
     });
 
     $(".dop-usl-window .dop-us-wrap .item").on('click', function(){
@@ -204,19 +261,24 @@ $( document ).ready(function() {
 
     $(".allservices .item-allservices").on('click', function(){
         var snachDop = '<span>'+$(this).children().children("p").text()+'</span>';
-        var indexMas= $(this).children("input[type='hidden']").val();
+        var indexMas = $(this).children("input[type='hidden']").val();
+        var dopoptAllCost = $(this).children("input").attr("data-additionlly");
         if($(this).hasClass('active')){
             $(this).toggleClass("active");
             delete additionllyVivod[indexMas];
+            dopoptSumm -= Number(dopoptAllCost);
         }else{
             $(this).addClass("active");
             additionllyVivod[indexMas] = snachDop;
+            dopoptSumm += Number(dopoptAllCost);
         }
         var str = ""; 
         for(k in additionllyVivod) { 
             str += additionllyVivod[k]; 
         }
         $("#result_dop_usluga").html(str);
+        var nullDopoptAll = 0;
+        summ(nullDopoptAll);
     });
     $("input[name='date_calculator']").on('input', function(){
         var dateVivodResult = $(this).val();
